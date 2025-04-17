@@ -19,7 +19,7 @@
   * [Issue Lock Time](getting-started/managing-your-bounty/issue-lock-time.md)
   * [Add Reward to an Existing Bounty](getting-started/managing-your-bounty/add-reward-to-an-existing-bounty.md)
   * [Withdraw Funds](getting-started/managing-your-bounty/withdraw-funds.md)
-  * [Detach an Issues from Pull Requests](getting-started/managing-your-bounty/detach-an-issues-from-pull-requests.md)
+  * [Detach Issues from Pull Requests](getting-started/managing-your-bounty/detach-issues-from-pull-requests.md)
   * [Expire or Reclaim a Bounty Reward](getting-started/managing-your-bounty/expire-or-reclaim-a-bounty-reward.md)
   * [User Balances Overview](getting-started/managing-your-bounty/user-balances-overview.md)
 

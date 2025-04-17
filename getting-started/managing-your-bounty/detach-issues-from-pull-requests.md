@@ -1,6 +1,6 @@
-# Detach an Issues from Pull Requests
+# Detach Issues from Pull Requests
 
-## How the Repo Maintainer can Detach an Issues from Pull Requests
+## How the Repo Maintainer can Detach Issues from Pull Requests
 
 In GitHub, issues and pull requests may automatically link when specific keywords (e.g., "close", "fixes") are used in pull request descriptions or comments. This guide explains how to detach an issue from a pull request.
 
