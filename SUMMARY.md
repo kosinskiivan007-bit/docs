@@ -15,11 +15,11 @@
 * [POSTING A BOUNTY](getting-started/posting-a-bounty/README.md)
   * [Deposit Funds](getting-started/posting-a-bounty/deposit-funds.md)
   * [Create a GitHub issue and Submit a new reward](getting-started/posting-a-bounty/create-a-github-issue-and-submit-a-new-reward.md)
-  * [How to Unlink Issues from Pull Requests](getting-started/posting-a-bounty/how-to-unlink-issues-from-pull-requests.md)
 * [MANAGING YOUR BOUNTY](getting-started/managing-your-bounty/README.md)
   * [Issue Lock Time](getting-started/managing-your-bounty/issue-lock-time.md)
   * [Add Reward to an Existing Bounty](getting-started/managing-your-bounty/add-reward-to-an-existing-bounty.md)
   * [Withdraw Funds](getting-started/managing-your-bounty/withdraw-funds.md)
+  * [How to Detach an Issues from Pull Request](getting-started/managing-your-bounty/how-to-detach-an-issues-from-pull-request.md)
   * [Expire or Reclaim a Bounty Reward](getting-started/managing-your-bounty/expire-or-reclaim-a-bounty-reward.md)
   * [User Balances Overview](getting-started/managing-your-bounty/user-balances-overview.md)
 
