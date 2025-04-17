@@ -28,7 +28,7 @@ In GitHub, issues and pull requests may automatically link when specific keyword
 {% hint style="info" %}
 After removing the issue link from the PR body, refresh the page to see the changes reflected in the PR interface. The previously linked issue will no longer appear in the related issues section. &#x20;
 
-* [<sup>_Learn more about issue-PR relationships here_</sup>](https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/linking-a-pull-request-to-an-issue)
+* [_Learn more about issue-PR relationships here_](https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/linking-a-pull-request-to-an-issue)
 {% endhint %}
 
 {% hint style="info" %}
