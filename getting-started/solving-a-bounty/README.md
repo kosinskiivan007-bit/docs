@@ -12,6 +12,10 @@
 [claiming-multiple-bounties-multi-bounty-prs.md](claiming-multiple-bounties-multi-bounty-prs.md)
 {% endcontent-ref %}
 
+{% content-ref url="claim-reward-criteria-and-troubleshooting-guide.md" %}
+[claim-reward-criteria-and-troubleshooting-guide.md](claim-reward-criteria-and-troubleshooting-guide.md)
+{% endcontent-ref %}
+
 {% content-ref url="withdraw-funds.md" %}
 [withdraw-funds.md](withdraw-funds.md)
 {% endcontent-ref %}
