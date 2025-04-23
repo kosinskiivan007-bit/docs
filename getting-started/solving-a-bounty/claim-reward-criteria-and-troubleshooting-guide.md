@@ -109,7 +109,6 @@ If your PR was merged but did not have the proper linking syntax:
 | Missing link syntax   | PR doesn't include `close #issue-number` | Edit PR description or create follow-up PR    |
 | Wrong issue number    | PR references incorrect issue            | Edit PR or create new PR with correct number  |
 | Not claiming reward   | Forgot to click "Claim Reward" button    | Go to Lightning Bounties app and click button |
-| No LN wallet          | No wallet to receive payment             | Set up Lightning wallet in account settings   |
 | Issue already claimed | Another dev claimed the bounty first     | Check issue status before working on it       |
 
 ### Best Practices
