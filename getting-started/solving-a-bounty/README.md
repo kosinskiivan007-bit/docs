@@ -8,6 +8,10 @@
 [working-on-the-bounty.md](working-on-the-bounty.md)
 {% endcontent-ref %}
 
+{% content-ref url="claiming-multiple-bounties-multi-bounty-prs.md" %}
+[claiming-multiple-bounties-multi-bounty-prs.md](claiming-multiple-bounties-multi-bounty-prs.md)
+{% endcontent-ref %}
+
 {% content-ref url="withdraw-funds.md" %}
 [withdraw-funds.md](withdraw-funds.md)
 {% endcontent-ref %}
