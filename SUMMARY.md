@@ -9,6 +9,7 @@
 * [SOLVING A BOUNTY](getting-started/solving-a-bounty/README.md)
   * [Looking for a project to get rewarded](getting-started/solving-a-bounty/looking-for-a-project-to-get-rewarded.md)
   * [Working on a Bounty](getting-started/solving-a-bounty/working-on-the-bounty.md)
+  * [Claiming Multiple Bounties: Multi-Bounty PRs](getting-started/solving-a-bounty/claiming-multiple-bounties-multi-bounty-prs.md)
   * [Withdrawing Funds](getting-started/solving-a-bounty/withdraw-funds.md)
   * [Working on Opensource Frontend: lb-next](getting-started/solving-a-bounty/working-on-opensource-frontend-lb-next.md)
   * [How to Convert Sats into Local Currencies](getting-started/solving-a-bounty/how-to-convert-sats-into-local-currencies.md)

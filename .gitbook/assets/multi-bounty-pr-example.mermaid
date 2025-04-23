@@ -1,0 +1,47 @@
+classDiagram
+    class PullRequest {
+        Title: "Fix user authentication bugs"
+        Description:
+        "This PR addresses several authentication issues:
+        
+        - Fixes login timeout issues
+        - Adds password reset functionality
+        - Improves error messages
+        
+        closes #42
+        closes #57
+        closes #63
+        
+        Testing completed on all browsers."
+    }
+    
+    class Issue42 {
+        Title: "Login times out after 30 seconds"
+        Status: Open → Closed
+        Bounty: $150
+    }
+    
+    class Issue57 {
+        Title: "Add password reset feature"
+        Status: Open → ?
+        Bounty: $200
+    }
+    
+    class Issue63 {
+        Title: "Improve auth error messages"
+        Status: Open → ?
+        Bounty: $100
+    }
+    
+    class Warning {
+        ⚠️ PROBLEMATIC APPROACH ⚠️
+        Lightning Bounties may only process
+        the first issue closure (#42)
+        and you might not receive bounties
+        for #57 and #63!
+    }
+    
+    PullRequest --> Issue42 : may close
+    PullRequest --> Issue57 : might not close
+    PullRequest --> Issue63 : might not close
+    Warning --> PullRequest : indicates problem with
