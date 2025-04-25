@@ -12,7 +12,7 @@ description: Here developers can see how to find projects to work on and get rew
 
 This example is fixing: _Add color to logo in this repo_
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## 3 - View on GitHub, click on 🔗 (Optional)
 
