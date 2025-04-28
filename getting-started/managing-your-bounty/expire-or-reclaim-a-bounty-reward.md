@@ -76,12 +76,14 @@ When your bounty is **unlocked**, it means:
 
 If you want to remove your bounty and get your sats back:
 
-1. Go to your Lightning Bounties profile (top right of the app).
-2. Locate the bounty you wish to expire.
+1. Go to your Lightning Bounties account dashboard (click your avatar in the top right of the app).
+2. Locate the bounty you wish to expire under "My Rewards" tab.
 3. Click the **Expire Reward** button next to your bounty.
 4. The sats from the bounty will be returned to your balance.
 
 Being able to expire rewards is necessary because sometimes you solve the issue yourself or your priorities for development change.
+
+If all rewards become expired on an issue, the issue will become hidden on the homepage.
 
 {\
 // IMAGE: Screenshot showing the "Expire Reward" button in the user profile section.\
@@ -113,14 +115,28 @@ If you want your bounty to remain available for others to solve:
 **Can I extend or update the expiration of an unlocked bounty?**\
 No, unlocked bounties do not have an expiration timer. They remain posted until you manually expire them or someone claims the reward.
 
+TODO - add suggestion to "Add Reward to Issue" with desired lock time. Then Expire the original reward that has become unlocked.
+
 **What happens if I do nothing after the lock time expires?**\
 The bounty stays active and visible to bounty hunters until it is solved or you choose to expire it. The status simply changes from "locked" to "unlocked."
 
 **How do I know if my bounty is locked or unlocked?**\
 Check the status label on your bounty in your Lightning Bounties dashboard. Locked bounties will show the remaining lock time, while unlocked bounties will have an "Expire Reward" option.
 
+Also, information on bounty lock time is public and can be seen in any bounty detail page with a lock or unlock emoji. Hover over this emoji to see the exact date.
+
 **Why should I set a lock time for my bounty?**\
 Lock time helps bounty hunters know the reward will be available by the time they submit their solution, giving them confidence to work on your issue.
+
+**Can I expire a non-logged-in reward?**\
+If you added sats to the issue by paying a one-time invoice in a non-logged in state, you can never expire the reward, since it will not be associated with your account, and therefore it will not show up under your "My Rewards" tab in the account dashbaord page.
+
+**Can I expire an Anonymous reward?**\
+Yes, follow the same steps explained above.
+
+
+
+
 
 
 
