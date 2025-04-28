@@ -6,7 +6,7 @@ This guide outlines the complete process for claiming rewards and provides troub
 
 <figure><img src="../../.gitbook/assets/first_bounty_workflow_mermaid.JPG" alt=""><figcaption></figcaption></figure>
 
-### ClaimRewardv2 Criteria
+### ClaimReward Criteria
 
 To successfully claim a reward for a bounty, follow these steps:
 
@@ -34,18 +34,23 @@ To successfully claim a reward for a bounty, follow these steps:
 * Provide a clear explanation of your changes and how they address the issue
 * Submit the PR for review
 
-#### 4. Claim Reward
+#### 4. Claim Reward Process
 
-<figure><img src="../../.gitbook/assets/check_claim_reward.JPG" alt=""><figcaption><p>Check &#x26; Claim Reward Interface on <a href="https://app.lightningbounties.com/">app.lightningbounties.com</a></p></figcaption></figure>
+1. **Wait for the repository maintainer to review and merge your PR.**
+2.  **Manually claim your reward:**
 
-* **⚠️IMPORTANT**: Before the reward can be processed, you must manually click the **Claim Reward** & **Check** buttons on [app.lightningbounties.com](http://app.lightningbounties.com/)
-* After clicking "Claim Reward," click the **Check** button to verify eligibility
-* Wait for the repository maintainer to review and merge your PR
-* Once merged, the reward will be deposited directly into your Lightning Bounties balance
+    * Visit [app.lightningbounties.com](http://app.lightningbounties.com/)
+    * Click the "Claim Reward" button
+    * Click the "Check" button to verify your eligibility
+
+    <figure><img src="../../.gitbook/assets/check_claim_reward.JPG" alt=""><figcaption><p>Claim Reward &#x26; Check Interface on <a href="https://app.lightningbounties.com/">app.lightningbounties.com</a></p></figcaption></figure>
+3. **Once your PR is merged and your eligibility is verified, the reward will be deposited directly into your Lightning Bounties balance.**
+
+⚠️ **IMPORTANT**: The reward process will not start automatically. You must manually complete the claim steps on [app.lightningbounties.com](http://app.lightningbounties.com/) after your PR is merged.
 
 ### Complete Claim Process Visualization
 
-<figure><img src="../../.gitbook/assets/claim_bounty_workflow_mermaid.JPG" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Complete_Claim_Process_Updated (2).png" alt="Complete Claim Process Visualization"><figcaption></figcaption></figure>
 
 ### Troubleshooting
 
