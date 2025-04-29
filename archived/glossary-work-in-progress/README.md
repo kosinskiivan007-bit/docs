@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Copy of Glossary (Work in Progress)
 
 ## Common Terms

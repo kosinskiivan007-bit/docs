@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # 📖 Copy of Lightning Bounties | Docs
 
 ## <mark style="background-color:yellow;">**Welcome to LB Docs**</mark>

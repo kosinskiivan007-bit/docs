@@ -19,6 +19,7 @@ To successfully claim a reward for a bounty, follow these steps:
 It’s essential to register and log in to Lightning Bounties using your GitHub account **before** submitting your PR and clicking _**"Claim Reward."**_&#x20;
 
 * This ensures your reward is properly linked to your account and that you’re eligible to claim the bounty.
+  * _See_ [first-time-onboarding](../first-time-onboarding/ "mention") _For Detailed Instructions._&#x20;
 {% endhint %}
 
 ### 2. Find an Issue
@@ -26,6 +27,7 @@ It’s essential to register and log in to Lightning Bounties using your GitHub 
 * Browse available bounties on the [app.lightningbounties.com](http://app.lightningbounties.com/) feed
 * Review the issue details, requirements, and reward amount
 * Check if the bounty is still available (not claimed by someone else)
+  * _See_ [looking-for-a-project-to-get-rewarded.md](looking-for-a-project-to-get-rewarded.md "mention") _For Detailed Instructions._
 
 ### 3. Fix the Issue
 
@@ -34,6 +36,7 @@ It’s essential to register and log in to Lightning Bounties using your GitHub 
 * Implement the fix according to the issue requirements
 * Test your changes thoroughly to ensure they meet all acceptance criteria
 * Push your changes to your fork
+  * &#x20;_See_ [working-on-the-bounty.md](working-on-the-bounty.md "mention") _For Detailed Instructions._&#x20;
 
 ### 4.  Create a Pull Request (PR) **Targeting Main/Master**
 
@@ -61,6 +64,8 @@ In the PR description, include `close #issue-number` or `closes #issue-number` t
 <figure><img src="../../.gitbook/assets/mergedPRScreenShot_ChangeIttoGreenOpenCheckmark.png" alt="Example: PR description with correct close syntax and branch targeting."><figcaption><p>Example: PR description with correct close syntax and branch targeting.</p></figcaption></figure>
 
 {% hint style="info" %}
+:information\_source: **INFO** :information\_source:
+
 _**You may need to refresh the GitHub page to see the issue show up as linked.**_
 {% endhint %}
 
@@ -68,6 +73,7 @@ _**You may need to refresh the GitHub page to see the issue show up as linked.**
 
 * The repository maintainer will review your PR.&#x20;
   * Once it is approved and merged, the issue will be closed automatically if you used the correct `close`syntax.
+    * &#x20;_See_ [working-on-the-bounty.md](working-on-the-bounty.md "mention") _For Detailed Instructions._&#x20;
 
 ### 6. Claim Reward Process
 
@@ -86,7 +92,11 @@ You must manually complete the claim steps on [app.lightningbounties.com](http:/
 
 <figure><img src="../../.gitbook/assets/check_claim_reward.JPG" alt="Claim Reward &#x26; Check Interface on Lightning Bounties "><figcaption><p>Claim Reward &#x26; Check Interface on <a href="https://app.lightningbounties.com/">app.lightningbounties.com</a></p></figcaption></figure>
 
-### 7. **Once your PR is merged and your eligibility is verified, the reward will be deposited directly into your Lightning Bounties balance.**
+{% hint style="success" %}
+### :checkered\_flag:Complete :checkered\_flag:
+
+**Once your PR is merged and your eligibility is verified, the reward will be deposited directly into your Lightning Bounties balance.**
+{% endhint %}
 
 ***
 
@@ -129,7 +139,7 @@ If your PR is still open, you can update the PR description to add the correct c
 * Navigate to your pull request on GitHub.
 * Near the top of the PR page, locate the description section (below the title).
 * Hover over the description area and click the "Edit" (... or pencil) icon.
-* Add the `close #issue-number`keyword at the **top of the PR description** (not in a comment or commit message, as only the PR body triggers the automation for Lightning Bounties and GitHub).
+* Add the `close #issue-number`keyword at the **top of the PR description** _(not in a comment or commit message, as only the PR body triggers the automation for Lightning Bounties and GitHub)_.
 
 {% embed url="https://app.tango.us/app/workflow/Add-and-update-Close-Keyword-on-open-GitHub-Pull-Request-b07c259289b04ea7bc75613574f7579c" %}
 What the Workflow Looks Like
@@ -148,10 +158,12 @@ If your original PR has already been merged without the correct closing keyword:
 * In the PR description, include the appropriate closing keyword (e.g., `close #42`).
 *   Reference your original PR:
 
-    ```
+    {% code overflow="wrap" %}
+    ```markdown
     close #42  
     This PR references the work completed in #123 (original PR).
     ```
+    {% endcode %}
 * Notify the repository owner about this follow-up PR and explain its purpose.
 * Once merged, return to Lightning Bounties and click "Claim Reward" and "Check."
 

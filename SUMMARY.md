@@ -7,7 +7,7 @@
 * [FIRST TIME ONBORDING](getting-started/first-time-onboarding/README.md)
   * [GitHub Auth & Lightning Bounties](getting-started/first-time-onboarding/github-auth-and-lightning-bounties.md)
 * [SOLVING A BOUNTY](getting-started/solving-a-bounty/README.md)
-  * [Looking for a project to get rewarded](getting-started/solving-a-bounty/looking-for-a-project-to-get-rewarded.md)
+  * [Finding Bounties to Solve](getting-started/solving-a-bounty/looking-for-a-project-to-get-rewarded.md)
   * [Working on a Bounty](getting-started/solving-a-bounty/working-on-the-bounty.md)
   * [Claiming Multiple Bounties: Multi-Bounty PRs](getting-started/solving-a-bounty/claiming-multiple-bounties-multi-bounty-prs.md)
   * [Claim Reward Criteria & Troubleshooting Guide](getting-started/solving-a-bounty/claim-reward-criteria-and-troubleshooting-guide.md)

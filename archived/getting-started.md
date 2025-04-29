@@ -1,5 +1,6 @@
 ---
 description: This video explains how our platform works
+hidden: true
 ---
 
 # Copy of Welcome To Lightning Bounties
