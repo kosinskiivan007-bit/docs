@@ -1,8 +1,11 @@
+---
+description: >-
+  This guide outlines the complete process for claiming rewards and provides
+  troubleshooting steps for developers working on bounties on the Lightning
+  Bounties Platform.
+---
+
 # Claim Reward Criteria & Troubleshooting Guide
-
-## Introduction
-
-This guide outlines the complete process for claiming rewards and provides troubleshooting steps for developers working on bounties on the Lightning Bounties Platform.
 
 ## ClaimReward Criteria
 
@@ -103,43 +106,73 @@ You must manually complete the claim steps on [app.lightningbounties.com](http:/
 
 ## Troubleshooting
 
+If you encounter issues claiming your Lightning Bounty reward, use this guide to diagnose and resolve common problems. For more details, see the [Lightning Bounties Troubleshooting Guide](https://docs.lightningbounties.com/docs/getting-started/solving-a-bounty/claim-reward-criteria-and-troubleshooting-guide) and [GitHub’s official documentation on linking pull requests to issues](https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword).
+
+***
+
 ### Issue Not Linked to PR
 
 <div data-full-width="false"><figure><img src="../../.gitbook/assets/no_close_pr.JPG" alt="Example: PR without the required &#x22;close #issue-number&#x22; syntax"><figcaption><p> <em>Example: PR without the required "close #issue-number" syntax</em></p></figcaption></figure></div>
 
 **Problem Indicators:**
 
-* PR doesn't show linked issue in GitHub interface
-* The issue remains open after PR is merged
-* Reward doesn't process automatically
+* The PR does not show the linked issue in the GitHub interface.
+* The issue remains open after your PR is merged.
+* The reward does not process automatically.
 
-**Solutions:**
+## **Solutions:**
 
-* **Edit PR Description**: If the PR is still open, edit it to add `close #issue-number` syntax
-* **Ask Repository Owner**: If you cannot edit the PR, ask the repository owner to add the link for you
-* **Create Follow-up PR**: If the PR was already merged, create a minimal follow-up PR (see below)
+### **1. Edit PR Description:**
 
-#### PR Merged but No Payment
+If your PR is still open, you can update the PR description to add the correct closing keyword (e.g., `close #issue-number`).
 
-<figure><img src="../../.gitbook/assets/fullowup_pr_issue.JPG" alt=""><figcaption><p><em>Example: A minimal follow-up PR correctly referencing both the issue and original</em> </p></figcaption></figure>
+* Navigate to your pull request on GitHub.
+* Near the top of the PR page, locate the description section (below the title).
+* Hover over the description area and click the "Edit" (... or pencil) icon.
+* Add the `close #issue-number`keyword at the **top of the PR description** (not in a comment or commit message, as only the PR body triggers the automation for Lightning Bounties and GitHub).
 
-If your PR was merged but did not have the proper linking syntax:
+{% embed url="https://app.tango.us/app/workflow/Add-and-update-Close-Keyword-on-open-GitHub-Pull-Request-b07c259289b04ea7bc75613574f7579c" %}
+What the Workflow Looks Like
+{% endembed %}
 
-1. Create a new PR with minimal changes:
-   * Update documentation
-   * Add a comment
-   * Fix a typo
-2.  In the PR description, include:
+### **2. Ask Repository Owner (If you can't edit the PR)**
 
-    {% code overflow="wrap" %}
-    ```markdown
-    close #42 This PR references the work completed in #123 (original PR).
+* Contact the repository owner or maintainer
+* Ask them to edit the PR description to add the closing keyword
 
-    This follow-up PR is created to properly link the issue for Lightning Bounty payment.
+### **3. Create a Follow-up PR** (If original PR was already merged)**:**
+
+If your original PR has already been merged without the correct closing keyword:  [(see below)](claim-reward-criteria-and-troubleshooting-guide.md#example-of-a-follow-up-pr-created-to-properly-link-the-issue-for-lightning-bounty-payment)
+
+* Create a new PR with a minimal change (e.g., update documentation, add a comment, or fix a typo).
+* In the PR description, include the appropriate closing keyword (e.g., `close #42`).
+*   Reference your original PR:
+
     ```
-    {% endcode %}
-3. Notify the repository owner about this follow-up PR and explain its purpose
-4. Once merged, go to Lightning Bounties and click "Claim Reward" and "Check"
+    close #42  
+    This PR references the work completed in #123 (original PR).
+    ```
+* Notify the repository owner about this follow-up PR and explain its purpose.
+* Once merged, return to Lightning Bounties and click "Claim Reward" and "Check."
+
+#### Example of a follow-up PR created to properly link the issue for Lightning Bounty payment :arrow\_down\_small:
+
+<figure><img src="../../.gitbook/assets/fullowup_pr_issue.JPG" alt=""><figcaption><p><em>Example: A minimal follow-up PR correctly referencing both the issue and original  PR</em></p></figcaption></figure>
+
+### **4. Request an Override via Discord**
+
+If you are unable to resolve the issue through the above steps, join the [Lightning Bounties Discord](https://discord.gg/zBxj4x4Cbq) and request an override from the LB team.
+
+* Add a comment to the PR, tagging the maintainer (e.g., `@maintainer`) and include the Lightning Bounties issue URL.
+* Ask the maintainer to respond in the PR thread confirming that the PR qualifies for the bounty.
+
+{% hint style="warning" %}
+## :warning:Important :warning:
+
+The maintainer must write a clear comment confirming the qualification (an emoji or reaction is not sufficient as proof).
+{% endhint %}
+
+For more details on linking PRs to issues, see [GitHub’s guide on linking pull requests to issues](https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/linking-a-pull-request-to-an-issue-using-a-keyword).
 
 #### Payment Not Received
 
@@ -148,7 +181,6 @@ If your PR was merged but did not have the proper linking syntax:
 1. Confirm the issue is marked as "closed" on GitHub
 2. Verify the PR that closed it has been merged
 3. Check that you clicked "Claim Reward" on Lightning Bounties
-4. Allow up to 24 hours for processing in some cases
 
 **Solutions:**
 
@@ -171,7 +203,6 @@ If your PR was merged but did not have the proper linking syntax:
 * **Communicate clearly** with repository maintainers about your bounty claim
 * **Keep PRs focused** on addressing the specific issue
 * **Don't forget** to manually click "Claim Reward" on Lightning Bounties platform
-* **Set up your Lightning wallet** before working on bounties to receive payments quickly
 
 ***
 
