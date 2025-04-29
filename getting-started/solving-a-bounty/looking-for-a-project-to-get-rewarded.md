@@ -10,11 +10,7 @@ description: >-
 
 Looking to earn Bitcoin for your coding skills? This guide will show you how to discover open, unsolved bounties on [Lightning Bounties](https://app.lightningbounties.com/), evaluate their details, and get ready to contribute.
 
-
-
-**Browse Open Bounties**
-
-## 1 - **Browse Open Bounties**
+## 1 - **Finding Open Bounties**
 
 * Visit [app.lightningbounties.com](https://app.lightningbounties.com).
 
