@@ -218,6 +218,12 @@ For more details on linking PRs to issues, see [GitHub’s guide on linking pull
 
 ***
 
-Remember, the Lightning Bounties system requires both proper GitHub issue linking through the `close #issue-number` syntax AND manual claiming through the Lightning Bounties platform. Both steps are essential for successful reward processing.
+{% hint style="info" %}
+## :information\_source: Remember :information\_source:
+
+The Lightning Bounties system requires both proper GitHub issue linking through the `close #issue-number` syntax **AND** manual claiming through the Lightning Bounties platform.&#x20;
+
+_Both steps are essential for successful reward processing_
+{% endhint %}
 
 For additional assistance, join the Lightning Bounties [Discord](https://discord.gg/zBxj4x4Cbq) community.
