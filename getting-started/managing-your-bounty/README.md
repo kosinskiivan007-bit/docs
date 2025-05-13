@@ -8,8 +8,8 @@
 [add-reward-to-an-existing-bounty.md](add-reward-to-an-existing-bounty.md)
 {% endcontent-ref %}
 
-{% content-ref url="withdraw-funds.md" %}
-[withdraw-funds.md](withdraw-funds.md)
+{% content-ref url="../solving-a-bounty/withdraw-funds.md" %}
+[withdraw-funds.md](../solving-a-bounty/withdraw-funds.md)
 {% endcontent-ref %}
 
 {% content-ref url="detach-issues-from-pull-requests.md" %}

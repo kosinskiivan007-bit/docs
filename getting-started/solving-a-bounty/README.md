@@ -16,8 +16,8 @@
 [claim-reward-criteria-and-troubleshooting-guide.md](claim-reward-criteria-and-troubleshooting-guide.md)
 {% endcontent-ref %}
 
-{% content-ref url="withdraw-funds.md" %}
-[withdraw-funds.md](withdraw-funds.md)
+{% content-ref url="../../withdraw-funds.md" %}
+[withdraw-funds.md](../../withdraw-funds.md)
 {% endcontent-ref %}
 
 {% content-ref url="working-on-opensource-frontend-lb-next.md" %}
