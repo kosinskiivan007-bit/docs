@@ -68,7 +68,7 @@ Once you’ve found a bounty you want to work on, continue to [Working on a Boun
 * **Check Requirements:** Always read the bounty’s requirements and acceptance criteria before starting.
 * **Act Fast:** Some bounties may be solved quickly. Start your work as soon as you find an issue that interests you.
 * **Look for the Winner** :trophy:**icon:** If it’s missing, the bounty is still available.
-* **Stay Updated:** Follow Lightning Bounties on[ social media](https://x.com/LBounties) and join our [community channels](../../about-lb/socials.md) to hear about new bounties and platform updates.
+* **Stay Updated:** Follow Lightning Bounties on[ social media](https://x.com/LBounties) and join our [community channels](../../resources/socials/) to hear about new bounties and platform updates.
 
 ***
 

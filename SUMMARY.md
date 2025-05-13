@@ -24,20 +24,6 @@
   * [Expire or Reclaim a Bounty Reward](getting-started/managing-your-bounty/expire-or-reclaim-a-bounty-reward.md)
   * [User Balances Overview](getting-started/managing-your-bounty/user-balances-overview.md)
 
-## Resources
-
-* [Glossary of Terms](resources/glossary-work-in-progress/README.md)
-  * [Bitcoin & Lightning Terms](resources/glossary-work-in-progress/bitcoin-and-lightning-terms.md)
-  * [Lightning Bounties Terms](resources/glossary-work-in-progress/lightning-bounties-terms.md)
-  * [GitHub Terms](resources/glossary-work-in-progress/github-terms.md)
-* [External resources](resources/external-resources/README.md)
-  * [Satoshi in Bitcoin: What It Is and How Much It Is Worth](https://www.investopedia.com/terms/s/satoshi.asp)
-  * [Use Lightning Network](https://uselightning.network/)
-  * [GitHub issues](https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues)
-* [Frequently Asked Questions](resources/frequently-asked-questions/README.md)
-  * [Lightning Bounties FAQ's](resources/frequently-asked-questions/lightning-bounties-faqs.md)
-  * [Lightning Network FAQ's](resources/frequently-asked-questions/lightning-network-faqs.md)
-
 ***
 
 * [ABOUT LIGHTNING BOUNTIES](glossary-work-in-progress/README.md)
@@ -46,10 +32,35 @@
   * [Values](glossary-work-in-progress/values.md)
   * [Features](glossary-work-in-progress/features.md)
   * [Why Choose Lightning Bounties?](glossary-work-in-progress/why-choose-lightning-bounties.md)
-* [Community & Engagement](community-and-engagement/README.md)
-  * [Lightning Bounties Team](about-lb/lightning-bounties-team.md)
-  * [Lightning Bounties Blog](https://blog.lightningbounties.com/)
-  * [Socials](about-lb/socials.md)
+  * [Lightning Bounties Team](glossary-work-in-progress/lightning-bounties-team.md)
+
+## Resources
+
+* [Frequently Asked Questions](resources/frequently-asked-questions/README.md)
+  * [Lightning Bounties FAQ's](resources/frequently-asked-questions/lightning-bounties-faqs.md)
+  * [Lightning Network FAQ's](resources/frequently-asked-questions/lightning-network-faqs.md)
+* [Glossary of Terms](resources/glossary-work-in-progress/README.md)
+  * [Bitcoin & Lightning Terms](resources/glossary-work-in-progress/bitcoin-and-lightning-terms.md)
+  * [Lightning Bounties Terms](resources/glossary-work-in-progress/lightning-bounties-terms.md)
+  * [GitHub Terms](resources/glossary-work-in-progress/github-terms.md)
+* [Social Media Channels](resources/socials/README.md)
+  * [Website](https://www.lightningbounties.com/)
+  * [Bounty Platform](https://app.lightningbounties.com/)
+  * [Docs](https://docs.lightningbounties.com/)
+  * [Blog](https://blog.lightningbounties.com/)
+  * [Discord](https://discord.gg/zBxj4x4Cbq)
+  * [GitHub](https://github.com/lightning-Bounties)
+  * [Twitter](https://x.com/LBounties)
+  * [Nostr](nostr:https://jumble.social/users/npub1d9qyu8yqd9jhxnnw2x4dnmryg9tcqdj6f6uupgwj433tcqukxpust8w9qj)
+  * [LinkedIn](https://www.linkedin.com/company/lightning-bounties/)
+  * [YouTube](https://youtube.com/@lightningbounties?si=AGCT8Zqazy1IUDaX)
+* [External resources](resources/external-resources/README.md)
+  * [Satoshi in Bitcoin: What It Is and How Much It Is Worth](https://www.investopedia.com/terms/s/satoshi.asp)
+  * [Use Lightning Network](https://uselightning.network/)
+  * [GitHub issues](https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues)
+
+***
+
 * [Contributing](contributing.md)
 * [LICENSE.md](license.md)
 * [CODE\_OF\_CONDUCT](code_of_conduct.md)
