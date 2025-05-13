@@ -389,7 +389,7 @@ The idea is that a <mark style="color:blue;">cold</mark> wallet is less suscepti
 
 <summary>What's Lightning Bounties?</summary>
 
-Lightning Bounties is a Web3 Bug Bounty Platform tailored to open-source developers and the Lightning Network. We provide a platform for developers, bug bounty hunters, and ethical hackers to discover and report bugs, vulnerabilities, and security issues within Lightning Network applications and protocols.
+Lightning Bounties is a Bitcoin Bug Bounty Platform tailored to open-source developers and the Lightning Network. We provide a platform for developers, bug bounty hunters, and ethical hackers to discover and report bugs, vulnerabilities, and security issues within Lightning Network applications and protocols.
 
 Lightning Bounties offers an opportunity for the Lightning community to proactively address potential security threats and ensure the overall safety and integrity of the network.
 

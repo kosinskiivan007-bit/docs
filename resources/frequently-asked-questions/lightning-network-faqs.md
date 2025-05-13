@@ -1,11 +1,5 @@
 # Lightning Network FAQ's
 
-##
-
-***
-
-###
-
 
 
 <details>
@@ -13,6 +7,16 @@
 <summary>How many Satoshi’s (Sats) are in one Bitcoin?</summary>
 
 Each of the 21 million units of Bitcoin that will ever exist can be broken down further into 100,000,000 satoshis.
+
+</details>
+
+<details>
+
+<summary>Are Lightning Wallets the Same as Bitcoin Wallets?</summary>
+
+Not exactly. Lightning wallets are specifically designed to interact with the Lightning Network, while traditional Bitcoin wallets handle on-chain transactions. However, many modern wallets support both types of transactions.
+
+Some wallets are Lightning-only, some are on-chain only, and some are hybrid wallets supporting both payment methods.
 
 </details>
 
@@ -116,32 +120,10 @@ The Lightning Network's instant, low-cost transactions make it the ideal payment
 
 mSats are each 1/1000 (a thousandth) of a satoshi. A satoshi is the smallest unit for bitcoin, but lightning can transact with even smaller units while channels are open. The amount is [rounded down](https://github.com/lightningnetwork/lnd/blob/master/lnwire/msat.go#L22-L24) to the nearest satoshi when the channel is closed and broadcast to the blockchain to adhere to Bitcoin's limit.
 
-![](https://static.wixstatic.com/media/8b683e\_5fadb3f8111444c8902ff8ddadd28c7d\~mv2.jpeg/v1/fill/w\_1344,h\_449,al\_c,q\_85,usm\_0.66\_1.00\_0.01,enc\_auto/8b683e\_5fadb3f8111444c8902ff8ddadd28c7d\~mv2.jpeg)\
+![](https://static.wixstatic.com/media/8b683e_5fadb3f8111444c8902ff8ddadd28c7d~mv2.jpeg/v1/fill/w_1344,h_449,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/8b683e_5fadb3f8111444c8902ff8ddadd28c7d~mv2.jpeg)\
 
 
 </details>
 
-<details>
 
-<summary></summary>
-
-
-
-</details>
-
-<details>
-
-<summary></summary>
-
-
-
-</details>
-
-<details>
-
-<summary></summary>
-
-
-
-</details>
 

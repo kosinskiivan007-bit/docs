@@ -24,6 +24,20 @@
   * [Expire or Reclaim a Bounty Reward](getting-started/managing-your-bounty/expire-or-reclaim-a-bounty-reward.md)
   * [User Balances Overview](getting-started/managing-your-bounty/user-balances-overview.md)
 
+## Resources
+
+* [Glossary of Terms](resources/glossary-work-in-progress/README.md)
+  * [Bitcoin & Lightning Terms](resources/glossary-work-in-progress/bitcoin-and-lightning-terms.md)
+  * [Lightning Bounties Terms](resources/glossary-work-in-progress/lightning-bounties-terms.md)
+  * [GitHub Terms](resources/glossary-work-in-progress/github-terms.md)
+* [External resources](resources/external-resources/README.md)
+  * [Satoshi in Bitcoin: What It Is and How Much It Is Worth](https://www.investopedia.com/terms/s/satoshi.asp)
+  * [Use Lightning Network](https://uselightning.network/)
+  * [GitHub issues](https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues)
+* [Frequently Asked Questions](resources/frequently-asked-questions/README.md)
+  * [Lightning Bounties FAQ's](resources/frequently-asked-questions/lightning-bounties-faqs.md)
+  * [Lightning Network FAQ's](resources/frequently-asked-questions/lightning-network-faqs.md)
+
 ***
 
 * [ABOUT LIGHTNING BOUNTIES](glossary-work-in-progress/README.md)
@@ -36,14 +50,6 @@
   * [Lightning Bounties Team](about-lb/lightning-bounties-team.md)
   * [Lightning Bounties Blog](https://blog.lightningbounties.com/)
   * [Socials](about-lb/socials.md)
-* [FAQ'S & RESOURCES](faqs-and-resources/README.md)
-  * [Lightning Bounties FAQ's](faqs-and-resources/lightning-bounties-faqs.md)
-  * [Lightning Network FAQ's](faqs-and-resources/lightning-network-faqs.md)
-  * [Glossary](faqs-and-resources/glossary-work-in-progress.md)
-  * [External resources](faqs-and-resources/external-resources/README.md)
-    * [Satoshi in Bitcoin: What It Is and How Much It Is Worth](https://www.investopedia.com/terms/s/satoshi.asp)
-    * [Use Lightning Network](https://uselightning.network/)
-    * [GitHub issues](https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues)
 * [Contributing](contributing.md)
 * [LICENSE.md](license.md)
 * [CODE\_OF\_CONDUCT](code_of_conduct.md)
@@ -51,6 +57,8 @@
 ## Archived
 
 * [Copy of Glossary (Work in Progress)](archived/glossary-work-in-progress/README.md)
+  * [Copy of Glossary of Terms](archived/glossary-work-in-progress/glossary-work-in-progress.md)
+  * [General Questions](archived/glossary-work-in-progress/general-questions.md)
   * [Lightning Bounties FAQ's](archived/glossary-work-in-progress/lightning-bounties-faqs.md)
   * [Lightning Network FAQ's](archived/glossary-work-in-progress/lightning-network-faqs.md)
   * [External resources](archived/glossary-work-in-progress/external-resources/README.md)
@@ -58,10 +66,7 @@
     * [Use Lightning Network](https://uselightning.network/)
     * [GitHub issues](https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues)
 * [📖 Copy of Lightning Bounties | Docs](archived/readme.md)
-
-***
-
-* [Withdraw Funds](withdraw-funds.md)
+* [Withdraw Funds](archived/withdraw-funds.md)
 
 ## WIP Docs
 

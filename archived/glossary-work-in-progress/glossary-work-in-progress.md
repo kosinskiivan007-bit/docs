@@ -1,4 +1,8 @@
-# Glossary
+---
+description: edited 5-13-25
+---
+
+# Copy of Glossary of Terms
 
 ## Common Terms
 
@@ -36,7 +40,7 @@ _Credit: bitcoin.design_
 
 Since a [private key](https://bitcoin.design/guide/glossary/#private-key) can be used to prove that the holder controls a specific address, it can therefore authorize transactions from the address. This is called a digital signature.
 
-<img src="../.gitbook/assets/image (14).png" alt="https://bitcoin.design/assets/images/guide/glossary/signature.jpg" data-size="original">
+<img src="../../.gitbook/assets/image (14).png" alt="https://bitcoin.design/assets/images/guide/glossary/signature.jpg" data-size="original">
 
 One of the most important activities of the Bitcoin network is to verify that signatures are valid.
 
@@ -388,7 +392,7 @@ Lightning Bounties caters to two primary groups: **developers** and **organizati
 
 **Linking your GitHub account to Lightning Bounties is necessary for several reasons:**
 
-<img src="../.gitbook/assets/image (18).png" alt="" data-size="original">
+<img src="../../.gitbook/assets/image (18).png" alt="" data-size="original">
 
 
 
