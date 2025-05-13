@@ -5,7 +5,7 @@ hidden: true
 
 # Expire or Reclaim a Bounty Reward
 
-
+Expire or Reclaim a Bounty Reward
 
 
 

@@ -1,5 +1,6 @@
 ---
 hidden: true
+noIndex: true
 ---
 
 # 5/25-Detailed Example: Generating a Lightning Invoice with Coinbase
@@ -16,7 +17,7 @@ If you haven't already, download and set up the Coinbase app:
 2. Create and verify your account
 3. Complete identity verification if required
 
-<figure><img src=".gitbook/assets/downloadCoinbase.JPG" alt="IMAGE: App store download the Coinbase app"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/downloadCoinbase.JPG" alt="IMAGE: App store download the Coinbase app"><figcaption></figcaption></figure>
 
 #### 2. Open the Coinbase App
 

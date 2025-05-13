@@ -1,6 +1,7 @@
 ---
 description: This page describes how to withdraw funds to your account.
 hidden: true
+noIndex: true
 ---
 
 # Withdraw Funds

@@ -58,10 +58,13 @@
     * [Use Lightning Network](https://uselightning.network/)
     * [GitHub issues](https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues)
 * [📖 Copy of Lightning Bounties | Docs](archived/readme.md)
-* [Copy of Welcome To Lightning Bounties](archived/getting-started.md)
 
 ***
 
-* [Welcome To Lightning Bounties](getting-started-1.md)
 * [Withdraw Funds](withdraw-funds.md)
-* [5/25-Detailed Example: Generating a Lightning Invoice with Coinbase](5-25-detailed-example-generating-a-lightning-invoice-with-coinbase.md)
+
+## WIP Docs
+
+* [Workflow](wip-docs/workflow.md)
+* [Draft Docs](wip-docs/draft-docs/README.md)
+  * [5/25-Detailed Example: Generating a Lightning Invoice with Coinbase](wip-docs/draft-docs/5-25-detailed-example-generating-a-lightning-invoice-with-coinbase.md)

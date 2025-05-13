@@ -1,5 +1,6 @@
 ---
 hidden: true
+noIndex: true
 ---
 
 # 📖 Copy of Lightning Bounties | Docs
