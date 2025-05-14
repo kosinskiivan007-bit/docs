@@ -1,11 +1,8 @@
----
-description: >-
-  This guide explains why Lightning Bounties uses GitHub OAuth to verify your
-  identity. By linking your account, you grant just the minimal permissions
-  needed—nothing more—so you stay in control of your
----
-
 # GitHub Auth & Lightning Bounties
+
+This guide explains why Lightning Bounties uses GitHub OAuth to verify your identity.&#x20;
+
+By linking your account, you grant just the minimal permissions needed—nothing more—so you stay in control of your data.&#x20;
 
 ### **Linking Your GitHub Account to Lightning Bounties is Necessary For Several Reasons:**
 
