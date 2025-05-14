@@ -1,8 +1,13 @@
+---
+description: >-
+  This guide explains why Lightning Bounties uses GitHub OAuth to verify your
+  identity. By linking your account, you grant just the minimal permissions
+  needed—nothing more—so you stay in control of your
+---
+
 # GitHub Auth & Lightning Bounties
 
-This guide explains why linking your GitHub account is required to use Lightning Bounties. Logging in through GitHub allows applications to access your information, so understanding these permissions is crucial to protecting your data
-
-**Linking your GitHub account to Lightning Bounties is necessary for several reasons:**
+### **Linking Your GitHub Account to Lightning Bounties is Necessary For Several Reasons:**
 
 <table><thead><tr><th width="210">Authentication:</th><th>It verifies your identity and prevents fake accounts.</th></tr></thead><tbody><tr><td><strong>​Project Access:</strong></td><td>You can link your GitHub projects to post bounties on specific issues or projects.</td></tr><tr><td><strong>​​Issue Tracking:</strong></td><td>It helps you stay organized and focused on the issues that require attention.</td></tr><tr><td><strong>Collaboration:</strong></td><td>Enables effective communication and progress tracking with bug hunters.</td></tr><tr><td><strong>Reward Distribution:</strong></td><td>Ensures correct and efficient distribution of rewards.</td></tr><tr><td><strong>Profile &#x26; Reputation:</strong></td><td>Builds your reputation as a responsible project maintainer.</td></tr></tbody></table>
 

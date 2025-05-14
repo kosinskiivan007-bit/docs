@@ -1,13 +1,13 @@
 ---
 description: >-
   This guide outlines the complete process for claiming rewards and provides
-  troubleshooting steps for developers working on bounties on the Lightning
-  Bounties Platform.
+  troubleshooting steps for developers working on the Lightning Bounties
+  Platform.
 ---
 
 # Claim Reward Criteria & Troubleshooting Guide
 
-## ClaimReward Criteria
+## Claim Reward Criteria
 
 To successfully claim a reward for a bounty, follow these steps:
 
@@ -103,12 +103,12 @@ You must manually complete the claim steps on [app.lightningbounties.com](http:/
 ### Complete Claim Process Visualization
 
 {% tabs %}
-{% tab title="Simplified Workflow" %}
-<figure><img src="../../.gitbook/assets/visualworkflow.JPG" alt="Simplified Workflow"><figcaption><p>Simplified Workflow</p></figcaption></figure>
-{% endtab %}
-
 {% tab title="Complete Claim Process" %}
 <div data-full-width="false"><figure><img src="../../.gitbook/assets/Complete_Claim_Process_Updated (2).png" alt="Complete Claim Process"><figcaption><p>Complete Claim Process</p></figcaption></figure></div>
+{% endtab %}
+
+{% tab title="Simplified Workflow" %}
+<figure><img src="../../.gitbook/assets/visualworkflow.JPG" alt="Simplified Workflow"><figcaption><p>Simplified Workflow</p></figcaption></figure>
 {% endtab %}
 {% endtabs %}
 
@@ -116,7 +116,9 @@ You must manually complete the claim steps on [app.lightningbounties.com](http:/
 
 ## Troubleshooting
 
-If you encounter issues claiming your Lightning Bounty reward, use this guide to diagnose and resolve common problems. For more details, see the [Lightning Bounties Troubleshooting Guide](https://docs.lightningbounties.com/docs/getting-started/solving-a-bounty/claim-reward-criteria-and-troubleshooting-guide) and [GitHub’s official documentation on linking pull requests to issues](https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword).
+If you encounter issues claiming your Lightning Bounty reward, use this guide to diagnose and resolve common problems.&#x20;
+
+For more details, see the [Lightning Bounties Troubleshooting Guide](https://docs.lightningbounties.com/docs/getting-started/solving-a-bounty/claim-reward-criteria-and-troubleshooting-guide) and [GitHub’s official documentation on linking pull requests to issues](https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword).
 
 ***
 
@@ -132,7 +134,7 @@ If you encounter issues claiming your Lightning Bounty reward, use this guide to
 
 ## **Solutions:**
 
-### **1. Edit PR Description:**
+### **1. Edit PR Description**
 
 If your PR is still open, you can update the PR description to add the correct closing keyword (e.g., `close #issue-number`).
 
@@ -150,7 +152,7 @@ What the Workflow Looks Like
 * Contact the repository owner or maintainer
 * Ask them to edit the PR description to add the closing keyword
 
-### **3. Create a Follow-up PR** (If original PR was already merged)**:**
+### **3. Create a Follow-up PR** (If original PR was already merged)
 
 If your original PR has already been merged without the correct closing keyword:  [(see below)](claim-reward-criteria-and-troubleshooting-guide.md#example-of-a-follow-up-pr-created-to-properly-link-the-issue-for-lightning-bounty-payment)
 
