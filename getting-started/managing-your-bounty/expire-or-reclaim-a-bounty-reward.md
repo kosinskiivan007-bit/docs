@@ -136,6 +136,15 @@ Yes, follow the same steps explained above.
 
 
 
+***
+
+
+
+### **Bounty Lock Time & Expiry**
+
+* **Guaranteed Escrow**: Rewards are locked for a set period (e.g., two weeks) to ensure bounty hunters know the reward will be available when they submit their solution.
+* **Flexible Expiry Options**: After the lock time ends, you can manually expire the bounty and reclaim your funds if priorities change or the issue is resolved elsewhere.
+
 
 
 
