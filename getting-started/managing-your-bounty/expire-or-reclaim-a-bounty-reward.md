@@ -1,152 +1,106 @@
 ---
-description: TODO Coming Soon
-hidden: true
+description: >-
+  This guide is for bounty posters using Lightning Bounties who want to know how
+  to expire an open bounty or reclaim their sats.
 ---
 
 # Expire or Reclaim a Bounty Reward
 
-Expire or Reclaim a Bounty Reward
+### Overview
 
+Expiring a bounty allows the creator to reclaim the reward if the issue remains unsolved after the lock time period. This process is secure and ensures that developers always have a guaranteed window to work on issues.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-{% hint style="warning" %}
-:arrow\_down: A Draft From AI Mike made for answering this exact question. Feel Free to Delete/Edit as u wish
+{% hint style="info" %}
+See [issue-lock-time.md](issue-lock-time.md "mention")For a more detailed Guide on this topic.&#x20;
 {% endhint %}
 
-## Expire or Reclaim a Bounty Reward <a href="#expire-or-reclaim-a-bounty-reward" id="expire-or-reclaim-a-bounty-reward"></a>
+***
 
-This guide is for bounty posters using Lightning Bounties who want to know how to expire an open bounty or reclaim their sats.
+### **Step-by-Step: Expiring a Bounty**
 
-### Understanding Bounty Status: Locked vs. Unlocked <a href="#understanding-bounty-status-locked-vs-unlocked" id="understanding-bounty-status-locked-vs-unlocked"></a>
+1. **Log In:**\
+   Visit [app.lightningbounties.com](https://app.lightningbounties.com) and log in with your GitHub account.
+2. **Navigate to Your Bounties:**\
+   Go to your dashboard by clicking on your profile avatar _(Top Right)_&#x20;
 
-### Locked Bounties
+<figure><img src="../../.gitbook/assets/click_avatar.png" alt="Image of Logged-In User Avatar "><figcaption><p><em>Click on Your Profile Avatar on the Top Right of Lightning Bounties Feed</em></p></figcaption></figure>
 
-When your bounty is **locked**, it means:
+3. Once on Your dashboard select the "**My Rewards**" Tab.
 
-* The bounty reward is guaranteed to be available for a specific period.
-* The funds are held in escrow and cannot be reclaimed during the lock time.
-* Bounty hunters can work on the issue with confidence that the reward will be available.
+<figure><img src="../../.gitbook/assets/MyRewards_Tab.png" alt="Image Showing My Rewards Tab on Your Lightning Bounties Profile"><figcaption><p><em>My Rewards Tab Should be By Default</em></p></figcaption></figure>
 
-Bounties come along with a lock time, during which the escrow of the bounty reward is guaranteed. This helps bounty hunters know the reward will be available by the time they submit their solution.
+4. **Check Lock Time Status:**\
+   Locate the bounty you wish to expire. Ensure the lock time period has ended. You will see an indicator or countdown showing when expiry is allowed.
 
-We recommend two weeks as a standard lock time, to give your hunters time to get in a PR, but also a short enough time to iterate on your bounty postings and format.
+<div><figure><img src="../../.gitbook/assets/UnLocked_Bounty.png" alt="An unlocked bounty that can now be expired if needed."><figcaption><p><em>An unlocked bounty that can now be expired if needed.</em></p></figcaption></figure> <figure><img src="../../.gitbook/assets/Locked_Bounty.png" alt="A locked bounty with remaining lock time displayed."><figcaption><p><em>A locked bounty with remaining lock time displayed.</em></p></figcaption></figure></div>
 
-{\
-// IMAGE: Screenshot of a bounty with "Locked" status showing the lock time countdown.\
-// Caption: "A locked bounty with remaining lock time displayed."
+5.  **Expire the Bounty:**
 
-\
-}
+    Click the "**Expire Reward**" button next to your bounty.
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/expire_reward_circle.png" alt="Image Showing &#x22;Expire Reward&#x22; Button Filled with Blue Coloring"><figcaption><p><em>Expire Reward Shows Blue Coloring on Eligible Bounty</em></p></figcaption></figure>
 
-### Unlocked Bounties
-
-When your bounty is **unlocked**, it means:
-
-* The lock time has expired.
-* You can now expire the reward and reclaim your sats if needed.
-* The bounty remains active and open for anyone to solve until you take action.
-* The reward does NOT automatically become revoked after the lock time is over.
-
-**Note:** If a reward is unlocked, this simply means that the reward could be expired by the poster. The bounty can still be earned by hunters until you manually expire it.
-
-{\
-// IMAGE: Screenshot of a bounty with "Unlocked" status as seen on the Lightning Bounties dashboard.\
-// Caption: "An unlocked bounty that can now be expired if needed."\
-}
-
-### How to Expire a Bounty and Reclaim Your Sats <a href="#how-to-expire-a-bounty-and-reclaim-your-sats" id="how-to-expire-a-bounty-and-reclaim-your-sats"></a>
-
-If you want to remove your bounty and get your sats back:
-
-1. Go to your Lightning Bounties account dashboard (click your avatar in the top right of the app).
-2. Locate the bounty you wish to expire under "My Rewards" tab.
-3. Click the **Expire Reward** button next to your bounty.
-4. The sats from the bounty will be returned to your balance.
-
-Being able to expire rewards is necessary because sometimes you solve the issue yourself or your priorities for development change.
-
-If all rewards become expired on an issue, the issue will become hidden on the homepage.
-
-{\
-// IMAGE: Screenshot showing the "Expire Reward" button in the user profile section.\
-// Caption: "How to expire a bounty and reclaim your sats."
-
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
-
-\
-}
-
-### Keeping Your Bounty Active <a href="#keeping-your-bounty-active" id="keeping-your-bounty-active"></a>
-
-If you want your bounty to remain available for others to solve:
-
-* **Do nothing.**\
-  As long as the bounty is unlocked, it will stay active and open for submissions until it is solved or you manually expire it.
-
-{\
-// IMAGE: Simple workflow diagram showing "Unlocked Bounty → Open for Hunters → Claimed or Expired by Poster"\
-// Caption: "Unlocked bounties remain open until solved or expired."
-
-\
-}
-
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
-
-### Frequently Asked Questions <a href="#frequently-asked-questions" id="frequently-asked-questions"></a>
-
-**Can I extend or update the expiration of an unlocked bounty?**\
-No, unlocked bounties do not have an expiration timer. They remain posted until you manually expire them or someone claims the reward.
-
-TODO - add suggestion to "Add Reward to Issue" with desired lock time. Then Expire the original reward that has become unlocked.
-
-**What happens if I do nothing after the lock time expires?**\
-The bounty stays active and visible to bounty hunters until it is solved or you choose to expire it. The status simply changes from "locked" to "unlocked."
-
-**How do I know if my bounty is locked or unlocked?**\
-Check the status label on your bounty in your Lightning Bounties dashboard. Locked bounties will show the remaining lock time, while unlocked bounties will have an "Expire Reward" option.
-
-Also, information on bounty lock time is public and can be seen in any bounty detail page with a lock or unlock emoji. Hover over this emoji to see the exact date.
-
-**Why should I set a lock time for my bounty?**\
-Lock time helps bounty hunters know the reward will be available by the time they submit their solution, giving them confidence to work on your issue.
-
-**Can I expire a non-logged-in reward?**\
-If you added sats to the issue by paying a one-time invoice in a non-logged in state, you can never expire the reward, since it will not be associated with your account, and therefore it will not show up under your "My Rewards" tab in the account dashbaord page.
-
-**Can I expire an Anonymous reward?**\
-Yes, follow the same steps explained above.
-
-
+6. **Reclaim Funds:**\
+   The reward will be returned to your Lightning Bounties account balance, ready for withdrawal or use in other bounties.
 
 ***
 
+{% hint style="info" %}
+**Note:** You cannot expire or reclaim a bounty before the lock time has ended.&#x20;
 
-
-### **Bounty Lock Time & Expiry**
-
-* **Guaranteed Escrow**: Rewards are locked for a set period (e.g., two weeks) to ensure bounty hunters know the reward will be available when they submit their solution.
-* **Flexible Expiry Options**: After the lock time ends, you can manually expire the bounty and reclaim your funds if priorities change or the issue is resolved elsewhere.
-
-
-
-
+This is to protect developers who may be actively working on a solution
+{% endhint %}
 
 ***
+
+### **Frequently Asked Questions**
+
+<details>
+
+<summary><strong>Can I extend or update the expiration on an unlocked bounty?</strong></summary>
+
+No, unlocked bounties remain posted until you manually expire them or a hunter claims the reward. To set a new lock time, add a new reward to the issue with your desired lock period, then expire the original unlocked reward.
+
+</details>
+
+<details>
+
+<summary><strong>What happens if I do nothing after the lock time expires?</strong></summary>
+
+The bounty remains active and visible to hunters.&#x20;
+
+The only change is its status from :lock:"locked" to :unlock:"unlocked".
+
+</details>
+
+<details>
+
+<summary><strong>How do I know if my bounty is locked or unlocked?</strong></summary>
+
+Check the status label or emoji on your bounty in your dashboard or on the bounty detail page. Hover over the lock/unlock emoji to see the exact unlock date.
+
+</details>
+
+<details>
+
+<summary><strong>Why should I set a lock time for my bounty?</strong></summary>
+
+Lock time gives bounty hunters assurance that the reward will be available when they submit their work, encouraging more and better contributions.
+
+</details>
+
+<details>
+
+<summary><strong>Can I expire a reward posted without logging in?</strong></summary>
+
+No. Rewards posted via a one-time invoice in a non-logged-in state cannot be expired or reclaimed, as they are not linked to your account.
+
+</details>
+
+<details>
+
+<summary><strong>Can I expire an Anonymous reward?</strong></summary>
+
+Yes. Anonymous rewards can be expired using the same process as regular rewards.
+
+</details>

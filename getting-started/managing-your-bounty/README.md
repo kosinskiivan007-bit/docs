@@ -4,6 +4,10 @@
 [issue-lock-time.md](issue-lock-time.md)
 {% endcontent-ref %}
 
+{% content-ref url="expire-or-reclaim-a-bounty-reward.md" %}
+[expire-or-reclaim-a-bounty-reward.md](expire-or-reclaim-a-bounty-reward.md)
+{% endcontent-ref %}
+
 {% content-ref url="add-reward-to-an-existing-bounty.md" %}
 [add-reward-to-an-existing-bounty.md](add-reward-to-an-existing-bounty.md)
 {% endcontent-ref %}
