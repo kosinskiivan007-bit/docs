@@ -2,7 +2,9 @@
 
 If a bounty already exists for the issue you can add a reward on the detail page.
 
-{% embed url="https://youtube.com/shorts/Elo8kxCfnr0" %}
+{% embed url="https://youtu.be/n1n8o5IfU_8" fullWidth="false" %}
+Crowdfunding Bounties In Action
+{% endembed %}
 
 This also works if you're the original bounty poster and want to add more to the reward, this is a good way to do it.
 
