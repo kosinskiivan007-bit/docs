@@ -1,24 +1,20 @@
+---
+description: Adding Rewards to Existing Bounties (Crowdfunding)
+---
+
 # Add Reward to an Existing Bounty
 
-If a bounty already exists for the issue you can add a reward on the detail page.
+Crowdfunding on [Lightning Bounties](https://app.lightningbounties.com/) enables multiple people to pool Bitcoin (sats) into a single bounty reward. This transforms traditional single-sponsor bounties into community-driven funding efforts, making open-source development more collaborative and financially sustainable.
 
 {% embed url="https://youtu.be/n1n8o5IfU_8" fullWidth="false" %}
 Crowdfunding Bounties In Action
 {% endembed %}
 
-This also works if you're the original bounty poster and want to add more to the reward, this is a good way to do it.
+### What is Bounty Crowdfunding? <a href="#what-is-bounty-crowdfunding" id="what-is-bounty-crowdfunding"></a>
 
-Note just the same as posting a bounty, you'll also has the chance to set your lock time for this add-on reward to the Bounty under the Advanced Settings. (link lock time page)
+Bounty crowdfunding allows anyone to add Bitcoin rewards to existing GitHub issues, regardless of registration status or project ownership. Unlike traditional bounty systems where only one person funds an issue, Lightning Bounties enables [collaborative funding where multiple users can contribute sats to fund a single bounty](https://docs.lightningbounties.com/docs/glossary-work-in-progress/features)&#x20;
 
-Tell your friends when you post a bounty and maybe they'll add funds as well!
-
-
-
-
-
-## Crowdfunding Bounties on Lightning Bounties
-
-Crowdfunding on [Lightning Bounties](https://app.lightningbounties.com) lets anyone—regardless of registration status—pool Bitcoin (sats) into a single bounty. This transforms bug bounties from a single sponsor model into a community-powered funding engine for open-source development.
+<figure><img src="../../.gitbook/assets/Crowdfunding_simple_design_assets.png" alt="Crowdfunding process flow showing multiple contributors pooling Bitcoin for bounties"><figcaption><p>Crowdfunding process flow showing multiple contributors pooling Bitcoin for bounties.</p></figcaption></figure>
 
 ***
 
@@ -29,8 +25,12 @@ Crowdfunding on [Lightning Bounties](https://app.lightningbounties.com) lets any
 * **Microfunding:** Add as little or as much as you want.
 * **Works for any GitHub issue:** You don’t need to be the project owner to post or fund a bounty.
 
+
+
 ***
 
+{% columns %}
+{% column %}
 ### Why Crowdfund?
 
 Crowdfunding enables:
@@ -39,17 +39,19 @@ Crowdfunding enables:
 * **Fund features in dependencies you rely on**
 * **Support colleagues, friends, or open-source maintainers**
 
-It democratizes funding, making it possible for anyone to support the projects they care about and help accelerate open-source progress.
+<sup><sub>It democratizes funding, making it possible for anyone to support the projects they care about and help accelerate open-source progress.<sub></sup>
+{% endcolumn %}
+
+{% column %}
+<div align="right"><figure><img src="../../.gitbook/assets/crowdfunding_features_slide.JPG" alt="Some of the few Benefits of Crowdfunding Bounties "><figcaption><p><sup>Some of the few Benefits of Crowdfunding Bounties</sup> </p></figcaption></figure></div>
+{% endcolumn %}
+{% endcolumns %}
 
 ***
 
-### How to Crowdfund a Bounty: Step-by-Step
 
 
-
-
-
-## How to Add Rewards to an Exisiting Bounty
+## How to Crowdfund a Bounty: Step-by-Step
 
 ***
 
@@ -91,7 +93,7 @@ It democratizes funding, making it possible for anyone to support the projects t
 
 ![Step 9 screenshot](https://images.tango.us/workflows/34f7b2a8-9a5b-4741-8739-91bad126b4c6/steps/2bc28e85-43e3-4d31-891a-9e278ed94eb3/1154ec3a-f8ee-4918-9bcf-8681333ac8f4.png?crop=focalpoint\&fit=crop\&fp-x=0.5000\&fp-y=0.5000\&w=1200\&border=2%2CF4F2F7\&border-radius=8%2C8%2C8%2C8\&border-radius-inner=8%2C8%2C8%2C8\&blend-align=bottom\&blend-mode=normal\&blend-x=0\&blend-w=1200\&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n\&mark-x=12\&mark-y=533\&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTQlMkNGRjc0NDImdz0xMTU1Jmg9MjA5JmZpdD1jcm9wJmNvcm5lci1yYWRpdXM9MTA%3D)
 
-### Adding Anonymous Rewards to a Bounty
+## Adding Anonymous Rewards to a Bounty
 
 ***
 
@@ -133,9 +135,7 @@ It democratizes funding, making it possible for anyone to support the projects t
 
 ![Step 18 screenshot](https://images.tango.us/workflows/34f7b2a8-9a5b-4741-8739-91bad126b4c6/steps/1bc8b265-364b-4d6d-b02d-88fc737f1b10/2352e4e1-7f42-420f-bb8d-104e18c9a650.png?crop=focalpoint\&fit=crop\&fp-x=0.7309\&fp-y=0.5562\&fp-z=1.8284\&w=1200\&border=2%2CF4F2F7\&border-radius=8%2C8%2C8%2C8\&border-radius-inner=8%2C8%2C8%2C8\&blend-align=bottom\&blend-mode=normal\&blend-x=0\&blend-w=1200\&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n\&mark-x=93\&mark-y=215\&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTYlMkNGRjc0NDImdz0xMDM0Jmg9MzU1JmZpdD1jcm9wJmNvcm5lci1yYWRpdXM9MTA%3D)
 
-
-
-### # Add Rewards to a Bounty without Login
+## Add Rewards to a Bounty without Login
 
 ***
 
@@ -226,4 +226,3 @@ Yes! Lightning Bounties supports [third-party bounties](https://docs.lightningbo
 ***
 
 <sub>_Crowdfunding on Lightning Bounties turns every open-source user into a potential supporter. Pool your sats, fund the future, and help build the Bitcoin ecosystem—one bounty at a time!_</sub>
-
