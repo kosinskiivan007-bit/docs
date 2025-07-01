@@ -43,7 +43,7 @@ Looking to earn Bitcoin for your coding skills? This guide will show you how to 
 ### :arrow\_down\_small: **This example we'll be:&#x20;**_**Adding color to the logo in this repo**_ :arrow\_down\_small:
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt="Click a bounty to view all details and requirements."><figcaption><p>Click a bounty to view all details and requirements.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt="Click a bounty to view all details and requirements."><figcaption><p>Click a bounty to view all details and requirements.</p></figcaption></figure>
 
 ## 3 - (Optional) View on GitHub
 

@@ -55,7 +55,7 @@ Crowdfunding enables:
 
 ![Step 1 screenshot](https://images.tango.us/workflows/34f7b2a8-9a5b-4741-8739-91bad126b4c6/steps/63acf887-26de-423c-82ca-4e492612744f/3c293e2d-2a8a-4a35-9bfd-d7a421cbbb42.png?crop=focalpoint\&fit=crop\&fp-x=0.4927\&fp-y=0.2959\&fp-z=1.0473\&w=1200\&border=2%2CF4F2F7\&border-radius=8%2C8%2C8%2C8\&border-radius-inner=8%2C8%2C8%2C8\&blend-align=bottom\&blend-mode=normal\&blend-x=0\&blend-w=1200\&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n\&mark-x=38\&mark-y=216\&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTYlMkNGRjc0NDImdz0xMTI1Jmg9NTUmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
 
-#### 2. Click on the Open Bounty You Wish to Add Fund
+#### 2. Click on the Open Bounty You Wish to Add Funds Into
 
 ![Step 2 screenshot](https://images.tango.us/workflows/34f7b2a8-9a5b-4741-8739-91bad126b4c6/steps/8c1cc36f-dfdb-437d-8834-03e86ab79158/fbef5114-58a2-44fc-8d54-4c160ab1b4a9.png?crop=focalpoint\&fit=crop\&fp-x=0.4916\&fp-y=0.5578\&fp-z=1.0457\&w=1200\&border=2%2CF4F2F7\&border-radius=8%2C8%2C8%2C8\&border-radius-inner=8%2C8%2C8%2C8\&blend-align=bottom\&blend-mode=normal\&blend-x=0\&blend-w=1200\&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n\&mark-x=38\&mark-y=303\&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTYlMkNGRjc0NDImdz0xMTI0Jmg9MjM5JmZpdD1jcm9wJmNvcm5lci1yYWRpdXM9MTA%3D)
 
@@ -218,5 +218,7 @@ Yes! Lightning Bounties supports [third-party bounties](https://docs.lightningbo
 </details>
 
 ***
+
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption><p>Bounty Flywheel</p></figcaption></figure>
 
 <sub>_Crowdfunding on Lightning Bounties turns every open-source user into a potential supporter. Pool your sats, fund the future, and help build the Bitcoin ecosystem—one bounty at a time!_</sub>

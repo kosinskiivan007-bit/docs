@@ -20,6 +20,7 @@
 * [MANAGING YOUR BOUNTY](getting-started/managing-your-bounty/README.md)
   * [Issue Lock Time](getting-started/managing-your-bounty/issue-lock-time.md)
   * [Add Reward to an Existing Bounty](getting-started/managing-your-bounty/add-reward-to-an-existing-bounty/README.md)
+    * [Add Rewards to a Bounty without Login](getting-started/managing-your-bounty/add-reward-to-an-existing-bounty/add-rewards-to-a-bounty-without-login.md)
     * [Adding Anonymous Rewards to a Bounty](getting-started/managing-your-bounty/add-reward-to-an-existing-bounty/adding-anonymous-rewards-to-a-bounty.md)
     * [Verify with Branta](getting-started/managing-your-bounty/add-reward-to-an-existing-bounty/verify-with-branta.md)
   * [Detach Issues from Pull Requests](getting-started/managing-your-bounty/detach-issues-from-pull-requests.md)
