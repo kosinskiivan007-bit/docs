@@ -8,8 +8,12 @@
 [expire-or-reclaim-a-bounty-reward.md](expire-or-reclaim-a-bounty-reward.md)
 {% endcontent-ref %}
 
-{% content-ref url="add-reward-to-an-existing-bounty.md" %}
-[add-reward-to-an-existing-bounty.md](add-reward-to-an-existing-bounty.md)
+{% content-ref url="add-reward-to-an-existing-bounty/" %}
+[add-reward-to-an-existing-bounty](add-reward-to-an-existing-bounty/)
+{% endcontent-ref %}
+
+{% content-ref url="add-reward-to-an-existing-bounty/adding-anonymous-rewards-to-a-bounty.md" %}
+[adding-anonymous-rewards-to-a-bounty.md](add-reward-to-an-existing-bounty/adding-anonymous-rewards-to-a-bounty.md)
 {% endcontent-ref %}
 
 {% content-ref url="../solving-a-bounty/withdraw-funds.md" %}

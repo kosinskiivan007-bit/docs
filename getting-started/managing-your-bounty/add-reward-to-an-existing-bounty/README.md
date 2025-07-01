@@ -14,7 +14,7 @@ Crowdfunding Bounties In Action
 
 Bounty crowdfunding allows anyone to add Bitcoin rewards to existing GitHub issues, regardless of registration status or project ownership. Unlike traditional bounty systems where only one person funds an issue, Lightning Bounties enables [collaborative funding where multiple users can contribute sats to fund a single bounty](https://docs.lightningbounties.com/docs/glossary-work-in-progress/features)&#x20;
 
-<figure><img src="../../.gitbook/assets/Crowdfunding_simple_design_assets.png" alt="Crowdfunding process flow showing multiple contributors pooling Bitcoin for bounties"><figcaption><p>Crowdfunding process flow showing multiple contributors pooling Bitcoin for bounties.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Crowdfunding_simple_design_assets.png" alt="Crowdfunding process flow showing multiple contributors pooling Bitcoin for bounties"><figcaption><p>Crowdfunding process flow showing multiple contributors pooling Bitcoin for bounties.</p></figcaption></figure>
 
 ***
 
@@ -24,8 +24,6 @@ Bounty crowdfunding allows anyone to add Bitcoin rewards to existing GitHub issu
 * **No registration required:** Anyone can add funds, even without a Lightning Bounties or GitHub account.
 * **Microfunding:** Add as little or as much as you want.
 * **Works for any GitHub issue:** You don’t need to be the project owner to post or fund a bounty.
-
-
 
 ***
 
@@ -43,19 +41,17 @@ Crowdfunding enables:
 {% endcolumn %}
 
 {% column %}
-<div align="right"><figure><img src="../../.gitbook/assets/crowdfunding_features_slide.JPG" alt="Some of the few Benefits of Crowdfunding Bounties "><figcaption><p><sup>Some of the few Benefits of Crowdfunding Bounties</sup> </p></figcaption></figure></div>
+<div align="right"><figure><img src="../../../.gitbook/assets/crowdfunding_features_slide.JPG" alt="Some of the few Benefits of Crowdfunding Bounties "><figcaption><p><sup>Some of the few Benefits of Crowdfunding Bounties</sup> </p></figcaption></figure></div>
 {% endcolumn %}
 {% endcolumns %}
 
 ***
 
-
-
 ## How to Crowdfund a Bounty: Step-by-Step
 
 ***
 
-#### 1. Visit[ app.lightningbounties.com](add-reward-to-an-existing-bounty.md#id-0.-visit-https-app.lightningbounties.com) & Click on Login with GitHub
+#### 1. Visit[ app.lightningbounties.com](./#id-0.-visit-https-app.lightningbounties.com) & Click on Login with GitHub
 
 ![Step 1 screenshot](https://images.tango.us/workflows/34f7b2a8-9a5b-4741-8739-91bad126b4c6/steps/63acf887-26de-423c-82ca-4e492612744f/3c293e2d-2a8a-4a35-9bfd-d7a421cbbb42.png?crop=focalpoint\&fit=crop\&fp-x=0.4927\&fp-y=0.2959\&fp-z=1.0473\&w=1200\&border=2%2CF4F2F7\&border-radius=8%2C8%2C8%2C8\&border-radius-inner=8%2C8%2C8%2C8\&blend-align=bottom\&blend-mode=normal\&blend-x=0\&blend-w=1200\&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n\&mark-x=38\&mark-y=216\&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTYlMkNGRjc0NDImdz0xMTI1Jmg9NTUmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
 
@@ -220,8 +216,6 @@ No! Anyone can contribute sats to any bounty using a Lightning wallet.
 Yes! Lightning Bounties supports [third-party bounties](https://docs.lightningbounties.com/docs/glossary-work-in-progress/features#crowdfunding-bounties)
 
 </details>
-
-
 
 ***
 

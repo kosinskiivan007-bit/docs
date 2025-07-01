@@ -19,7 +19,9 @@
   * [Create a GitHub issue and Submit a new reward](getting-started/posting-a-bounty/create-a-github-issue-and-submit-a-new-reward.md)
 * [MANAGING YOUR BOUNTY](getting-started/managing-your-bounty/README.md)
   * [Issue Lock Time](getting-started/managing-your-bounty/issue-lock-time.md)
-  * [Add Reward to an Existing Bounty](getting-started/managing-your-bounty/add-reward-to-an-existing-bounty.md)
+  * [Add Reward to an Existing Bounty](getting-started/managing-your-bounty/add-reward-to-an-existing-bounty/README.md)
+    * [Adding Anonymous Rewards to a Bounty](getting-started/managing-your-bounty/add-reward-to-an-existing-bounty/adding-anonymous-rewards-to-a-bounty.md)
+    * [Verify with Branta](getting-started/managing-your-bounty/add-reward-to-an-existing-bounty/verify-with-branta.md)
   * [Detach Issues from Pull Requests](getting-started/managing-your-bounty/detach-issues-from-pull-requests.md)
   * [Expire or Reclaim a Bounty Reward](getting-started/managing-your-bounty/expire-or-reclaim-a-bounty-reward.md)
   * [User Balances Overview](getting-started/managing-your-bounty/user-balances-overview.md)
@@ -78,6 +80,10 @@
     * [GitHub issues](https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues)
 * [📖 Copy of Lightning Bounties | Docs](archived/readme.md)
 * [Withdraw Funds](archived/withdraw-funds.md)
+
+***
+
+* [Master of Add Reward to an Existing Bounty](add-reward-to-an-existing-bounty.md)
 
 ## WIP Docs
 
