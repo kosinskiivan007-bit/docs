@@ -219,6 +219,6 @@ Yes! Lightning Bounties supports [third-party bounties](https://docs.lightningbo
 
 ***
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption><p>Bounty Flywheel</p></figcaption></figure>
+<figure><img src="broken-reference" alt=""><figcaption><p>Bounty Flywheel</p></figcaption></figure>
 
 <sub>_Crowdfunding on Lightning Bounties turns every open-source user into a potential supporter. Pool your sats, fund the future, and help build the Bitcoin ecosystem—one bounty at a time!_</sub>
