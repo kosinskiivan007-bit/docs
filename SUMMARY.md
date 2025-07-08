@@ -91,3 +91,4 @@
 * [Workflow](wip-docs/workflow.md)
 * [Draft Docs](wip-docs/draft-docs/README.md)
   * [5/25-Detailed Example: Generating a Lightning Invoice with Coinbase](wip-docs/draft-docs/5-25-detailed-example-generating-a-lightning-invoice-with-coinbase.md)
+  * [Verify with Branta](wip-docs/draft-docs/verify-with-branta.md)
