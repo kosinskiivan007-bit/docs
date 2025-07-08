@@ -13,8 +13,6 @@ Anonymous rewards allow **anyone to top-up an existing bounty** without requirin
 * **Enables quick contributions.** All you need is a Lightning Wallet that supports [Bolt 11 invoices](https://www.whatisbitcoin.com/lightning-network/bolt-11-vs-bolt-12).&#x20;
 * **Supports spontaneous funding** when users discover important issues
 
-
-
 ### When to Use Anonymous Rewards
 
 | Scenario                   | Why Choose Anonymous                                                                            |
@@ -114,34 +112,15 @@ Anonymous rewards allow **anyone to top-up an existing bounty** without requirin
 
 ### Anonymous Contribution Scenarios
 
-### Scenario 1: Supporting Open Source Projects
+<table><thead><tr><th width="175" valign="middle">Scenario:</th><th width="220.16668701171875" valign="middle">Use Case:</th><th valign="top">Process:</th></tr></thead><tbody><tr><td valign="middle"><strong>Supporting Open Source Projects</strong> </td><td valign="middle"><strong>You discover a critical bug in a project you use daily</strong></td><td valign="top"><ul><li>Find the bounty on Lightning Bounties</li></ul><ul><li>Add an anonymous reward to increase incentives</li></ul><ul><li>Share the bounty link with other affected </li></ul></td></tr><tr><td valign="middle"><strong>Community-Driven Funding</strong> </td><td valign="middle"><strong>A developer community rallies around an important feature request</strong><br></td><td valign="top"><ul><li>Multiple anonymous contributors add rewards</li></ul><ul><li>Total bounty grows to attract skilled developers</li></ul><ul><li>Community members share progress on forums</li></ul></td></tr><tr><td valign="middle"><strong>Privacy-Focused Contributions</strong></td><td valign="middle"><strong>You want to support development but maintain privacy</strong></td><td valign="top"><ul><li>Use anonymous rewards exclusively</li></ul><ul><li>Verify payments via Branta</li></ul><ul><li>Track bounty progress without account linkage</li></ul></td></tr></tbody></table>
 
-**Use Case**: You discover a critical bug in a project you use daily\
-**Process**:
 
-1. Find the bounty on Lightning Bounties
-2. Add an anonymous reward to increase incentives
-3. Share the bounty link with other affected users
 
-### Scenario 2: Community-Driven Funding
+{% columns %}
+{% column width="50%" %}
+## <mark style="background-color:red;">Anonymous Rewards Limitations</mark>
 
-**Use Case**: A developer community rallies around an important feature request\
-**Process**:
-
-1. Multiple anonymous contributors add rewards
-2. Total bounty grows to attract skilled developers
-3. Community members share progress on forums
-
-### Scenario 3: Privacy-Focused Contributions
-
-**Use Case**: You want to support development but maintain privacy\
-**Process**:
-
-1. Use anonymous rewards exclusively
-2. Verify payments through Branta
-3. Track bounty progress without account linkage
-
-### Limitations of Anonymous Rewards
+***
 
 ### No Account Benefits
 
@@ -159,10 +138,14 @@ Anonymous rewards allow **anyone to top-up an existing bounty** without requirin
 
 **If you find yourself regularly contributing anonymously, consider:**
 
-1. **Creating a Lightning Bounties account** for better tracking
+1. **Login through GitHub on Lightning Bounties** for better tracking
 2. **Using the** [**deposit system** ](https://docs.lightningbounties.com/docs/getting-started/posting-a-bounty/deposit-funds)for more efficient contributions
+{% endcolumn %}
 
-### Anonymous Reward Best Practices
+{% column %}
+## <mark style="background-color:green;">Anonymous Reward Best Practices</mark>
+
+***
 
 ### Contribution Sizing
 
@@ -181,6 +164,8 @@ Anonymous rewards allow **anyone to top-up an existing bounty** without requirin
 * **Share bounty links** in relevant forums and chat channels
 * **Encourage others** to add anonymous rewards
 * **Monitor progress** through public GitHub activity
+{% endcolumn %}
+{% endcolumns %}
 
 
 

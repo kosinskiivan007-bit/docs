@@ -14,7 +14,7 @@ You can solve and claim multiple bounties in a single pull request by referencin
 {% hint style="warning" %}
 ## :warning: IMPORTANT :warning:
 
-&#x20;You must click "_**Claim Reward**_" & "_**Check**_" on each individual issue on Lightning Bounties to receive each bounty reward.&#x20;
+#### You must click "_**Claim Reward**_" & "_**Check**_" on each individual issue on Lightning Bounties to receive each bounty reward.&#x20;
 
 Claiming is done separately for every issue, even if they were closed together in one PR.
 

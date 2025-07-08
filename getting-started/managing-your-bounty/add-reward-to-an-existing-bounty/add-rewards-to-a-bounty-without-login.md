@@ -51,7 +51,7 @@ This approach aligns with Lightning Bounties' core principle of **removing tradi
 
 {% stepper %}
 {% step %}
-<h4 align="center"><strong>Visit</strong> <a href="https://app.lightningbounties.com/"><strong>app.lightningbounties.com</strong></a> &#x26; <mark style="background-color:orange;">DO NOT Login With GitHub</mark></h4>
+### **Visit** [**app.lightningbounties.com**](https://app.lightningbounties.com/) & <mark style="background-color:orange;">DO NOT Login With GitHub</mark>
 
 <figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Non-logged-in state on Lightning Bounties Platform</p></figcaption></figure>
 {% endstep %}
@@ -169,7 +169,6 @@ The platform provides **real-time payment tracking** and **transparent reward sy
 
 ### Summary <a href="#summary" id="summary"></a>
 
-The no-login reward system exemplifies Lightning Bounties' commitment to **frictionless, accessible, and innovative** open-source funding4. By removing traditional barriers while maintaining robust security through **Branta verification**2022, this feature enables anyone to instantly support the open-source development they care about.
+The no-login reward system exemplifies Lightning Bounties' commitment to **frictionless, accessible, and innovative** open-source funding. By removing traditional barriers while maintaining robust security through **Branta verification**, this feature enables anyone to instantly support the open-source development they care about.
 
-This approach creates a **global bounty aggregator** that truly democratizes software development funding, making it possible for anyone, anywhere to contribute to the projects that matter most46.
-
+This approach creates a **global bounty aggregator** that truly democratizes software development funding, making it possible for anyone, anywhere to contribute to the projects that matter most.

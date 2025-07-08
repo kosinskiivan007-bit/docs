@@ -53,7 +53,7 @@ Crowdfunding enables:
 
 #### 1. Visit[ app.lightningbounties.com](./#id-0.-visit-https-app.lightningbounties.com) & Click on Login with GitHub
 
-![Step 1 screenshot](https://images.tango.us/workflows/34f7b2a8-9a5b-4741-8739-91bad126b4c6/steps/63acf887-26de-423c-82ca-4e492612744f/3c293e2d-2a8a-4a35-9bfd-d7a421cbbb42.png?crop=focalpoint\&fit=crop\&fp-x=0.4927\&fp-y=0.2959\&fp-z=1.0473\&w=1200\&border=2%2CF4F2F7\&border-radius=8%2C8%2C8%2C8\&border-radius-inner=8%2C8%2C8%2C8\&blend-align=bottom\&blend-mode=normal\&blend-x=0\&blend-w=1200\&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n\&mark-x=38\&mark-y=216\&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTYlMkNGRjc0NDImdz0xMTI1Jmg9NTUmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D)
+<figure><img src="https://images.tango.us/workflows/34f7b2a8-9a5b-4741-8739-91bad126b4c6/steps/63acf887-26de-423c-82ca-4e492612744f/3c293e2d-2a8a-4a35-9bfd-d7a421cbbb42.png?crop=focalpoint&#x26;fit=crop&#x26;fp-x=0.4927&#x26;fp-y=0.2959&#x26;fp-z=1.0473&#x26;w=1200&#x26;border=2%2CF4F2F7&#x26;border-radius=8%2C8%2C8%2C8&#x26;border-radius-inner=8%2C8%2C8%2C8&#x26;blend-align=bottom&#x26;blend-mode=normal&#x26;blend-x=0&#x26;blend-w=1200&#x26;blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&#x26;mark-x=38&#x26;mark-y=216&#x26;m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTYlMkNGRjc0NDImdz0xMTI1Jmg9NTUmZml0PWNyb3AmY29ybmVyLXJhZGl1cz0xMA%3D%3D" alt="Non-logged-in state on Lightning Bounties Platform"><figcaption><p>Non-logged-in state on Lightning Bounties Platform</p></figcaption></figure>
 
 #### 2. Click on the Open Bounty You Wish to Add Funds Into
 
@@ -219,6 +219,6 @@ Yes! Lightning Bounties supports [third-party bounties](https://docs.lightningbo
 
 ***
 
-<figure><img src="broken-reference" alt=""><figcaption><p>Bounty Flywheel</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Bounty Flywheel</p></figcaption></figure>
 
 <sub>_Crowdfunding on Lightning Bounties turns every open-source user into a potential supporter. Pool your sats, fund the future, and help build the Bitcoin ecosystem—one bounty at a time!_</sub>
