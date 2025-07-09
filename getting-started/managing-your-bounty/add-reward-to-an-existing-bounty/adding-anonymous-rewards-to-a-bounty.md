@@ -76,7 +76,7 @@ Anonymous rewards allow **anyone to top-up an existing bounty** without requirin
 {% step %}
 #### **Set lock time** for your contribution (optional)
 
-<figure><img src="../../../.gitbook/assets/image (61).png" alt=""><figcaption><p>Choose between minutes, hours, weeks, or months</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (61).png" alt="Choose between minutes, hours, days, weeks, or months"><figcaption><p>Choose between minutes, hours, days, weeks, or months</p></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -118,7 +118,7 @@ Anonymous rewards allow **anyone to top-up an existing bounty** without requirin
 
 {% columns %}
 {% column width="50%" %}
-## <mark style="background-color:red;">Anonymous Rewards Limitations</mark>
+### <mark style="background-color:red;">Anonymous Rewards Limitations</mark>
 
 ***
 
@@ -143,7 +143,7 @@ Anonymous rewards allow **anyone to top-up an existing bounty** without requirin
 {% endcolumn %}
 
 {% column %}
-## <mark style="background-color:green;">Anonymous Reward Best Practices</mark>
+### <mark style="background-color:green;">Anonymous Reward Best Practices</mark>
 
 ***
 

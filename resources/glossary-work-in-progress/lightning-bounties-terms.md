@@ -36,6 +36,10 @@ A reward offered for completing a specific task, typically fixing a bug or imple
 
 A specified period during which bounty funds are locked in escrow to ensure they remain available when developers submit solutions.
 
+#### Branta Verification
+
+[**Verify with Branta** ](https://branta.pro/)is an optional security feature that lets you double-check a Lightning invoice before paying it on Lightning Bounties. When you see a "_**Verify Invoice - Branta**_" link under any payment form, clicking it opens a separate page that confirms the invoice destination is legitimate.
+
 #### Bug Bounty
 
 A reward offered to developers who discover and report bugs in a software project, enhancing security and reliability.
