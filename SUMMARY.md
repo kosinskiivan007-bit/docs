@@ -4,7 +4,7 @@
 
 ## Getting started
 
-* [FIRST TIME ONBORDING](getting-started/first-time-onboarding/README.md)
+* [FIRST TIME ONBOARDING](getting-started/first-time-onboarding/README.md)
   * [GitHub Auth & Lightning Bounties](getting-started/first-time-onboarding/github-auth-and-lightning-bounties.md)
 * [SOLVING A BOUNTY](getting-started/solving-a-bounty/README.md)
   * [Finding Bounties to Solve](getting-started/solving-a-bounty/looking-for-a-project-to-get-rewarded.md)
