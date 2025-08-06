@@ -54,6 +54,10 @@ If you decide to unlink your GitHub account from Lightning Bounties, please foll
 
 After completing the steps to unlink your GitHub account, it will be disassociated from Lightning Bounties.&#x20;
 
+{% embed url="https://youtu.be/LrXGUxT1riA" %}
+Video Walkthrough
+{% endembed %}
+
 {% hint style="info" %}
 **If you wish to link your GitHub** account **to Lightning Bounties again in the future:**
 
