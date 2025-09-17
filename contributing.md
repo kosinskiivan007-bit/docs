@@ -25,6 +25,23 @@ layout:
 
 Want to make our documentation even better? First of all, thank you! This page will guide you through our contribution process, including how to submit changes and claim bounties for your contributions.
 
+{% hint style="info" %}
+_**Quick Start**:_&#x20;
+
+_Find any page that needs improvement → Click "Edit on GitHub" → Submit changes → Earn Bitcoin bounties!_
+{% endhint %}
+
+### Table of Contents
+
+* [Quick Documentation Edits](contributing.md#quick-documentation-edits)
+* [Common Documentation Bounties](contributing.md#common-documentation-bounties)
+* [What We Need Help With](contributing.md#what-were-looking-for)
+* [Writing Guidelines](contributing.md#content-guidelines)
+* [Local Development Workflow](contributing.md#local-development-workflow)
+* [Support & Community](contributing.md#getting-support)
+
+### Quick Documentation Edits
+
 #### Prerequisites
 
 To edit our documentation, you must have a [GitHub account](https://github.com). If you already have one, make sure you are logged in. If you don't, please [create one](https://github.com/join).
@@ -32,62 +49,6 @@ To edit our documentation, you must have a [GitHub account](https://github.com).
 #### Understanding GitBook's Integration with GitHub
 
 We use a platform called [GitBook](https://gitbook.com) to host, manage and serve our documentation. GitBook fetches files from our GitHub repository `Lightning-Bounties/docs`, reads them and converts them into the pages you can access on [docs.lightningbounties.com](https://docs.lightningbounties.com).
-
-**Repository Structure**
-
-A generic structure of documentation hosted on GitBook looks like this:
-
-```
-
-Getting Started
-├── First-Time Onboarding
-│   ├── GitHub Auth \& Lightning Bounties
-│   ├── Account Setup
-├── Posting a Bounty
-│   ├── Create GitHub Issue
-│   ├── Submit New Reward
-├── Solving a Bounty
-│   ├── Working on the Bounty
-│   ├── Claiming Rewards
-│   └── Withdraw Funds
-```
-
-Its mirror to GitHub has the following structure:
-
-```markup
-
-├── .gitbook/
-│   └── assets/
-│       └── screenshot-claim-interface.png
-├── getting-started/
-│   ├── first-time-onboarding/
-│   │   ├── README.md
-│   │   ├── github-auth-and-lightning-bounties.md
-│   │   └── account-setup.md
-│   ├── posting-a-bounty/
-│   │   ├── README.md
-│   │   ├── create-github-issue.md
-│   │   └── submit-new-reward.md
-│   ├── solving-a-bounty/
-│   │   ├── README.md
-│   │   ├── working-on-the-bounty.md
-│   │   ├── claiming-rewards.md
-│   │   └── withdraw-funds.md
-├── resources/
-│   ├── frequently-asked-questions/
-│   │   └── lightning-bounties-faqs.md
-│   └── troubleshooting/
-├── README.md
-└── SUMMARY.md
-```
-
-**Key Components:**
-
-* The `.gitbook/assets` folder manages every file used in any page
-* The `SUMMARY.md` file tells GitBook the order and grouping of pages
-* The `README.md` file contains the first page content users see
-* Groups of pages are controlled by folders named after the group title
-* Nested pages have a similar structure, but require a `README.md` file in the parent folder
 
 ### Method 1: Quick Editing via GitHub Web Interface
 
@@ -232,63 +193,22 @@ If you cannot edit the PR, ask the repository owner to add the `close` syntax fo
 * Lightning Bounties uses the GitHub API as an oracle to prevent fraudulent claims
 * Payments are processed automatically when all conditions are met
 
-#### Content Guidelines
+### Common Documentation Bounties
 
-**Writing Best Practices**
+Lightning Bounties offers Bitcoin rewards for documentation improvements:
 
-* Use clear, concise language suitable for global developers
-* Follow consistent Markdown formatting
-* Include relevant links to Lightning Bounties resources
-* Ensure proper heading hierarchy (H1, H2, H3, etc.)
-* Test all external links for functionality
-* Explain Bitcoin and Lightning Network concepts for newcomers
-* Use simple examples and step-by-step instructions
+| Contribution Type           | Typical Reward     | Description                    |
+| --------------------------- | ------------------ | ------------------------------ |
+| Typo fixes                  | 1,000-2,000 sats   | Grammar, spelling, punctuation |
+| Broken links                | 2,000-2,500 sats   | Fix outdated or incorrect URLs |
+| Clarity improvements        | 5,000-10,000 sats  | Simplify complex explanations  |
+| Screenshots/Video Tutorials | 8,000-15,000 sats  | Add missing visual guides      |
+| New sections                | 15,000-25,000 sats | Create new documentation pages |
+| Major guides                | 30,000+ sats       | Comprehensive tutorials        |
 
-**Technical Standards**
+_Amounts vary based on complexity and Bitcoin price_
 
-* Keep contributions focused on specific improvements
-* Follow existing file structure and naming conventions
-* Optimize images and include descriptive alt text
-* Use proper Git commit message conventions
-* Include screenshots for complex UI interactions
-* Add troubleshooting sections where appropriate
-
-#### **Documentation Priorities**
-
-**High-Value Contributions:**
-
-* Fix typos, grammar errors, and broken links
-* Simplify complex technical explanations
-* Add missing screenshots and visual guides
-* Improve navigation and cross-referencing
-* Create troubleshooting guides for common issues
-* Add context for international users
-
-**Content Areas Needing Help:**
-
-* Bounty hunter onboarding guides
-* Wallet setup and Lightning Network basics
-* Platform troubleshooting and FAQ sections
-* API documentation and integration examples
-* Global accessibility improvements
-
-**Community Engagement**
-
-* Respond promptly to feedback during reviews
-* Be open to suggestions from maintainers
-* Credit sources appropriately when building on existing work
-* Maintain professional and constructive communication
-* Help other contributors in discussions
-
-#### Getting Support
-
-For additional help with contributions:
-
-1. **Documentation**: Check our detailed guides at [docs.lightningbounties.com](https://docs.lightningbounties.com)
-2. **Community**: Join our [Discord](https://discord.com/invite/zBxj4x4Cbq) for real-time assistance
-3. **GitHub Issues**: Report bugs or request features on our [docs repository](https://github.com/Lightning-Bounties/docs/issues)
-
-#### What We're Looking For
+### What We're Looking For
 
 **Simple Fixes (Great for Beginners)**
 
@@ -315,36 +235,118 @@ For additional help with contributions:
 * Including multiple Lightning wallet guides
 * Clarifying payment processing variations
 
-#### Lightning Bounties Platform Benefits
+### Content Guidelines
 
-* **No Installation Required**: Simply log in with your GitHub account
-* **Instant Bitcoin Payments**: Receive rewards immediately after PR approval via Lightning Network
-* **Global Accessibility**: Available worldwide, bypassing traditional banking restrictions
-* **Crowdfunding Support**: Multiple users can fund single documentation bounties
-* **Automated Validation**: GitHub API integration prevents fraudulent claims
-* **Fair Compensation**: Earn Bitcoin for improving open-source documentation
+**Writing Best Practices**
 
-#### Common Documentation Bounties
+* Use clear, concise language suitable for global developers
+* Follow consistent Markdown formatting
+* Include relevant links to Lightning Bounties resources
+* Ensure proper heading hierarchy (H1, H2, H3, etc.)
+* Test all external links for functionality
+* Explain Bitcoin and Lightning Network concepts for newcomers
+* Use simple examples and step-by-step instructions
 
-| Contribution Type           | Typical Reward     | Description                    |
-| --------------------------- | ------------------ | ------------------------------ |
-| Typo fixes                  | 1,000-2,000 sats   | Grammar, spelling, punctuation |
-| Broken links                | 2,000-2,500 sats   | Fix outdated or incorrect URLs |
-| Clarity improvements        | 5,000-10,000 sats  | Simplify complex explanations  |
-| Screenshots/Video Tutorials | 8,000-15,000 sats  | Add missing visual guides      |
-| New sections                | 15,000-25,000 sats | Create new documentation pages |
-| Major guides                | 30,000+ sats       | Comprehensive tutorials        |
+**Technical Standards**
 
-_Amounts vary based on complexity and Bitcoin price_
+* Keep contributions focused on specific improvements
+* Follow existing file structure and naming conventions
+* Optimize images and include descriptive alt text
+* Add missing screenshots and visual guides
+* Use proper Git commit message conventions
+* Include screenshots for complex UI interactions
+* Add troubleshooting sections where appropriate
 
-#### Recognition Program
+#### **Documentation Priorities**
 
-Contributors who improve our documentation receive:
+**Community Engagement**
 
-* Bitcoin bounty payments via Lightning Network
-* Recognition in monthly blog posts
-* Priority access to future documentation bounties
-* LinkedIn recommendations for significant contributions
+* Respond promptly to feedback during reviews
+* Be open to suggestions from maintainers
+* Credit sources appropriately when building on existing work
+* Maintain professional and constructive communication
+* Help other contributors in discussions
+
+### Local Development Workflow
+
+For substantial changes, work locally:
+
+#### Setup Your Environment
+
+```bash
+# Fork Lightning-Bounties/docs on GitHub first
+
+git clone https://github.com/YOUR-USERNAME/docs.git
+cd docs
+git checkout -b improve-documentation
+```
+
+#### Make Your Changes
+
+1. Edit markdown files in your preferred editor
+2. Add images to `.gitbook/assets/` folder
+3. Update navigation in `SUMMARY.md` if needed
+4. Test links and formatting
+
+#### Submit Your Work
+
+```bash
+git add .
+git commit -m "Example commit message
+
+Improve bounty claiming documentation
+
+- Add screenshots for claim interface
+- Clarify Lightning wallet requirements
+- Fix broken links in troubleshooting section
+- Update outdated fee information
+
+close \#789"
+
+git push origin improve-documentation
+
+```
+
+Create pull request on GitHub with `close #[issue-number]` in description.
+
+### Repository Structure
+
+Our documentation lives at [Lightning-Bounties/docs](https://github.com/Lightning-Bounties/docs):
+
+```
+
+docs/
+├── README.md                    \# Homepage content
+├── SUMMARY.md                   \# Navigation structure
+├── getting-started/             \# New user guides
+│   ├── first-time-onboarding/   \# Account setup
+│   ├── posting-a-bounty/        \# For bounty creators
+│   └── solving-a-bounty/        \# For bounty hunters
+├── glossary-work-in-progress/   \# Platform features
+├── resources/                   \# Help \& references
+│   ├── frequently-asked-questions/
+│   ├── troubleshooting/
+│   └── socials/
+└── .gitbook/
+└── assets/                  \# Images and media
+
+```
+
+**Key Components:**
+
+* The `.gitbook/assets` folder manages every file used in any page
+* The `SUMMARY.md` file tells GitBook the order and grouping of pages
+* The `README.md` file contains the first page content users see
+* Groups of pages are controlled by folders named after the group title
+* Nested pages have a similar structure, but require a `README.md` file in the parent folder
+
+#### Getting Support
+
+For additional help with contributions:
+
+1. **Documentation**: Check our detailed guides at [docs.lightningbounties.com](https://docs.lightningbounties.com)
+2. **Community**: Join our [Discord](https://discord.com/invite/zBxj4x4Cbq) for real-time assistance
+3. **GitHub Issues**: Report bugs or request features on our [docs repository](https://github.com/Lightning-Bounties/docs/issues)
 
 Thank you for helping us improve our documentation and contributing to the Bitcoin development ecosystem! Your contributions help make Lightning Bounties more accessible and valuable for developers worldwide, especially those in regions underserved by traditional payment systems.
 
@@ -357,4 +359,3 @@ Thank you for helping us improve our documentation and contributing to the Bitco
 {% hint style="info" %}
 **New contributor?** Start with simple fixes like typos or broken links. You'll quickly learn our documentation style and can work up to larger bounties!
 {% endhint %}
-
