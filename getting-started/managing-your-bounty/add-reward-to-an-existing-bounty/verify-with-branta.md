@@ -4,21 +4,6 @@ description: >-
   sending Bitcoin.
 cover: ../../../.gitbook/assets/branta_banner.png
 coverY: 0
-layout:
-  width: default
-  cover:
-    visible: true
-    size: hero
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # Verify with Branta

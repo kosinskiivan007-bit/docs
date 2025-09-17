@@ -64,7 +64,7 @@
 
 ***
 
-* [Contributing](contributing.md)
+* [Contribute to Lightning Bounties Docs & Earn Bounties](contributing.md)
 * [LICENSE.md](license.md)
 * [CODE\_OF\_CONDUCT](code_of_conduct.md)
 
@@ -92,3 +92,4 @@
 * [Draft Docs](wip-docs/draft-docs/README.md)
   * [5/25-Detailed Example: Generating a Lightning Invoice with Coinbase](wip-docs/draft-docs/5-25-detailed-example-generating-a-lightning-invoice-with-coinbase.md)
   * [Verify with Branta](wip-docs/draft-docs/verify-with-branta.md)
+  * [Copy of Contributing](wip-docs/draft-docs/contributing.md)
