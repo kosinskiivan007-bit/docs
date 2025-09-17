@@ -21,8 +21,6 @@ layout:
 
 # Contribute to Lightning Bounties Docs & Earn Bounties
 
-## Contribute to Lightning Bounties Docs & Earn Bitcoin
-
 Want to make our documentation even better? First of all, thank you! This page will guide you through our contribution process, including how to submit changes and claim bounties for your contributions.
 
 {% hint style="info" %}
@@ -35,8 +33,8 @@ _Find any page that needs improvement → Click "Edit on GitHub" → Submit chan
 
 * [Quick Documentation Edits](contributing.md#quick-documentation-edits)
 * [Common Documentation Bounties](contributing.md#common-documentation-bounties)
-* [What We Need Help With](contributing.md#what-were-looking-for)
-* [Writing Guidelines](contributing.md#content-guidelines)
+* [What We're Looking For](contributing.md#what-were-looking-for)
+* [Writing Guidelines](contributing.md#writing-guidelines)
 * [Local Development Workflow](contributing.md#local-development-workflow)
 * [Support & Community](contributing.md#getting-support)
 
@@ -235,7 +233,7 @@ _Amounts vary based on complexity and Bitcoin price_
 * Including multiple Lightning wallet guides
 * Clarifying payment processing variations
 
-### Content Guidelines
+### Writing Guidelines
 
 **Writing Best Practices**
 
@@ -301,7 +299,7 @@ Improve bounty claiming documentation
 - Fix broken links in troubleshooting section
 - Update outdated fee information
 
-close \#789"
+close #789"
 
 git push origin improve-documentation
 
