@@ -59,6 +59,23 @@ In the PR description, include `close #issue-number` or `closes #issue-number` t
 * You can include as much additional information as needed in your PR description.
 * Submit the PR for review
 
+#### PR Requirements Checklist
+
+Before you request review, verify all items below:
+
+- PR targets the repo default branch (`main` or `master`)
+- PR body includes `close #issue-number` or `closes #issue-number`
+- PR body references the Lightning Bounties issue URL
+- PR contains real code/docs changes (not an empty PR)
+- PR passes repository checks (CI/tests/lint if required by that repo)
+- PR is not in draft state
+- PR uses the same GitHub account connected to your Lightning Bounties account
+- PR stays focused on the bounty scope and acceptance criteria
+
+{% hint style="info" %}
+Tip: If maintainers require a specific template, fill every required section in the PR form so review is not blocked.
+{% endhint %}
+
 **Screenshot Example:**
 
 <figure><img src="../../.gitbook/assets/mergedPRScreenShot_ChangeIttoGreenOpenCheckmark.png" alt="Example: PR description with correct close syntax and branch targeting."><figcaption><p>Example: PR description with correct close syntax and branch targeting.</p></figcaption></figure>
@@ -119,6 +136,18 @@ You must manually complete the claim steps on [app.lightningbounties.com](http:/
 If you encounter issues claiming your Lightning Bounty reward, use this guide to diagnose and resolve common problems.&#x20;
 
 For more details, see the [Lightning Bounties Troubleshooting Guide](https://docs.lightningbounties.com/docs/getting-started/solving-a-bounty/claim-reward-criteria-and-troubleshooting-guide) and [GitHub’s official documentation on linking pull requests to issues](https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword).
+
+### Quick Checklist: Claim Reward Not Working
+
+Run this quick check in order before requesting support:
+
+1. Confirm PR is merged into `main`/`master` (not just approved).
+2. Confirm PR body includes `close #issue-number` with the correct issue number.
+3. Confirm the GitHub issue is now closed.
+4. Confirm you clicked **Claim Reward** and then **Check** in the app.
+5. Refresh the page and re-run **Check** after a short delay.
+6. Confirm you are logged into Lightning Bounties with the same GitHub identity used for the PR.
+7. If still blocked, post the issue + PR links in Discord and request an override.
 
 ***
 
