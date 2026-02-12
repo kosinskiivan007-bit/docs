@@ -84,3 +84,49 @@ Once the crypto sell order is complete, the funds will be available in your cash
 | <ol start="6"><li>Select <strong>Review.</strong></li></ol>                                                    | <ol start="6"><li>Select <strong>Cash out now</strong> to complete your transfer.</li></ol>                                            |
 | <ol start="7"><li>Select <strong>Withdraw cash</strong> to complete your transfer.</li></ol>                   |                                                                                                                                        |
 
+## <mark style="background-color:green;">**Part (4):**</mark>** Converting BTC into Mexican Pesos (MXN)**
+
+If you want to end up with MXN in a Mexican bank account, the common flow is:
+
+1. Move your BTC to a regulated exchange that supports MXN withdrawals to Mexico.
+2. Sell BTC to MXN.
+3. Withdraw MXN to your bank account (often via CLABE).
+
+### **4a. Choose an exchange that supports MXN withdrawals**
+
+The exchange you choose should be able to:
+- Hold an MXN balance
+- Let you sell BTC -> MXN
+- Withdraw MXN to a Mexican bank account (often via CLABE)
+
+{% hint style="info" %}
+Rules, fees, and availability can change. If you are moving a meaningful amount, test first with a small deposit and withdrawal.
+{% endhint %}
+
+### **4b. Deposit BTC to the exchange**
+
+1. Create a BTC deposit address in the exchange app.
+2. Send BTC from your current wallet/exchange to that deposit address.
+3. Wait for the deposit to confirm.
+
+{% hint style="warning" %}
+If the exchange supports Lightning deposits, you can use Lightning. If it does not, you will need to send on-chain BTC (fees and confirmations apply).
+{% endhint %}
+
+### **4c. Sell BTC -> MXN**
+
+1. Use the exchange's "Sell" flow to convert BTC into MXN.
+2. Double-check the total after fees before confirming.
+
+### **4d. Withdraw MXN to your bank**
+
+1. Add your withdrawal details (often CLABE).
+2. Withdraw your MXN balance to your bank.
+3. Keep records for taxes/accounting in your jurisdiction.
+
+### **Bonus: What you can do with sats without converting to fiat**
+
+You often do not need to convert to MXN. You can:
+- Spend sats at Lightning-enabled merchants (map: https://btcmap.org/)
+- Buy gift cards / products that accept Lightning (directory: https://lightningnetworkstores.com/)
+- Pay friends or freelancers who accept Lightning
