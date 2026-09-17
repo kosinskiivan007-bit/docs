@@ -1,0 +1,2788 @@
+{
+  "captured_at": "2026-09-17T08:53:03.811Z",
+  "base": "https://api.vibewatch.io",
+  "items": [
+    {
+      "label": "free index",
+      "request": "GET /api/v1/public/stacks-index",
+      "at": "2026-09-17T08:53:03.812Z",
+      "status": 200,
+      "response_server_date": "Thu, 17 Sep 2026 08:53:04 GMT",
+      "payment_required_header": false,
+      "challenge": null,
+      "body": "{\"schema_version\":\"1.0\",\"as_of\":\"2026-09-17T08:46:59.279665Z\",\"index\":{\"composite_score\":6.9,\"label\":\"Positive\",\"wow_change\":0.2,\"constant_panel\":true,\"components\":{\"polarity\":{\"score\":8.0,\"weight\":0.35},\"velocity\":{\"score\":4.9,\"weight\":0.3},\"volume\":{\"score\":7.2,\"weight\":0.15},\"extremity\":{\"score\":7.7,\"weight\":0.15},\"engagement\":{\"score\":7.3,\"weight\":0.05}}},\"panel\":{\"projects\":12,\"messages_7d\":1606,\"messages_prev_7d\":1818,\"inside_share_pct\":7,\"distinct_authors_7d\":568,\"sources_connected\":24},\"source_mix_7d\":[{\"source\":\"x\",\"share_pct\":91},{\"source\":\"discord\",\"share_pct\":7},{\"source\":\"forum\",\"share_pct\":2},{\"source\":\"telegram\",\"share_pct\":0}],\"top_voices_7d\":[{\"handle\":\"godfred_xcuz\",\"source\":\"x\",\"messages\":83,\"avatar_url\":\"https://pbs.twimg.com/profile_images/1618540494564347904/jaITa_YL_400x400.jpg\"},{\"handle\":\"reubs_btc\",\"source\":\"x\",\"messages\":57,\"avatar_url\":\"https://pbs.twimg.com/profile_images/2038568942827139072/ph_B3k1c_400x400.jpg\"},{\"handle\":\"jdekpen\",\"source\":\"x\",\"messages\":51,\"avatar_url\":\"https://pbs.twimg.com/profile_images/2062624104432214016/433EDSmP_400x400.jpg\"},{\"handle\":\"xyzerobtc\",\"source\":\"x\",\"messages\":49,\"avatar_url\":\"https://pbs.twimg.com/profile_images/2063357088265601024/Ur27FLEr_400x400.jpg\"},{\"handle\":\"gpsc_stx\",\"source\":\"x\",\"messages\":30,\"avatar_url\":\"https://pbs.twimg.com/profile_images/2069469869821554688/WI2cc1fx_400x400.jpg\"},{\"handle\":\"hodlstxbtc\",\"source\":\"x\",\"messages\":27,\"avatar_url\":\"https://pbs.twimg.com/profile_images/1881464004100702208/ncCDJwR9_400x400.jpg\"},{\"handle\":\"3hunnatheartist\",\"source\":\"x\",\"messages\":24,\"avatar_url\":\"https://pbs.twimg.com/profile_images/2095569718732333056/6Qm8TMDW_400x400.jpg\"},{\"handle\":\"fabian84630991\",\"source\":\"x\",\"messages\":20,\"avatar_url\":\"https://pbs.twimg.com/profile_images/1450208870232739851/YGVohZPX_400x400.jpg\"},{\"handle\":\"grimaldoremade\",\"source\":\"x\",\"messages\":20,\"avatar_url\":\"https://pbs.twimg.com/profile_images/2062664353984221184/C6cRTgjB_400x400.jpg\"},{\"handle\":\"aceband2021\",\"source\":\"x\",\"messages\":19,\"avatar_url\":\"https://pbs.twimg.com/profile_images/1994332463368171522/hJuzKSD6_400x400.jpg\"}],\"distribution_7d\":[{\"date\":\"2026-09-10\",\"positive\":298,\"neutral\":126,\"negative\":37},{\"date\":\"2026-09-11\",\"positive\":227,\"neutral\":76,\"negative\":19},{\"date\":\"2026-09-12\",\"positive\":121,\"neutral\":50,\"negative\":18},{\"date\":\"2026-09-13\",\"positive\":60,\"neutral\":55,\"negative\":11},{\"date\":\"2026-09-14\",\"positive\":272,\"neutral\":106,\"negative\":10},{\"date\":\"2026-09-15\",\"positive\":204,\"neutral\":78,\"negative\":6},{\"date\":\"2026-09-16\",\"positive\":188,\"neutral\":72,\"negative\":3}],\"history\":[{\"date\":\"2026-07-31\",\"composite\":null,\"fear_greed\":25,\"suppressed\":true,\"reason\":\"below_min_orgs\"},{\"date\":\"2026-08-01\",\"composite\":null,\"fear_greed\":27,\"suppressed\":true,\"reason\":\"below_min_orgs\"},{\"date\":\"2026-08-02\",\"composite\":7.1,\"fear_greed\":27},{\"date\":\"2026-08-03\",\"composite\":6.4,\"fear_greed\":28},{\"date\":\"2026-08-04\",\"composite\":6.3,\"fear_greed\":25},{\"date\":\"2026-08-05\",\"composite\":6.8,\"fear_greed\":27},{\"date\":\"2026-08-06\",\"composite\":6.7,\"fear_greed\":25},{\"date\":\"2026-08-07\",\"composite\":6.1,\"fear_greed\":29},{\"date\":\"2026-08-08\",\"composite\":6.7,\"fear_greed\":30},{\"date\":\"2026-08-09\",\"composite\":6.8,\"fear_greed\":31},{\"date\":\"2026-08-10\",\"composite\":6.4,\"fear_greed\":30},{\"date\":\"2026-08-11\",\"composite\":5.9,\"fear_greed\":29},{\"date\":\"2026-08-12\",\"composite\":6.5,\"fear_greed\":27},{\"date\":\"2026-08-13\",\"composite\":6.2,\"fear_greed\":29},{\"date\":\"2026-08-14\",\"composite\":6.4,\"fear_greed\":29},{\"date\":\"2026-08-15\",\"composite\":6.6,\"fear_greed\":34},{\"date\":\"2026-08-16\",\"composite\":6.8,\"fear_greed\":34},{\"date\":\"2026-08-17\",\"composite\":5.9,\"fear_greed\":31},{\"date\":\"2026-08-18\",\"composite\":6.5,\"fear_greed\":41},{\"date\":\"2026-08-19\",\"composite\":7.0,\"fear_greed\":46},{\"date\":\"2026-08-20\",\"composite\":6.1,\"fear_greed\":62},{\"date\":\"2026-08-21\",\"composite\":6.8,\"fear_greed\":72},{\"date\":\"2026-08-22\",\"composite\":6.6,\"fear_greed\":71},{\"date\":\"2026-08-23\",\"composite\":5.9,\"fear_greed\":66},{\"date\":\"2026-08-24\",\"composite\":6.7,\"fear_greed\":73},{\"date\":\"2026-08-25\",\"composite\":6.8,\"fear_greed\":74},{\"date\":\"2026-08-26\",\"composite\":6.7,\"fear_greed\":65},{\"date\":\"2026-08-27\",\"composite\":6.5,\"fear_greed\":71},{\"date\":\"2026-08-28\",\"composite\":6.3,\"fear_greed\":73},{\"date\":\"2026-08-29\",\"composite\":6.6,\"fear_greed\":68},{\"date\":\"2026-08-30\",\"composite\":6.4,\"fear_greed\":69},{\"date\":\"2026-08-31\",\"composite\":6.3,\"fear_greed\":62},{\"date\":\"2026-09-01\",\"composite\":6.3,\"fear_greed\":69},{\"date\":\"2026-09-02\",\"composite\":6.3,\"fear_greed\":63},{\"date\":\"2026-09-03\",\"composite\":6.8,\"fear_greed\":65},{\"date\":\"2026-09-04\",\"composite\":6.6,\"fear_greed\":74},{\"date\":\"2026-09-05\",\"composite\":6.1,\"fear_greed\":73},{\"date\":\"2026-09-06\",\"composite\":6.0,\"fear_greed\":73},{\"date\":\"2026-09-07\",\"composite\":6.9,\"fear_greed\":71},{\"date\":\"2026-09-08\",\"composite\":6.4,\"fear_greed\":69},{\"date\":\"2026-09-09\",\"composite\":6.2,\"fear_greed\":66},{\"date\":\"2026-09-10\",\"composite\":6.3,\"fear_greed\":69},{\"date\":\"2026-09-11\",\"composite\":6.5,\"fear_greed\":56},{\"date\":\"2026-09-12\",\"composite\":6.1,\"fear_greed\":63},{\"date\":\"2026-09-13\",\"composite\":6.4,\"fear_greed\":61},{\"date\":\"2026-09-14\",\"composite\":6.6,\"fear_greed\":57},{\"date\":\"2026-09-15\",\"composite\":6.5,\"fear_greed\":69},{\"date\":\"2026-09-16\",\"composite\":6.8,\"fear_greed\":51},{\"date\":\"2026-09-17\",\"composite\":6.6,\"fear_greed\":50}],\"projects\":[{\"slug\":\"tenero-021c\",\"name\":\"Tenero\",\"icon_url\":\"https://tenero.io/favicon.ico?favicon.87b212ac.ico\",\"score\":7.8,\"wow_change\":null,\"sources\":[\"discord\",\"x\"],\"sparkline_14d\":[5.6,4.1,7.3,6.2,null,null,5.6,null,null,6.9,7.4,5.2,7.8,null],\"messages_7d_band\":\"medium\"},{\"slug\":\"scaffold-stacks\",\"name\":\"Scaffold Stacks\",\"icon_url\":\"https://scaffoldstacks.mintlify.app/mintlify-assets/_mintlify/favicons/scaffoldstacks/POJlTZSi0ixyRqCJ/_generated/favicon/apple-touch-icon.png\",\"score\":7.7,\"wow_change\":null,\"sources\":[\"x\"],\"sparkline_14d\":[null,null,null,null,null,null,null,null,null,null,null,7.1,7.7,null],\"messages_7d_band\":\"low\"},{\"slug\":\"hermetica\",\"name\":\"Hermetica\",\"icon_url\":\"https://framerusercontent.com/images/6bjqvyXlAkazHzLmDwVf4veY.png\",\"score\":7.4,\"wow_change\":null,\"sources\":[\"discord\",\"x\"],\"sparkline_14d\":[null,null,5.6,7.5,7.2,null,6.7,7.4,7.0,null,5.5,5.9,7.4,null],\"messages_7d_band\":\"medium\"},{\"slug\":\"bitflow-finance-af3b\",\"name\":\"Bitflow Finance\",\"icon_url\":\"https://www.bitflow.finance/favicon.ico\",\"score\":7.0,\"wow_change\":3.0,\"sources\":[\"x\"],\"sparkline_14d\":[6.6,7.6,6.4,6.9,7.3,6.7,4.0,7.9,6.5,6.4,7.0,7.1,6.6,7.0],\"messages_7d_band\":\"high\"},{\"slug\":\"stacking-dao\",\"name\":\"Stacking DAO\",\"icon_url\":\"https://cdn.prod.website-files.com/659ac11b664b15dc69f75700/660db0604d3e7ff322c9bcb4_webclip.png\",\"score\":7.0,\"wow_change\":-0.8,\"sources\":[\"discord\",\"telegram\",\"x\"],\"sparkline_14d\":[7.5,6.1,4.1,6.6,5.7,7.5,7.8,6.8,6.6,7.1,5.7,6.7,7.3,7.0],\"messages_7d_band\":\"high\"},{\"slug\":\"stacks-endowment\",\"name\":\"Stacks Endowment\",\"icon_url\":\"https://cdn.prod.website-files.com/68e6f8d4d0348327a08c8be0/690d1d0780b350f787274641_StacksEndowmentSymbol_Squircle%201-1.png\",\"score\":6.9,\"wow_change\":1.5,\"sources\":[\"forum\",\"x\"],\"sparkline_14d\":[6.5,6.5,null,6.9,null,5.5,5.4,5.5,5.7,6.5,5.2,6.8,5.5,6.9],\"messages_7d_band\":\"medium\"},{\"slug\":\"zest-protocol-3672\",\"name\":\"Zest Protocol\",\"icon_url\":\"https://cdn.prod.website-files.com/653fe0bb9dd31b04c24b2e44/65d0c2fcd6ab41d1dedcff2b_webclip-zest.png\",\"score\":6.7,\"wow_change\":-0.3,\"sources\":[\"discord\",\"telegram\",\"x\"],\"sparkline_14d\":[6.9,6.0,4.3,7.8,7.0,4.4,7.0,6.8,3.8,4.1,8.1,6.3,7.6,6.7],\"messages_7d_band\":\"high\"},{\"slug\":\"leo\",\"name\":\"LEO\",\"icon_url\":\"https://pbs.twimg.com/profile_images/1742120134964322304/ijQtmZ28_400x400.jpg\",\"score\":6.5,\"wow_change\":-1.0,\"sources\":[\"discord\",\"x\"],\"sparkline_14d\":[6.4,6.5,7.5,6.0,5.8,7.5,7.4,4.7,7.0,7.2,6.3,6.8,6.5,null],\"messages_7d_band\":\"medium\"},{\"slug\":\"stacks-da51\",\"name\":\"Stacks\",\"icon_url\":\"https://cdn.prod.website-files.com/618b0aafa4afde65f2fe38fe/6595cd4d199d17f0429766ea_Stacks%20(Nakamojo)%20(1).png\",\"score\":6.3,\"wow_change\":-0.9,\"sources\":[\"ballot\",\"forum\",\"x\"],\"sparkline_14d\":[7.2,5.8,7.0,7.0,6.5,5.9,7.2,6.6,5.8,6.2,8.0,6.5,6.1,6.3],\"messages_7d_band\":\"high\"},{\"slug\":\"aibtc\",\"name\":\"AIBTC\",\"icon_url\":\"https://aibtc.com/apple-icon.png\",\"score\":5.5,\"wow_change\":-0.4,\"sources\":[\"discord\",\"github_discussions\",\"x\"],\"sparkline_14d\":[6.3,null,null,null,5.4,6.2,5.9,null,6.3,6.5,6.6,6.6,5.7,5.5],\"messages_7d_band\":\"low\"},{\"slug\":\"boom\",\"name\":\"Boom\",\"icon_url\":null,\"score\":null,\"wow_change\":null,\"sources\":[\"x\"],\"sparkline_14d\":[null,null,null,null,null,null,null,null,null,null,null,null,null,null],\"messages_7d_band\":\"low\"},{\"slug\":\"jing-swap\",\"name\":\"Jing Swap\",\"icon_url\":\"https://www.jingswap.com/jing-logo-twitter.png\",\"score\":null,\"wow_change\":null,\"sources\":[\"x\"],\"sparkline_14d\":[null,null,null,null,null,null,null,null,null,null,null,null,null,null],\"messages_7d_band\":\"low\"}],\"panel_joins\":[],\"panel_joins_truncated\":false,\"governance\":[],\"summary\":{\"generated_at\":\"2026-09-17T06:25:00.017086Z\",\"window_days\":7,\"tldr\":\"Stacks discourse this week centered on Bitcoin capital markets maturing: the Genesis Bond selling out with institutional participation, StackingDAO's dominant staking share feeding Zest Protocol's BTCFi loops, and the Stack Sats campaign driving DeFi activity. Builder bounties, community token chatter, and governance friction rounded out a broadly bullish, activity-heavy window.\",\"themes\":[{\"evidence_ref\":\"theme-1\",\"title\":\"Genesis Bond Sells Out, Institutions Commit\",\"paragraph\":\"The first Bitcoin bond on Stacks filled its enrollment quickly, with institutional names like 21Shares, HashKey Cloud, and Nakamoto Inc. taking part alongside pooled capital. Community voices framed it as a milestone for Bitcoin-native finance, with commentary on how STX locked and BTC capacity scaled with each new bond.\",\"polarity\":\"positive\",\"mentions\":380,\"voices\":228,\"count_is_floor\":false,\"projects\":[{\"slug\":\"aibtc\",\"name\":\"AIBTC\"},{\"slug\":\"bitflow-finance-af3b\",\"name\":\"Bitflow Finance\"},{\"slug\":\"hermetica\",\"name\":\"Hermetica\"},{\"slug\":\"stacking-dao\",\"name\":\"Stacking DAO\"},{\"slug\":\"stacks-da51\",\"name\":\"Stacks\"},{\"slug\":\"stacks-endowment\",\"name\":\"Stacks Endowment\"},{\"slug\":\"tenero-021c\",\"name\":\"Tenero\"},{\"slug\":\"zest-protocol-3672\",\"name\":\"Zest Protocol\"}]},{\"evidence_ref\":\"theme-2\",\"title\":\"StackingDAO Dominates Staking Share\",\"paragraph\":\"StackingDAO emerged as the largest single channel into Bitcoin Staking, contributing the majority of BTC bonded in the Genesis round via its stBTC token. Community members highlighted that stBTC remains liquid and usable as DeFi collateral even while earning staking yield, framing this dual utility as a key differentiator.\",\"polarity\":\"positive\",\"mentions\":244,\"voices\":103,\"count_is_floor\":false,\"projects\":[{\"slug\":\"bitflow-finance-af3b\",\"name\":\"Bitflow Finance\"},{\"slug\":\"hermetica\",\"name\":\"Hermetica\"},{\"slug\":\"stacking-dao\",\"name\":\"Stacking DAO\"},{\"slug\":\"stacks-da51\",\"name\":\"Stacks\"},{\"slug\":\"stacks-endowment\",\"name\":\"Stacks Endowment\"},{\"slug\":\"tenero-021c\",\"name\":\"Tenero\"},{\"slug\":\"zest-protocol-3672\",\"name\":\"Zest Protocol\"}]},{\"evidence_ref\":\"theme-3\",\"title\":\"Stack Sats Fuels BTCFi Loops\",\"paragraph\":\"The Stack Sats campaign distributing Bitcoin rewards across Bitflow and Zest Protocol drove visible looping behavior, with users supplying sBTC, borrowing USDCx, and re-supplying to compound exposure. Participants described it as an accessible way to put idle Bitcoin to work without leaving the asset or taking custody risk.\",\"polarity\":\"positive\",\"mentions\":538,\"voices\":253,\"count_is_floor\":false,\"projects\":[{\"slug\":\"aibtc\",\"name\":\"AIBTC\"},{\"slug\":\"bitflow-finance-af3b\",\"name\":\"Bitflow Finance\"},{\"slug\":\"hermetica\",\"name\":\"Hermetica\"},{\"slug\":\"leo\",\"name\":\"LEO\"},{\"slug\":\"stacking-dao\",\"name\":\"Stacking DAO\"},{\"slug\":\"stacks-da51\",\"name\":\"Stacks\"},{\"slug\":\"stacks-endowment\",\"name\":\"Stacks Endowment\"},{\"slug\":\"tenero-021c\",\"name\":\"Tenero\"},{\"slug\":\"zest-protocol-3672\",\"name\":\"Zest Protocol\"}]},{\"evidence_ref\":\"theme-4\",\"title\":\"Builder Bounties and Dev Tooling Active\",\"paragraph\":\"Multiple bounty programs targeted new Stacks builders, offering pooled USDCx rewards for shipping testnet dApps using Scaffold Stacks tooling. Community reaction was enthusiastic, with builders confirming participation and encouraging others to try Clarity development with no prior experience required.\",\"polarity\":\"positive\",\"mentions\":23,\"voices\":16,\"count_is_floor\":false,\"projects\":[{\"slug\":\"aibtc\",\"name\":\"AIBTC\"},{\"slug\":\"bitflow-finance-af3b\",\"name\":\"Bitflow Finance\"},{\"slug\":\"leo\",\"name\":\"LEO\"},{\"slug\":\"scaffold-stacks\",\"name\":\"Scaffold Stacks\"},{\"slug\":\"stacks-da51\",\"name\":\"Stacks\"},{\"slug\":\"stacks-endowment\",\"name\":\"Stacks Endowment\"},{\"slug\":\"zest-protocol-3672\",\"name\":\"Zest Protocol\"}]}]},\"suppressed\":[{\"slice\":\"history:2026-07-31\",\"reason\":\"below_min_orgs\"},{\"slice\":\"history:2026-08-01\",\"reason\":\"below_min_orgs\"}]}",
+      "json": {
+        "schema_version": "1.0",
+        "as_of": "2026-09-17T08:46:59.279665Z",
+        "index": {
+          "composite_score": 6.9,
+          "label": "Positive",
+          "wow_change": 0.2,
+          "constant_panel": true,
+          "components": {
+            "polarity": {
+              "score": 8,
+              "weight": 0.35
+            },
+            "velocity": {
+              "score": 4.9,
+              "weight": 0.3
+            },
+            "volume": {
+              "score": 7.2,
+              "weight": 0.15
+            },
+            "extremity": {
+              "score": 7.7,
+              "weight": 0.15
+            },
+            "engagement": {
+              "score": 7.3,
+              "weight": 0.05
+            }
+          }
+        },
+        "panel": {
+          "projects": 12,
+          "messages_7d": 1606,
+          "messages_prev_7d": 1818,
+          "inside_share_pct": 7,
+          "distinct_authors_7d": 568,
+          "sources_connected": 24
+        },
+        "source_mix_7d": [
+          {
+            "source": "x",
+            "share_pct": 91
+          },
+          {
+            "source": "discord",
+            "share_pct": 7
+          },
+          {
+            "source": "forum",
+            "share_pct": 2
+          },
+          {
+            "source": "telegram",
+            "share_pct": 0
+          }
+        ],
+        "top_voices_7d": [
+          {
+            "handle": "godfred_xcuz",
+            "source": "x",
+            "messages": 83,
+            "avatar_url": "https://pbs.twimg.com/profile_images/1618540494564347904/jaITa_YL_400x400.jpg"
+          },
+          {
+            "handle": "reubs_btc",
+            "source": "x",
+            "messages": 57,
+            "avatar_url": "https://pbs.twimg.com/profile_images/2038568942827139072/ph_B3k1c_400x400.jpg"
+          },
+          {
+            "handle": "jdekpen",
+            "source": "x",
+            "messages": 51,
+            "avatar_url": "https://pbs.twimg.com/profile_images/2062624104432214016/433EDSmP_400x400.jpg"
+          },
+          {
+            "handle": "xyzerobtc",
+            "source": "x",
+            "messages": 49,
+            "avatar_url": "https://pbs.twimg.com/profile_images/2063357088265601024/Ur27FLEr_400x400.jpg"
+          },
+          {
+            "handle": "gpsc_stx",
+            "source": "x",
+            "messages": 30,
+            "avatar_url": "https://pbs.twimg.com/profile_images/2069469869821554688/WI2cc1fx_400x400.jpg"
+          },
+          {
+            "handle": "hodlstxbtc",
+            "source": "x",
+            "messages": 27,
+            "avatar_url": "https://pbs.twimg.com/profile_images/1881464004100702208/ncCDJwR9_400x400.jpg"
+          },
+          {
+            "handle": "3hunnatheartist",
+            "source": "x",
+            "messages": 24,
+            "avatar_url": "https://pbs.twimg.com/profile_images/2095569718732333056/6Qm8TMDW_400x400.jpg"
+          },
+          {
+            "handle": "fabian84630991",
+            "source": "x",
+            "messages": 20,
+            "avatar_url": "https://pbs.twimg.com/profile_images/1450208870232739851/YGVohZPX_400x400.jpg"
+          },
+          {
+            "handle": "grimaldoremade",
+            "source": "x",
+            "messages": 20,
+            "avatar_url": "https://pbs.twimg.com/profile_images/2062664353984221184/C6cRTgjB_400x400.jpg"
+          },
+          {
+            "handle": "aceband2021",
+            "source": "x",
+            "messages": 19,
+            "avatar_url": "https://pbs.twimg.com/profile_images/1994332463368171522/hJuzKSD6_400x400.jpg"
+          }
+        ],
+        "distribution_7d": [
+          {
+            "date": "2026-09-10",
+            "positive": 298,
+            "neutral": 126,
+            "negative": 37
+          },
+          {
+            "date": "2026-09-11",
+            "positive": 227,
+            "neutral": 76,
+            "negative": 19
+          },
+          {
+            "date": "2026-09-12",
+            "positive": 121,
+            "neutral": 50,
+            "negative": 18
+          },
+          {
+            "date": "2026-09-13",
+            "positive": 60,
+            "neutral": 55,
+            "negative": 11
+          },
+          {
+            "date": "2026-09-14",
+            "positive": 272,
+            "neutral": 106,
+            "negative": 10
+          },
+          {
+            "date": "2026-09-15",
+            "positive": 204,
+            "neutral": 78,
+            "negative": 6
+          },
+          {
+            "date": "2026-09-16",
+            "positive": 188,
+            "neutral": 72,
+            "negative": 3
+          }
+        ],
+        "history": [
+          {
+            "date": "2026-07-31",
+            "composite": null,
+            "fear_greed": 25,
+            "suppressed": true,
+            "reason": "below_min_orgs"
+          },
+          {
+            "date": "2026-08-01",
+            "composite": null,
+            "fear_greed": 27,
+            "suppressed": true,
+            "reason": "below_min_orgs"
+          },
+          {
+            "date": "2026-08-02",
+            "composite": 7.1,
+            "fear_greed": 27
+          },
+          {
+            "date": "2026-08-03",
+            "composite": 6.4,
+            "fear_greed": 28
+          },
+          {
+            "date": "2026-08-04",
+            "composite": 6.3,
+            "fear_greed": 25
+          },
+          {
+            "date": "2026-08-05",
+            "composite": 6.8,
+            "fear_greed": 27
+          },
+          {
+            "date": "2026-08-06",
+            "composite": 6.7,
+            "fear_greed": 25
+          },
+          {
+            "date": "2026-08-07",
+            "composite": 6.1,
+            "fear_greed": 29
+          },
+          {
+            "date": "2026-08-08",
+            "composite": 6.7,
+            "fear_greed": 30
+          },
+          {
+            "date": "2026-08-09",
+            "composite": 6.8,
+            "fear_greed": 31
+          },
+          {
+            "date": "2026-08-10",
+            "composite": 6.4,
+            "fear_greed": 30
+          },
+          {
+            "date": "2026-08-11",
+            "composite": 5.9,
+            "fear_greed": 29
+          },
+          {
+            "date": "2026-08-12",
+            "composite": 6.5,
+            "fear_greed": 27
+          },
+          {
+            "date": "2026-08-13",
+            "composite": 6.2,
+            "fear_greed": 29
+          },
+          {
+            "date": "2026-08-14",
+            "composite": 6.4,
+            "fear_greed": 29
+          },
+          {
+            "date": "2026-08-15",
+            "composite": 6.6,
+            "fear_greed": 34
+          },
+          {
+            "date": "2026-08-16",
+            "composite": 6.8,
+            "fear_greed": 34
+          },
+          {
+            "date": "2026-08-17",
+            "composite": 5.9,
+            "fear_greed": 31
+          },
+          {
+            "date": "2026-08-18",
+            "composite": 6.5,
+            "fear_greed": 41
+          },
+          {
+            "date": "2026-08-19",
+            "composite": 7,
+            "fear_greed": 46
+          },
+          {
+            "date": "2026-08-20",
+            "composite": 6.1,
+            "fear_greed": 62
+          },
+          {
+            "date": "2026-08-21",
+            "composite": 6.8,
+            "fear_greed": 72
+          },
+          {
+            "date": "2026-08-22",
+            "composite": 6.6,
+            "fear_greed": 71
+          },
+          {
+            "date": "2026-08-23",
+            "composite": 5.9,
+            "fear_greed": 66
+          },
+          {
+            "date": "2026-08-24",
+            "composite": 6.7,
+            "fear_greed": 73
+          },
+          {
+            "date": "2026-08-25",
+            "composite": 6.8,
+            "fear_greed": 74
+          },
+          {
+            "date": "2026-08-26",
+            "composite": 6.7,
+            "fear_greed": 65
+          },
+          {
+            "date": "2026-08-27",
+            "composite": 6.5,
+            "fear_greed": 71
+          },
+          {
+            "date": "2026-08-28",
+            "composite": 6.3,
+            "fear_greed": 73
+          },
+          {
+            "date": "2026-08-29",
+            "composite": 6.6,
+            "fear_greed": 68
+          },
+          {
+            "date": "2026-08-30",
+            "composite": 6.4,
+            "fear_greed": 69
+          },
+          {
+            "date": "2026-08-31",
+            "composite": 6.3,
+            "fear_greed": 62
+          },
+          {
+            "date": "2026-09-01",
+            "composite": 6.3,
+            "fear_greed": 69
+          },
+          {
+            "date": "2026-09-02",
+            "composite": 6.3,
+            "fear_greed": 63
+          },
+          {
+            "date": "2026-09-03",
+            "composite": 6.8,
+            "fear_greed": 65
+          },
+          {
+            "date": "2026-09-04",
+            "composite": 6.6,
+            "fear_greed": 74
+          },
+          {
+            "date": "2026-09-05",
+            "composite": 6.1,
+            "fear_greed": 73
+          },
+          {
+            "date": "2026-09-06",
+            "composite": 6,
+            "fear_greed": 73
+          },
+          {
+            "date": "2026-09-07",
+            "composite": 6.9,
+            "fear_greed": 71
+          },
+          {
+            "date": "2026-09-08",
+            "composite": 6.4,
+            "fear_greed": 69
+          },
+          {
+            "date": "2026-09-09",
+            "composite": 6.2,
+            "fear_greed": 66
+          },
+          {
+            "date": "2026-09-10",
+            "composite": 6.3,
+            "fear_greed": 69
+          },
+          {
+            "date": "2026-09-11",
+            "composite": 6.5,
+            "fear_greed": 56
+          },
+          {
+            "date": "2026-09-12",
+            "composite": 6.1,
+            "fear_greed": 63
+          },
+          {
+            "date": "2026-09-13",
+            "composite": 6.4,
+            "fear_greed": 61
+          },
+          {
+            "date": "2026-09-14",
+            "composite": 6.6,
+            "fear_greed": 57
+          },
+          {
+            "date": "2026-09-15",
+            "composite": 6.5,
+            "fear_greed": 69
+          },
+          {
+            "date": "2026-09-16",
+            "composite": 6.8,
+            "fear_greed": 51
+          },
+          {
+            "date": "2026-09-17",
+            "composite": 6.6,
+            "fear_greed": 50
+          }
+        ],
+        "projects": [
+          {
+            "slug": "tenero-021c",
+            "name": "Tenero",
+            "icon_url": "https://tenero.io/favicon.ico?favicon.87b212ac.ico",
+            "score": 7.8,
+            "wow_change": null,
+            "sources": [
+              "discord",
+              "x"
+            ],
+            "sparkline_14d": [
+              5.6,
+              4.1,
+              7.3,
+              6.2,
+              null,
+              null,
+              5.6,
+              null,
+              null,
+              6.9,
+              7.4,
+              5.2,
+              7.8,
+              null
+            ],
+            "messages_7d_band": "medium"
+          },
+          {
+            "slug": "scaffold-stacks",
+            "name": "Scaffold Stacks",
+            "icon_url": "https://scaffoldstacks.mintlify.app/mintlify-assets/_mintlify/favicons/scaffoldstacks/POJlTZSi0ixyRqCJ/_generated/favicon/apple-touch-icon.png",
+            "score": 7.7,
+            "wow_change": null,
+            "sources": [
+              "x"
+            ],
+            "sparkline_14d": [
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              7.1,
+              7.7,
+              null
+            ],
+            "messages_7d_band": "low"
+          },
+          {
+            "slug": "hermetica",
+            "name": "Hermetica",
+            "icon_url": "https://framerusercontent.com/images/6bjqvyXlAkazHzLmDwVf4veY.png",
+            "score": 7.4,
+            "wow_change": null,
+            "sources": [
+              "discord",
+              "x"
+            ],
+            "sparkline_14d": [
+              null,
+              null,
+              5.6,
+              7.5,
+              7.2,
+              null,
+              6.7,
+              7.4,
+              7,
+              null,
+              5.5,
+              5.9,
+              7.4,
+              null
+            ],
+            "messages_7d_band": "medium"
+          },
+          {
+            "slug": "bitflow-finance-af3b",
+            "name": "Bitflow Finance",
+            "icon_url": "https://www.bitflow.finance/favicon.ico",
+            "score": 7,
+            "wow_change": 3,
+            "sources": [
+              "x"
+            ],
+            "sparkline_14d": [
+              6.6,
+              7.6,
+              6.4,
+              6.9,
+              7.3,
+              6.7,
+              4,
+              7.9,
+              6.5,
+              6.4,
+              7,
+              7.1,
+              6.6,
+              7
+            ],
+            "messages_7d_band": "high"
+          },
+          {
+            "slug": "stacking-dao",
+            "name": "Stacking DAO",
+            "icon_url": "https://cdn.prod.website-files.com/659ac11b664b15dc69f75700/660db0604d3e7ff322c9bcb4_webclip.png",
+            "score": 7,
+            "wow_change": -0.8,
+            "sources": [
+              "discord",
+              "telegram",
+              "x"
+            ],
+            "sparkline_14d": [
+              7.5,
+              6.1,
+              4.1,
+              6.6,
+              5.7,
+              7.5,
+              7.8,
+              6.8,
+              6.6,
+              7.1,
+              5.7,
+              6.7,
+              7.3,
+              7
+            ],
+            "messages_7d_band": "high"
+          },
+          {
+            "slug": "stacks-endowment",
+            "name": "Stacks Endowment",
+            "icon_url": "https://cdn.prod.website-files.com/68e6f8d4d0348327a08c8be0/690d1d0780b350f787274641_StacksEndowmentSymbol_Squircle%201-1.png",
+            "score": 6.9,
+            "wow_change": 1.5,
+            "sources": [
+              "forum",
+              "x"
+            ],
+            "sparkline_14d": [
+              6.5,
+              6.5,
+              null,
+              6.9,
+              null,
+              5.5,
+              5.4,
+              5.5,
+              5.7,
+              6.5,
+              5.2,
+              6.8,
+              5.5,
+              6.9
+            ],
+            "messages_7d_band": "medium"
+          },
+          {
+            "slug": "zest-protocol-3672",
+            "name": "Zest Protocol",
+            "icon_url": "https://cdn.prod.website-files.com/653fe0bb9dd31b04c24b2e44/65d0c2fcd6ab41d1dedcff2b_webclip-zest.png",
+            "score": 6.7,
+            "wow_change": -0.3,
+            "sources": [
+              "discord",
+              "telegram",
+              "x"
+            ],
+            "sparkline_14d": [
+              6.9,
+              6,
+              4.3,
+              7.8,
+              7,
+              4.4,
+              7,
+              6.8,
+              3.8,
+              4.1,
+              8.1,
+              6.3,
+              7.6,
+              6.7
+            ],
+            "messages_7d_band": "high"
+          },
+          {
+            "slug": "leo",
+            "name": "LEO",
+            "icon_url": "https://pbs.twimg.com/profile_images/1742120134964322304/ijQtmZ28_400x400.jpg",
+            "score": 6.5,
+            "wow_change": -1,
+            "sources": [
+              "discord",
+              "x"
+            ],
+            "sparkline_14d": [
+              6.4,
+              6.5,
+              7.5,
+              6,
+              5.8,
+              7.5,
+              7.4,
+              4.7,
+              7,
+              7.2,
+              6.3,
+              6.8,
+              6.5,
+              null
+            ],
+            "messages_7d_band": "medium"
+          },
+          {
+            "slug": "stacks-da51",
+            "name": "Stacks",
+            "icon_url": "https://cdn.prod.website-files.com/618b0aafa4afde65f2fe38fe/6595cd4d199d17f0429766ea_Stacks%20(Nakamojo)%20(1).png",
+            "score": 6.3,
+            "wow_change": -0.9,
+            "sources": [
+              "ballot",
+              "forum",
+              "x"
+            ],
+            "sparkline_14d": [
+              7.2,
+              5.8,
+              7,
+              7,
+              6.5,
+              5.9,
+              7.2,
+              6.6,
+              5.8,
+              6.2,
+              8,
+              6.5,
+              6.1,
+              6.3
+            ],
+            "messages_7d_band": "high"
+          },
+          {
+            "slug": "aibtc",
+            "name": "AIBTC",
+            "icon_url": "https://aibtc.com/apple-icon.png",
+            "score": 5.5,
+            "wow_change": -0.4,
+            "sources": [
+              "discord",
+              "github_discussions",
+              "x"
+            ],
+            "sparkline_14d": [
+              6.3,
+              null,
+              null,
+              null,
+              5.4,
+              6.2,
+              5.9,
+              null,
+              6.3,
+              6.5,
+              6.6,
+              6.6,
+              5.7,
+              5.5
+            ],
+            "messages_7d_band": "low"
+          },
+          {
+            "slug": "boom",
+            "name": "Boom",
+            "icon_url": null,
+            "score": null,
+            "wow_change": null,
+            "sources": [
+              "x"
+            ],
+            "sparkline_14d": [
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "messages_7d_band": "low"
+          },
+          {
+            "slug": "jing-swap",
+            "name": "Jing Swap",
+            "icon_url": "https://www.jingswap.com/jing-logo-twitter.png",
+            "score": null,
+            "wow_change": null,
+            "sources": [
+              "x"
+            ],
+            "sparkline_14d": [
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "messages_7d_band": "low"
+          }
+        ],
+        "panel_joins": [],
+        "panel_joins_truncated": false,
+        "governance": [],
+        "summary": {
+          "generated_at": "2026-09-17T06:25:00.017086Z",
+          "window_days": 7,
+          "tldr": "Stacks discourse this week centered on Bitcoin capital markets maturing: the Genesis Bond selling out with institutional participation, StackingDAO's dominant staking share feeding Zest Protocol's BTCFi loops, and the Stack Sats campaign driving DeFi activity. Builder bounties, community token chatter, and governance friction rounded out a broadly bullish, activity-heavy window.",
+          "themes": [
+            {
+              "evidence_ref": "theme-1",
+              "title": "Genesis Bond Sells Out, Institutions Commit",
+              "paragraph": "The first Bitcoin bond on Stacks filled its enrollment quickly, with institutional names like 21Shares, HashKey Cloud, and Nakamoto Inc. taking part alongside pooled capital. Community voices framed it as a milestone for Bitcoin-native finance, with commentary on how STX locked and BTC capacity scaled with each new bond.",
+              "polarity": "positive",
+              "mentions": 380,
+              "voices": 228,
+              "count_is_floor": false,
+              "projects": [
+                {
+                  "slug": "aibtc",
+                  "name": "AIBTC"
+                },
+                {
+                  "slug": "bitflow-finance-af3b",
+                  "name": "Bitflow Finance"
+                },
+                {
+                  "slug": "hermetica",
+                  "name": "Hermetica"
+                },
+                {
+                  "slug": "stacking-dao",
+                  "name": "Stacking DAO"
+                },
+                {
+                  "slug": "stacks-da51",
+                  "name": "Stacks"
+                },
+                {
+                  "slug": "stacks-endowment",
+                  "name": "Stacks Endowment"
+                },
+                {
+                  "slug": "tenero-021c",
+                  "name": "Tenero"
+                },
+                {
+                  "slug": "zest-protocol-3672",
+                  "name": "Zest Protocol"
+                }
+              ]
+            },
+            {
+              "evidence_ref": "theme-2",
+              "title": "StackingDAO Dominates Staking Share",
+              "paragraph": "StackingDAO emerged as the largest single channel into Bitcoin Staking, contributing the majority of BTC bonded in the Genesis round via its stBTC token. Community members highlighted that stBTC remains liquid and usable as DeFi collateral even while earning staking yield, framing this dual utility as a key differentiator.",
+              "polarity": "positive",
+              "mentions": 244,
+              "voices": 103,
+              "count_is_floor": false,
+              "projects": [
+                {
+                  "slug": "bitflow-finance-af3b",
+                  "name": "Bitflow Finance"
+                },
+                {
+                  "slug": "hermetica",
+                  "name": "Hermetica"
+                },
+                {
+                  "slug": "stacking-dao",
+                  "name": "Stacking DAO"
+                },
+                {
+                  "slug": "stacks-da51",
+                  "name": "Stacks"
+                },
+                {
+                  "slug": "stacks-endowment",
+                  "name": "Stacks Endowment"
+                },
+                {
+                  "slug": "tenero-021c",
+                  "name": "Tenero"
+                },
+                {
+                  "slug": "zest-protocol-3672",
+                  "name": "Zest Protocol"
+                }
+              ]
+            },
+            {
+              "evidence_ref": "theme-3",
+              "title": "Stack Sats Fuels BTCFi Loops",
+              "paragraph": "The Stack Sats campaign distributing Bitcoin rewards across Bitflow and Zest Protocol drove visible looping behavior, with users supplying sBTC, borrowing USDCx, and re-supplying to compound exposure. Participants described it as an accessible way to put idle Bitcoin to work without leaving the asset or taking custody risk.",
+              "polarity": "positive",
+              "mentions": 538,
+              "voices": 253,
+              "count_is_floor": false,
+              "projects": [
+                {
+                  "slug": "aibtc",
+                  "name": "AIBTC"
+                },
+                {
+                  "slug": "bitflow-finance-af3b",
+                  "name": "Bitflow Finance"
+                },
+                {
+                  "slug": "hermetica",
+                  "name": "Hermetica"
+                },
+                {
+                  "slug": "leo",
+                  "name": "LEO"
+                },
+                {
+                  "slug": "stacking-dao",
+                  "name": "Stacking DAO"
+                },
+                {
+                  "slug": "stacks-da51",
+                  "name": "Stacks"
+                },
+                {
+                  "slug": "stacks-endowment",
+                  "name": "Stacks Endowment"
+                },
+                {
+                  "slug": "tenero-021c",
+                  "name": "Tenero"
+                },
+                {
+                  "slug": "zest-protocol-3672",
+                  "name": "Zest Protocol"
+                }
+              ]
+            },
+            {
+              "evidence_ref": "theme-4",
+              "title": "Builder Bounties and Dev Tooling Active",
+              "paragraph": "Multiple bounty programs targeted new Stacks builders, offering pooled USDCx rewards for shipping testnet dApps using Scaffold Stacks tooling. Community reaction was enthusiastic, with builders confirming participation and encouraging others to try Clarity development with no prior experience required.",
+              "polarity": "positive",
+              "mentions": 23,
+              "voices": 16,
+              "count_is_floor": false,
+              "projects": [
+                {
+                  "slug": "aibtc",
+                  "name": "AIBTC"
+                },
+                {
+                  "slug": "bitflow-finance-af3b",
+                  "name": "Bitflow Finance"
+                },
+                {
+                  "slug": "leo",
+                  "name": "LEO"
+                },
+                {
+                  "slug": "scaffold-stacks",
+                  "name": "Scaffold Stacks"
+                },
+                {
+                  "slug": "stacks-da51",
+                  "name": "Stacks"
+                },
+                {
+                  "slug": "stacks-endowment",
+                  "name": "Stacks Endowment"
+                },
+                {
+                  "slug": "zest-protocol-3672",
+                  "name": "Zest Protocol"
+                }
+              ]
+            }
+          ]
+        },
+        "suppressed": [
+          {
+            "slice": "history:2026-07-31",
+            "reason": "below_min_orgs"
+          },
+          {
+            "slice": "history:2026-08-01",
+            "reason": "below_min_orgs"
+          }
+        ]
+      }
+    },
+    {
+      "label": "free report 2026-08-31",
+      "request": "GET /api/v1/public/stacks-index/reports/2026-08-31",
+      "at": "2026-09-17T08:53:05.491Z",
+      "status": 200,
+      "response_server_date": "Thu, 17 Sep 2026 08:53:05 GMT",
+      "payment_required_header": false,
+      "challenge": null,
+      "body": "{\"schema_version\":\"1.1\",\"as_of\":\"2026-09-17T08:46:52.376948Z\",\"report\":{\"week_start\":\"2026-08-31\",\"week_end\":\"2026-09-06\",\"title\":\"stBTC Sells Out in 24 Hours as Stacks Bitcoin Finance Goes Live\",\"title_emoji\":\"🟧⚡\",\"generated_at\":\"2026-09-07T09:01:38.166422Z\",\"wow\":-0.3,\"tldr\":\"Stacking DAO's stBTC minting window filled its full 150 BTC cap within 24 hours of launch, while Zest Protocol's leveraged Bitcoin staking vault also sold out and raised its cap to 20 BTC. Bullish listed STX and sBTC, 21Shares announced Genesis Bond participation, and the Stacks ecosystem entered its most consequential product week since Nakamoto.\",\"markets\":{\"tokens\":[{\"name\":\"Bitcoin\",\"image\":\"https://coin-images.coingecko.com/coins/images/1/small/bitcoin.png?1696501400\",\"symbol\":\"BTC\",\"price_usd\":79438.0,\"coingecko_id\":\"bitcoin\",\"sparkline_7d\":[78183.05727955054,78465.9818304446,78501.69227668509,78669.88490276886,78282.14198817499,77902.4125035204,77841.57927993884,78590.3128650354,78554.14249397103,78623.47336005233,78871.16683070223,79029.07045078847,78899.17790827646,78848.31861249713,78955.16797650147,78557.79779181909,78552.77932895812,78630.13146043592,78349.119390689,78421.83031494952,78660.94843747084,78698.40414375108,79133.60153164144,78720.23655912721,78612.90671691917,77869.1642668092,77891.45238039519,78010.95910528673,78067.53602493987,77981.92348502502,78045.63777896867,78137.78899466433,77901.28356473117,77571.78044504458,77246.12980665805,77112.94064912885,77269.91226365861,77410.46777948707,77174.47553625521,77240.801579754,77416.44110979848,77170.39523887339,76967.63489333939,77275.44455077226,77523.3387885885,77525.92756163293,77632.80046430147,77561.76741171286,77448.16293594704,76818.96132512593,76706.59368071826,76632.61833148886,76772.82018721351,76591.45163344304,77070.68654324919,77019.25544923359,77243.74217047928,77155.47647840958,77341.09170526761,77336.11227500642,77285.9454900689,77385.59112907,77258.17095018033,77004.75414720885,77297.13347191992,77043.200415925,77328.67603522998,77776.26490321505,77681.57571419993,77735.13621215663,77777.01387300041,77792.64435816841,77634.32543949968,77810.4954472119,77584.78971480542,77700.31017955823,77913.14094439356,78635.8198277505,78780.20188484156,80503.98990012161,81321.7073624723,80958.76413522735,81037.20517412091,81244.43792979473,81731.27627363407,81468.78623999904,81599.03754394985,81142.27254272846,81264.70153038795,80984.70052847588,80969.99953830658,80812.35052737984,80855.6007824934,81055.85296434356,80982.60774336972,80775.9080604573,80638.3779699146,81129.17782120455,81049.94245952881,81166.63283313578,81222.97676673981,79438.20975066516,79362.52222701395,78918.77058040584,79411.2566301278,79753.14168349805,79478.53536802711,79623.42306987401,79779.29611442194,79706.25394282232,79649.90012856525,79648.8752251388,79671.25767420157,79593.020767888,79547.32656799363,79577.31078765137,79591.52525925986,79513.2875742262,79586.59732593811,79657.8072660828,79711.96673205243,79647.88200438251,79626.99964778067,79624.2235567454,79616.72878630973,79713.129978018,79617.56064482199,79730.88136501185,79803.39493926977,80053.61256468344,80045.27884672082,79987.72340498707,79757.93033702066,79741.22436343327,79909.49573147147,79781.05895269189,79821.69873179746,79886.77458177783,79959.30436655713,79906.5630995094,80026.31967167041,79862.90595561713,79971.37099232111,79772.81701990326,79811.52488960416,79835.09901045753,79878.78090091703,80001.87569426838,79911.77981667651,79918.62682851448,79806.90665184474,79526.7967398626,79707.92574611641,79668.64531446325,79730.84512060262,79944.44972766159,79814.59046924824,79896.32558416478,79935.95559040409,80046.70819196723,80329.3478460037,80112.92063846144,79916.55232204411,79848.98832803365,79588.86534996543,79705.86589525286,79750.33195508539,79647.51433159942],\"price_change_7d\":1.7,\"price_change_24h\":-0.49298},{\"name\":\"Stacks\",\"image\":\"https://coin-images.coingecko.com/coins/images/2069/small/Stacks_Logo_png.png?1709979332\",\"symbol\":\"STX\",\"price_usd\":0.265261,\"coingecko_id\":\"blockstack\",\"sparkline_7d\":[0.24684619574561784,0.24991244386867623,0.24740824376562023,0.24647668256344138,0.24538051666343855,0.24867208007552669,0.2472077672175993,0.2497020079638931,0.2447658584108192,0.2506201424651693,0.24974894678788725,0.25071144876258955,0.2508240567523632,0.2512295525342966,0.2504397010883697,0.25273394343941114,0.25135369468112295,0.253077352520627,0.2547084612927057,0.25788289249316765,0.25709639278144564,0.25495828551552324,0.2543820562823104,0.24965641405022432,0.2518240471485796,0.2487103155093646,0.25104531488350684,0.25132978632140734,0.25331978719026627,0.25678362955491124,0.25674935273669175,0.26246876992257795,0.2651888930984411,0.2618079148009928,0.25960398592174105,0.2598245529404967,0.25728480487891764,0.2571789847422721,0.2573623343722636,0.25797236103455967,0.2555773295793575,0.2501129832279394,0.25132965133453056,0.2573348772787948,0.25942328896269157,0.2599398461564435,0.26007666580805894,0.2587145212701174,0.25947642794394377,0.2566064488841215,0.2546479225310576,0.25446965781910974,0.2590527277492667,0.255845792872247,0.2575649819467694,0.25594509425994955,0.2566175319824862,0.2585748991463447,0.2587778475294677,0.25771920896185047,0.2579635108812592,0.2585303906834086,0.26124022084537324,0.25881484321846404,0.2610734976768246,0.26227277269372123,0.26657585110344156,0.2740309725986183,0.2761638318065084,0.2788109496316383,0.27868212619260985,0.27304343090914895,0.26942301932970536,0.2670593386221705,0.265122996455971,0.26321609877548285,0.26253891786379263,0.2623129343262394,0.2613326389498535,0.26758630019632723,0.27065327163753006,0.27744165553283856,0.279648767712802,0.2785462629269047,0.2809502498620351,0.2757023473288737,0.27623497439649675,0.2720021664958397,0.27535087774820505,0.2749071468127833,0.2743867116607551,0.27461558183622975,0.2750031009330981,0.2727114942816982,0.27184699827164005,0.2676084103003541,0.27035953913243177,0.27252048184536176,0.27475940184819153,0.2742352537616818,0.2708566751722686,0.26381006397624834,0.2650813378475384,0.2602733301325043,0.26269068850131244,0.2641258261191392,0.26165316354379947,0.2637272098516289,0.26456325615726717,0.2647942580995931,0.2626503284717063,0.26309322180606204,0.26475447091765175,0.26557636327250916,0.2660115545429034,0.2643267559011273,0.26322064558826563,0.26272470598839653,0.2631933444320809,0.2646534009758374,0.26257219710633367,0.26048124756249874,0.261103950741645,0.26074034228395,0.2607352100919463,0.2604850764197999,0.2580323052852099,0.2586572352331571,0.2602326828345605,0.26086296373109863,0.26461860568531875,0.2708406698885865,0.27074527451160085,0.2694645737606889,0.26938892803753645,0.26906210858840063,0.2693246808574325,0.271500676752532,0.26636350670286163,0.26652630803933064,0.266973134383786,0.26559597344647645,0.2671667868964456,0.26562076704362303,0.2658063944906482,0.2650140936269488,0.2650248061951199,0.2690848934988988,0.26949513811030634,0.2660325738745363,0.2655894900593084,0.2638167341495402,0.265192055341128,0.2646506938722429,0.2670112628893742,0.269221907318247,0.27014484348539575,0.2689891485733244,0.26952570128737063,0.2667595499889915,0.2689444115767969,0.26380480783604604,0.2613002340061917,0.26065982538934496,0.261129833123245,0.263438643844773,0.26533044982770543,0.26510032399800754],\"price_change_7d\":5.9,\"price_change_24h\":0.00193},{\"name\":\"Hermetica USDh\",\"image\":\"https://coin-images.coingecko.com/coins/images/54325/small/USDh.png?1758177140\",\"symbol\":\"USDH\",\"price_usd\":1.0,\"coingecko_id\":\"hermetica-usdh\",\"sparkline_7d\":[1.002228174842461,1.0022312562529248,1.0022108278629973,1.0022703035280112,1.0022377278320884,1.002276673327392,1.0022645738423446,1.002316134790598,1.002183304714478,1.0022394379933235,1.0022579222247934,1.002252630780071,1.0022734967967,1.0022925538361447,1.0022593209207873,1.0022600929957286,1.0022625135464205,1.0023701319391645,1.0023602916470096,1.0023422272389888,1.0023946006063835,1.0023009266071836,1.0023128782909467,1.002344422832854,1.0023208175371054,1.0023520944863378,1.0023642494891745,1.0025108899496729,1.0024892849588072,1.0025145272979683,1.0024744620671893,1.0025006001339027,1.0025030718527903,1.0024527803887704,1.0024341965873496,1.0024233684220232,1.0020880785806745,1.002127781540069,1.0020640069177806,1.0020769702775347,1.002454751042373,1.0024156419782786,1.0024129153426065,1.0024260592061442,1.002402842965505,1.0024381486866407,1.002432396409034,1.0024014845550464,1.0024242396461276,1.002125125276745,1.0021012326106014,1.002091867464152,1.0020129130988316,1.0020414518366585,1.0020440689368886,1.0019761958481888,1.002247523651259,0.9994676844444551,0.999492744002137,0.9994978349391034,0.9993895861635523,0.9993346676563732,0.9993641540635024,0.9993884884272893,0.9993488899187413,0.9993714966330745,0.9993430384429162,0.9993608349545895,0.9993714051543603,0.9993610882871049,0.9993963573833354,0.9993940222144497,0.9993989739120951,0.9994096373169199,0.9993888010863952,0.9993701148745971,0.9993841687814422,0.9994096004437313,0.999639966690517,0.9994051915517401,0.99937459219838,0.9993681179962952,0.9993586673955078,0.9993169641684349,0.9993098517356503,0.9992632931166844,0.9992983494174448,0.9992897717671058,0.9993372805934058,0.9992824712284398,0.9992831082951248,0.9993141872984652,0.9992920483465929,0.9992990037559948,0.9993303839421511,0.9993613688785205,0.9993482909478657,0.9993636270234522,0.9993302014918624,0.9993147863478445,0.999378357600091,0.999357910340854,0.9993500034022015,0.9993291248198153,0.9993153808878147,1.000243674317077,1.0002060535300699,1.0002489610132752,1.000228553327047,1.0001988776144262,1.000190425360405,1.0002271727219816,1.0001856054316582,1.0002015148072976,1.0001813905372834,1.000187612533197,1.0001836863918356,1.0002105636849092,1.0002007598727574,1.0002040876631835,1.000225182662142,1.0002072546826408,1.0002190039489702,1.0002557858920271,1.0002984366285668,1.0002569245754347,1.0002703141739224,1.0002684259577892,1.0002443817056923,1.0001580267259713,1.0001822934347429,1.0001684118523904,1.0001728790874278,1.0001876264125829,1.0000806155989224,1.0000689741135542,1.0000493788811,1.0000606209811649,1.0000639473651367,0.9999698866484338,0.9999515191711384,0.9999393751254586,0.9999549310271885,0.9999871680631832,0.9998527645226657,0.9998581423189058,0.9998656929847192,0.999855599004145,0.9998751530741302,0.9998315424339621,0.9998752787286057,0.9998867346754254,0.9998827677556339,0.9998837657396992,0.9998566528539222,0.9998743459014977,0.9999089526420458,0.9998850983267142,0.9998832148514258,0.9998885525999924,1.0003941759279293,1.0003631627258063,1.0003607759478954,1.0003858368495246,1.0004049241629798,1.0004076296090896,1.0003904915633595,1.0003859232613734],\"price_change_7d\":-0.2,\"price_change_24h\":0.05392},{\"name\":\"LEO\",\"image\":\"https://coin-images.coingecko.com/coins/images/34175/small/imresizer-1704428645492.jpg?1704504097\",\"symbol\":\"LEO\",\"price_usd\":0.00011033,\"coingecko_id\":\"leopold\",\"sparkline_7d\":[0.00018118879191313553,0.000183165055610552,0.00018208559772361002,0.0001819378743031117,0.00018185054783210314,0.00018348653794712325,0.00018257975313202654,0.00018402383250847073,0.00018142423638860893,0.00018454546666565343,0.00018405231233289474,0.0001859743306718256,0.0001863084427192471,0.00018669151243196706,0.00018584685454023814,0.00018767636901333604,0.00018669129790542744,0.0001879924375026814,0.00018894494699156863,0.00019093629257916543,0.00019061456552056424,0.00018939788652418778,0.00018926491492223118,0.0001859742187207166,0.0001875824970800952,0.0001890982724734104,0.00018683606691855193,0.00018724591887263458,0.0001885354224533775,0.00019017810823209545,0.0001903365156094905,0.000193793938271042,0.00019563672521630363,0.00019621916371045757,0.0001960552790595169,0.00019477537748356768,0.00019371283049497384,0.00019277193514847252,0.0001933627461196868,0.00019596570554622633,0.00019629275735055573,0.0001942891124398686,0.00019290360007334683,0.0001946117780342224,0.00019599603141999127,0.0001961142585506814,0.00019655871718624474,0.00019612229294922815,0.00019677254610952675,0.00019761554126381922,0.00019527202852455297,0.00019530075483296816,0.00019669158750562074,0.00019535509065135201,0.00019638453261144613,0.00019454101143461896,0.00019370403007054008,0.00019513900857983684,0.0001958638079339551,0.00019648983288045254,0.0001964572480626639,0.00019665520232598993,0.00019745719057489831,0.0001950037303437509,0.00019776450464114418,0.00019907757517396537,0.00020412036530985378,0.000207314943852297,0.00020930582809454507,0.00021337044083294298,0.00018990477556900002,0.00018680740065536367,0.00018009681672346604,0.00017890776980856524,0.00017788290025625998,0.00017651313007041293,0.00017612840904454344,0.0001767235532078576,0.0001776802731650772,0.0001818865007146871,0.00018426171608549528,0.0001928267010634501,0.00019109116956495773,0.00019021445836892676,0.00019147972483611245,0.00018813433540858243,0.00017918962459418945,0.00014353417984407785,0.00010992609062433164,0.00012761778279664893,0.0001266961067273618,0.00012832855126658377,0.00012936071570417517,0.00013151329312397525,0.00013590473380455903,0.00013498283707060808,0.00013533873291835837,0.00013627425334844954,0.00013837025275551532,0.0001395500859784741,0.00013850505010759264,0.00013603059583019872,0.00013492736794855868,0.00013258070681217133,0.00013275460574715197,0.0001342569076137843,0.00013299224803458337,0.00012998428750077311,0.00013110795236857546,0.000130938743174,0.00013045391901849677,0.00013040849903545845,0.00013247414849248062,0.00013225648074293803,0.00013233506805449997,0.0001333033900922923,0.00012879115379295323,0.00012865754533727592,0.00012853997497709144,0.00012962955055206195,0.00012920192283541275,0.00012908161764646906,0.00012921047882883297,0.00012918164753486573,0.0001288692927046789,0.00010702699635084859,0.00010999050332562592,0.00011025417444204736,0.00011447512470982855,0.0001149257426143164,0.0001168890405964472,0.00011890025992516707,0.00011962462073884604,0.00011937954570913723,0.00011947505429591877,0.00011915831696865357,0.00012015494792478875,0.0001212460326285029,0.00012032477294475613,0.000120153085605258,0.00012065515880915031,0.00011994094766907262,0.00012022887734890388,0.00012005283968001888,0.00012005977675561995,0.00011991683478435587,0.0001198956577225383,0.00012089967713907174,0.00012095238192294485,0.00012098398102360795,0.00012271526096211001,0.00012195041315078094,0.00012171976080734599,0.0001238845474257376,0.00012436200062155745,0.00011999744700108874,0.00012013724114002396,0.00012005385708753893,0.00011613887769302078,0.0001151081708573721,0.00011587717033487009,0.00010907366248910256,0.00010814254354837141,0.00010774345340531088,0.00010812742935179486,0.00010863855821349255,0.00010944080446045444,0.00010965035308523993],\"price_change_7d\":-40.1,\"price_change_24h\":-8.04083},{\"name\":\"Zest Protocol\",\"image\":\"https://coin-images.coingecko.com/coins/images/102173294/small/zest.jpg?1778837125\",\"symbol\":\"ZEST\",\"price_usd\":0.130745,\"coingecko_id\":\"zest-protocol\",\"sparkline_7d\":[0.13997773458621385,0.13780707286446903,0.1376021443771066,0.13663370995495724,0.1348805175296022,0.13663304220810008,0.13800894543279477,0.13763226851006455,0.13828392705952938,0.13803672386901786,0.13905699657988563,0.13880747215266437,0.13931835767667564,0.13867375903741366,0.13850785207256594,0.1386481757064206,0.13756676797784875,0.13817699073441106,0.1377873006772332,0.13735647011010244,0.137642916872767,0.13828081469172618,0.13809758280643325,0.13722314841079772,0.13639347673029867,0.13512416393703652,0.13481662264112146,0.1337892727506717,0.13386476755327273,0.1348266537745278,0.1345458973302752,0.13452678375986002,0.13558872000633035,0.1350228746683168,0.13473084551832443,0.13427229935103244,0.13466975338842177,0.13471169673535285,0.13513526357422076,0.1345291205584019,0.13460458399947112,0.13439552588042367,0.13389193132214552,0.13481883566979017,0.13437824053414132,0.13462768939645006,0.13539899765808808,0.13559009820441267,0.1350496546730642,0.13136624206197042,0.13327861323068854,0.13697392119499316,0.1315543575830868,0.13076379943313313,0.13028184885165603,0.13253936283550047,0.13334859742176838,0.13222341977440588,0.13288607660246968,0.1323603074695408,0.13409581471081355,0.13371577966724627,0.1339926239455352,0.13309353710543914,0.13266564813206377,0.13276774244095443,0.13058819630527022,0.12936757208099436,0.12829146252916787,0.1279207024943777,0.1282951762964464,0.12827621412892387,0.12803294639876203,0.12790039477148418,0.14775035762628824,0.14809033081176967,0.14786924460050263,0.14811436952237658,0.14690015392499997,0.14639331450564377,0.14521398057648716,0.15209820004934996,0.1589120037051519,0.1505533705640438,0.1536403967639944,0.1530058495883428,0.15302610603711173,0.15554106349667757,0.1556213652990036,0.15101023176634196,0.15318474638055407,0.1488888142619002,0.14917482261913786,0.1476618017431456,0.15136232411923273,0.14953309763805372,0.16130374574119843,0.1617847280447189,0.14039336399845767,0.14036890629229073,0.139876164843617,0.1360669419473993,0.1348635670420135,0.1345966369644696,0.12907440843250823,0.12991769632469624,0.1290156403730307,0.12134813490975337,0.12105066777064077,0.12146999692795557,0.12216551472731288,0.12282051177051062,0.12018053687196237,0.12145657288522511,0.12065075857403769,0.12024307587011968,0.12073651749118261,0.12169329662715829,0.12202402586808135,0.12240932848958222,0.12425455860165893,0.12443024421950447,0.1236478218699737,0.12273727962669082,0.12122582164037823,0.123059603032924,0.12332597946436599,0.12412206191477393,0.12353155995996104,0.12477343960301057,0.12414144732672304,0.12359993533816048,0.12347366526143838,0.12355084898611056,0.12468443778729792,0.12395270328155197,0.12521148142784239,0.12981197619697393,0.12844643925631455,0.12922117885549586,0.1308267724910571,0.1272895702731639,0.130687226780496,0.128729163279263,0.12663996895753749,0.12666524926377498,0.1265412445732114,0.12768022459303066,0.12978801015551752,0.12977381364729165,0.12861718716647436,0.12827451218318986,0.1294388151391074,0.1296459102801476,0.12996819116828134,0.13007710977262757,0.1290353112856214,0.12989152096481835,0.12878029887207929,0.12848453744695684,0.1282647238553481,0.13074451521412622,0.13018280264010926,0.13132889259878638,0.13077952140281013,0.13122666160663227,0.1309266874083517,0.13043042270169622],\"price_change_7d\":-6.0,\"price_change_24h\":3.2205}],\"fear_greed\":{\"emoji\":\":large_green_circle:\",\"value\":68,\"timestamp\":\"2026-09-06T00:00:00\",\"classification\":\"Greed\"}},\"activity\":{\"by_source\":[{\"count\":1839,\"source\":\"x\",\"share_pct\":82.5},{\"count\":304,\"source\":\"discord\",\"share_pct\":13.6},{\"count\":72,\"source\":\"telegram\",\"share_pct\":3.2},{\"count\":14,\"source\":\"forum\",\"share_pct\":0.6}],\"voice_count\":655,\"message_count\":2229},\"projects\":[{\"name\":\"LEO\",\"slug\":\"leo\",\"score\":7.5,\"sources\":[\"discord\",\"x\"],\"icon_url\":\"https://pbs.twimg.com/profile_images/1742120134964322304/ijQtmZ28_400x400.jpg\",\"wow_change\":1.8,\"sparkline_14d\":[7.0,6.8,5.8,4.7,null,7.0,5.7,7.4,5.5,3.8,7.3,6.4,6.5,7.5],\"messages_7d_band\":\"medium\"},{\"name\":\"Tenero\",\"slug\":\"tenero-021c\",\"score\":7.3,\"sources\":[\"discord\",\"x\"],\"icon_url\":\"https://tenero.io/favicon.ico?favicon.87b212ac.ico\",\"wow_change\":1.2,\"sparkline_14d\":[5.6,5.8,6.6,5.5,6.2,6.7,6.1,5.7,6.8,6.0,6.1,5.6,4.1,7.3],\"messages_7d_band\":\"medium\"},{\"name\":\"Stacks\",\"slug\":\"stacks-da51\",\"score\":7.0,\"sources\":[\"ballot\",\"forum\",\"x\"],\"icon_url\":\"https://cdn.prod.website-files.com/618b0aafa4afde65f2fe38fe/6595cd4d199d17f0429766ea_Stacks%20(Nakamojo)%20(1).png\",\"wow_change\":-0.1,\"sparkline_14d\":[8.0,7.2,6.9,6.4,6.6,5.2,7.1,7.5,6.5,6.2,8.3,7.2,5.8,7.0],\"messages_7d_band\":\"high\"},{\"name\":\"Stacks Endowment\",\"slug\":\"stacks-endowment\",\"score\":6.5,\"sources\":[\"forum\",\"x\"],\"icon_url\":\"https://cdn.prod.website-files.com/68e6f8d4d0348327a08c8be0/690d1d0780b350f787274641_StacksEndowmentSymbol_Squircle%201-1.png\",\"wow_change\":-1.2,\"sparkline_14d\":[7.3,7.3,5.4,8.1,5.5,7.7,6.9,5.9,6.9,6.7,6.6,6.5,6.5,null],\"messages_7d_band\":\"medium\"},{\"name\":\"Bitflow Finance\",\"slug\":\"bitflow-finance-af3b\",\"score\":6.4,\"sources\":[\"x\"],\"icon_url\":\"https://www.bitflow.finance/favicon.ico\",\"wow_change\":0.2,\"sparkline_14d\":[6.0,6.3,7.9,6.0,7.6,7.2,6.2,7.0,5.9,7.6,6.1,6.6,7.6,6.4],\"messages_7d_band\":\"high\"},{\"name\":\"AIBTC\",\"slug\":\"aibtc\",\"score\":6.3,\"sources\":[\"discord\",\"github_discussions\",\"x\"],\"icon_url\":\"https://aibtc.com/apple-icon.png\",\"wow_change\":null,\"sparkline_14d\":[6.4,7.6,6.9,7.1,null,6.0,6.3,null,6.4,6.8,6.2,6.3,null,null],\"messages_7d_band\":\"medium\"},{\"name\":\"Hermetica\",\"slug\":\"hermetica\",\"score\":5.6,\"sources\":[\"discord\",\"x\"],\"icon_url\":\"https://framerusercontent.com/images/6bjqvyXlAkazHzLmDwVf4veY.png\",\"wow_change\":-0.9,\"sparkline_14d\":[5.9,6.7,6.1,6.5,5.7,7.2,6.5,6.2,5.8,6.0,5.7,null,null,5.6],\"messages_7d_band\":\"low\"},{\"name\":\"Zest Protocol\",\"slug\":\"zest-protocol-3672\",\"score\":4.3,\"sources\":[\"discord\",\"telegram\",\"x\"],\"icon_url\":\"https://cdn.prod.website-files.com/653fe0bb9dd31b04c24b2e44/65d0c2fcd6ab41d1dedcff2b_webclip-zest.png\",\"wow_change\":-1.1,\"sparkline_14d\":[6.8,6.6,7.5,6.3,6.2,6.2,5.4,7.3,5.5,7.5,6.8,6.9,6.0,4.3],\"messages_7d_band\":\"high\"},{\"name\":\"Stacking DAO\",\"slug\":\"stacking-dao\",\"score\":4.1,\"sources\":[\"discord\",\"telegram\",\"x\"],\"icon_url\":\"https://cdn.prod.website-files.com/659ac11b664b15dc69f75700/660db0604d3e7ff322c9bcb4_webclip.png\",\"wow_change\":-3.3,\"sparkline_14d\":[7.2,6.8,6.9,8.0,6.5,6.4,7.4,3.8,7.0,6.4,8.0,7.5,6.1,4.1],\"messages_7d_band\":\"high\"},{\"name\":\"Boom\",\"slug\":\"boom\",\"score\":null,\"sources\":[\"x\"],\"icon_url\":null,\"wow_change\":null,\"sparkline_14d\":[null,null,null,null,null,null,null,null,null,null,null,null,null,null],\"messages_7d_band\":\"low\"},{\"name\":\"Jing Swap\",\"slug\":\"jing-swap\",\"score\":null,\"sources\":[\"x\"],\"icon_url\":\"https://www.jingswap.com/jing-logo-twitter.png\",\"wow_change\":null,\"sparkline_14d\":[null,null,null,null,null,null,null,null,null,null,null,null,null,null],\"messages_7d_band\":\"low\"},{\"name\":\"Scaffold Stacks\",\"slug\":\"scaffold-stacks\",\"score\":null,\"sources\":[\"x\"],\"icon_url\":\"https://scaffoldstacks.mintlify.app/mintlify-assets/_mintlify/favicons/scaffoldstacks/POJlTZSi0ixyRqCJ/_generated/favicon/apple-touch-icon.png\",\"wow_change\":null,\"sparkline_14d\":[null,null,null,null,null,null,null,null,null,null,null,null,null,null],\"messages_7d_band\":\"low\"}],\"narrative\":\"The week ending September 6, 2026 marked a decisive inflection for Stacks Bitcoin finance. Stacking DAO launched stBTC — a liquid, auto-compounding Bitcoin staking token with no STX pairing required for individuals — and its initial minting cap was entirely subscribed in under 24 hours, with a single whale deploying a significant stBTC position as collateral on Zest Protocol. Zest Protocol simultaneously shipped its Levered Bitcoin Staking Vault, a one-click loop that deposits sBTC or stBTC, borrows against the position, and restakes to target elevated APY fully denominated in Bitcoin; that vault also hit capacity and had its cap raised before filling again. On the institutional side, Bullish — the NYSE-listed exchange — listed STX/USDC, sBTC/USDC, and sBTC/BTC pairs, while 21Shares announced participation in the Stacks Genesis Bond scheduled for around mid-September, joining HashKey and UTXO Management as inaugural participants. Bitflow's BoostX integration attracted its own wave of enthusiasm, enabling hover-to-swap Bitcoin Tags directly on X timelines via Bitflow routing. The Stacks Endowment opened Q3 2026 grants with a September 23 deadline, prioritizing Bitcoin staking, sBTC utility, and market efficiency. Sentiment across scored messages ran strongly positive with minimal negative readings, and the Fear and Greed index reflected broad but measured enthusiasm rather than euphoria.\",\"sentiment\":{\"counts\":{\"neutral\":607,\"negative\":99,\"positive\":1523},\"shares_pct\":{\"neutral\":27.2,\"negative\":4.4,\"positive\":68.3},\"scored_messages\":2229},\"standouts\":[{\"url\":\"https://x.com/Bullish/status/2095498487651561973\",\"text\":\"1/2 📣 New digital asset listing: @Stacks (blockstack:native), the native asset of the Stacks network, and $sBTC, are now available to trade on Bullish in eligible regions.\\n\\nAvailable pairs:\\n◾STX/USDC\\n◾sBTC/USDC\\n◾sBTC/BTC https://t.co/BtK9mPHsKV\",\"author\":\"Bullish\",\"reason\":\"Bullish, the NYSE-listed exchange, publicly announced STX and sBTC listings with three trading pairs, the most consequential institutional exchange integration Stacks has received and a direct signal of growing mainstream market access for Bitcoin-native assets.\",\"engagement\":16,\"project_slug\":\"stacks-da51\"},{\"url\":\"https://x.com/reubs_btc/status/2095558662228164934\",\"text\":\"Today on @Stacks 🟧\\n\\n→ @Bullish integrating $STX & sBTC\\n→ @21shares announcing participation in Stacks Genesis Bond\\n→ @StackingDao stBTC\\n→ @ZestProtocol Vaults launch\\n\\nBullish times indeed and i'm building out the STX Legionaries X chat to boost these and future activations\\n\\nWho wants in? 👀\",\"author\":\"reubs_btc\",\"reason\":\"A single post captured the full convergence of the week — Bullish listing, 21Shares Genesis Bond participation, stBTC launch, and Zest Protocol Vaults — making it the clearest single-source summary of why this period stands out in Stacks ecosystem history.\",\"engagement\":14,\"project_slug\":\"stacking-dao\"},{\"url\":\"https://x.com/hodlstxbtc/status/2094788219720331483\",\"text\":\"This is the Stacks Vaults reveal: stBTC is collateral on @ZestProtocol, day one 👇\\n\\nHow it works in one click: deposit BTC → vault mints stBTC → borrows sBTC against it → stakes more stBTC → repeat. Target APY 6-8%, all denominated in Bitcoin, one position.\\n\\nWhat makes this different from a typical leverage loop: the borrowed asset and the yield asset are both Bitcoin. No altcoin exposure in the collateral, no altcoin in the debt. You are levering Bitcoin yield with Bitcoin.\\n\\nHonest note: leverage cuts both ways, and stacked positions carry liquidation risk if rates shift. This is a product for people who understand loops, not a savings account.\\n\\n@Stacks Bitcoin staking yield, StackingDAO's stBTC, and Zest's lending engine, composed into one button. Nine days before enrollment, the DeFi stack is arriving assembled 🟧\\n\\nDisclosure: I hold BTC and STX.\",\"author\":\"hodlstxbtc\",\"reason\":\"The most detailed public explanation of how Zest Protocol's leveraged vault works mechanically, grounding the excitement in a concrete step-by-step description and articulating why the borrowed and yield assets both being Bitcoin changes the risk profile versus typical leverage loops.\",\"engagement\":9,\"project_slug\":\"zest-protocol-3672\"},{\"url\":\"https://x.com/renapshah/status/2095879345554280468\",\"text\":\"Congrats @StackingDao! A new milestone unlocked for Bitcoin Staking with @Stacks. Bitcoin has spent years being the most valuable idle asset in crypto. Now, BTC can earn native yield and remain productive within an emerging Bitcoin-native financial ecosystem 🟧\",\"author\":\"renapshah\",\"reason\":\"A concise, high-signal framing of stBTC's significance from a credible voice, positioning native Bitcoin yield as the end of BTC's status as crypto's largest idle asset and contextualizing the launch within a longer arc of ecosystem development.\",\"engagement\":15,\"project_slug\":\"stacking-dao\"}],\"governance\":[],\"suppressed\":[],\"top_themes\":[{\"count\":8,\"title\":\"stBTC Launch and 150 BTC Sellout Define the Week's Signal Moment\",\"projects\":[\"stacking-dao\",\"stacks-da51\"],\"paragraph\":\"Stacking DAO's stBTC went live on Stacks, filling its full initial minting cap in under 24 hours with no STX pairing required for depositors. A single whale staked a substantial stBTC position as Zest Protocol collateral on day one, and Stacking DAO confirmed the Genesis Bitcoin Bond is scheduled for around mid-September to expand capacity further.\",\"evidence_ref\":\"theme-1\",\"count_is_floor\":true,\"distinct_authors\":6,\"quote\":{\"text\":\"@StackingDao @Stacks Huge demand for bitcoin yield!\",\"author\":\"larrysalibra\",\"url\":\"https://x.com/larrysalibra/status/2095884498202501302\"}},{\"count\":8,\"title\":\"Zest Protocol Leveraged Vault Sells Out Twice, Raising Cap to 20 BTC\",\"projects\":[\"stacks-da51\",\"zest-protocol-3672\"],\"paragraph\":\"Zest Protocol launched its Levered Bitcoin Staking Vault — a one-click loop targeting 6–8% APY fully in Bitcoin — and hit capacity fast enough to warrant a cap raise to 20 BTC before filling again. The vault accepts stBTC or sBTC as collateral, borrows against the position, and restakes automatically, drawing whale interest and strong community demand for higher limits.\",\"evidence_ref\":\"theme-2\",\"count_is_floor\":true,\"distinct_authors\":6,\"quote\":{\"text\":\"Morpho have Ethereum DeFi vaults. @ZestProtocol is creating Bitcoin DeFi vaults. Can you see where this is going anon ? $ZEST trading up strongly 🟧\",\"author\":\"Taylor_stxBTC\",\"url\":\"https://x.com/Taylor_stxBTC/status/2095812292483149896\"}},{\"count\":7,\"title\":\"Institutional Onramps Accelerate: Bullish Lists STX and sBTC, 21Shares Joins Genesis Bond\",\"projects\":[\"stacking-dao\",\"stacks-da51\",\"zest-protocol-3672\"],\"paragraph\":\"Bullish, the NYSE-listed exchange, listed STX/USDC, sBTC/USDC, and sBTC/BTC pairs, while 21Shares announced participation in the Stacks Genesis Bond alongside inaugural participants HashKey and UTXO Management. Muneeb noted the first bond is intentionally limited to demonstrate that all components work before scaling to larger monthly capacity.\",\"evidence_ref\":\"theme-3\",\"count_is_floor\":true,\"distinct_authors\":5,\"quote\":{\"text\":\"@Olaniran_btc @Stacks correct, starting small and then scaling out. the key is to have sustained monthly capacity launches at larger scales. first one is limited on purpose to showcase that everything works well.\",\"author\":\"muneeb\",\"url\":\"https://x.com/muneeb/status/2095888722558382160\"}},{\"count\":8,\"title\":\"Bitflow BoostX Enables Hover-to-Swap Bitcoin Tags Directly on X\",\"projects\":[\"bitflow-finance-af3b\",\"stacks-da51\"],\"paragraph\":\"A new BoostX integration built on Bitflow routing lets users hover over Bitcoin Tags such as STX₿ or sBTC₿ in any X timeline post and execute live swaps without leaving the page. The launch generated enthusiastic reception from ecosystem builders and community members as a frictionless onboarding surface.\",\"evidence_ref\":\"theme-4\",\"count_is_floor\":true,\"distinct_authors\":7,\"quote\":{\"text\":\"@boostx_app @bitflow @Stacks @stackslabs @mcuevasm @DiegoMey @muneeb How you may ask? ... Bitcoin Tags Example: STX₿ or sBTC₿ (or other tagged tokens Built on Bitcoin via @Stacks) Are detected if you are running @boostx_app From there you…\",\"author\":\"cryptodude_btc\",\"url\":\"https://x.com/cryptodude_btc/status/2096413614764892529\"}},{\"count\":6,\"title\":\"Stacks Endowment Opens Q3 2026 Grants Targeting Bitcoin Staking and Market Efficiency\",\"projects\":[\"bitflow-finance-af3b\",\"leo\",\"stacks-endowment\"],\"paragraph\":\"The Stacks Endowment opened its Q3 2026 grant cycle with a September 23 deadline, prioritizing three focus areas: Bitcoin staking and sBTC utility, distribution and integration, and market efficiency and risk. The announcement coincided with the broader product momentum of the week and drew international builder attention.\",\"evidence_ref\":\"theme-5\",\"count_is_floor\":true,\"distinct_authors\":6,\"quote\":{\"text\":\"1/ Q3 2026 Stacks Ecosystem Grants are now open! Find out more at @StacksEndowment\",\"author\":\"zeroauthdao\",\"url\":\"https://x.com/zeroauthdao/status/2094802542903636133\"}}],\"week_composite\":6.3,\"worth_addressing\":[{\"type\":\"support_issue\",\"count\":5,\"title\":\"Bitflow Ledger signing error leaving user locked out for over a week\",\"projects\":[\"bitflow-finance-af3b\",\"stacks-da51\"],\"paragraph\":\"A user reported being unable to add or remove liquidity on Bitflow for more than ten days due to a persistent Ledger signing error, with a submitted support ticket going unacknowledged for the entire period despite a known manual wallet fix existing.\",\"suggestion\":\"Bitflow should audit ticket queue response times, especially for hardware-wallet edge cases where a manual fix is already documented, and confirm ETAs publicly so affected users know their issue is tracked.\",\"evidence_ref\":\"worth-1\",\"count_is_floor\":false,\"distinct_authors\":1},{\"type\":\"misinformation\",\"count\":4,\"title\":\"Coordinated scam accusations targeting Zest Protocol and its team\",\"projects\":[\"stacks-da51\",\"zest-protocol-3672\"],\"paragraph\":\"A single account repeatedly posted accusations across multiple threads claiming Zest Protocol is a scam and that its team is dumping tokens on the community, using increasingly hostile language and attempting to spread fear during the vault launch period.\",\"suggestion\":\"Zest Protocol should address on-chain token flow questions transparently with verifiable data and consider a brief public clarification post so the broader community has factual context to evaluate claims independently.\",\"evidence_ref\":\"worth-2\",\"count_is_floor\":false,\"distinct_authors\":1},{\"type\":\"question\",\"count\":2,\"title\":\"Hermetica token launch timeline unclear for pre-launch investors\",\"projects\":[\"hermetica\"],\"paragraph\":\"Multiple posts from a concerned investor expressed frustration that Hermetica has not communicated a launch date for tokens purchased during the pre-launch phase, with the absence of updates creating anxiety among early participants.\",\"suggestion\":\"Hermetica should publish a clear, dated roadmap for its token launch process and establish a regular communication cadence so pre-launch participants have confidence the team is on track.\",\"evidence_ref\":\"worth-3\",\"count_is_floor\":true,\"distinct_authors\":1}],\"governance_historical_unavailable\":false}}",
+      "json": {
+        "schema_version": "1.1",
+        "as_of": "2026-09-17T08:46:52.376948Z",
+        "report": {
+          "week_start": "2026-08-31",
+          "week_end": "2026-09-06",
+          "title": "stBTC Sells Out in 24 Hours as Stacks Bitcoin Finance Goes Live",
+          "title_emoji": "🟧⚡",
+          "generated_at": "2026-09-07T09:01:38.166422Z",
+          "wow": -0.3,
+          "tldr": "Stacking DAO's stBTC minting window filled its full 150 BTC cap within 24 hours of launch, while Zest Protocol's leveraged Bitcoin staking vault also sold out and raised its cap to 20 BTC. Bullish listed STX and sBTC, 21Shares announced Genesis Bond participation, and the Stacks ecosystem entered its most consequential product week since Nakamoto.",
+          "markets": {
+            "tokens": [
+              {
+                "name": "Bitcoin",
+                "image": "https://coin-images.coingecko.com/coins/images/1/small/bitcoin.png?1696501400",
+                "symbol": "BTC",
+                "price_usd": 79438,
+                "coingecko_id": "bitcoin",
+                "sparkline_7d": [
+                  78183.05727955054,
+                  78465.9818304446,
+                  78501.69227668509,
+                  78669.88490276886,
+                  78282.14198817499,
+                  77902.4125035204,
+                  77841.57927993884,
+                  78590.3128650354,
+                  78554.14249397103,
+                  78623.47336005233,
+                  78871.16683070223,
+                  79029.07045078847,
+                  78899.17790827646,
+                  78848.31861249713,
+                  78955.16797650147,
+                  78557.79779181909,
+                  78552.77932895812,
+                  78630.13146043592,
+                  78349.119390689,
+                  78421.83031494952,
+                  78660.94843747084,
+                  78698.40414375108,
+                  79133.60153164144,
+                  78720.23655912721,
+                  78612.90671691917,
+                  77869.1642668092,
+                  77891.45238039519,
+                  78010.95910528673,
+                  78067.53602493987,
+                  77981.92348502502,
+                  78045.63777896867,
+                  78137.78899466433,
+                  77901.28356473117,
+                  77571.78044504458,
+                  77246.12980665805,
+                  77112.94064912885,
+                  77269.91226365861,
+                  77410.46777948707,
+                  77174.47553625521,
+                  77240.801579754,
+                  77416.44110979848,
+                  77170.39523887339,
+                  76967.63489333939,
+                  77275.44455077226,
+                  77523.3387885885,
+                  77525.92756163293,
+                  77632.80046430147,
+                  77561.76741171286,
+                  77448.16293594704,
+                  76818.96132512593,
+                  76706.59368071826,
+                  76632.61833148886,
+                  76772.82018721351,
+                  76591.45163344304,
+                  77070.68654324919,
+                  77019.25544923359,
+                  77243.74217047928,
+                  77155.47647840958,
+                  77341.09170526761,
+                  77336.11227500642,
+                  77285.9454900689,
+                  77385.59112907,
+                  77258.17095018033,
+                  77004.75414720885,
+                  77297.13347191992,
+                  77043.200415925,
+                  77328.67603522998,
+                  77776.26490321505,
+                  77681.57571419993,
+                  77735.13621215663,
+                  77777.01387300041,
+                  77792.64435816841,
+                  77634.32543949968,
+                  77810.4954472119,
+                  77584.78971480542,
+                  77700.31017955823,
+                  77913.14094439356,
+                  78635.8198277505,
+                  78780.20188484156,
+                  80503.98990012161,
+                  81321.7073624723,
+                  80958.76413522735,
+                  81037.20517412091,
+                  81244.43792979473,
+                  81731.27627363407,
+                  81468.78623999904,
+                  81599.03754394985,
+                  81142.27254272846,
+                  81264.70153038795,
+                  80984.70052847588,
+                  80969.99953830658,
+                  80812.35052737984,
+                  80855.6007824934,
+                  81055.85296434356,
+                  80982.60774336972,
+                  80775.9080604573,
+                  80638.3779699146,
+                  81129.17782120455,
+                  81049.94245952881,
+                  81166.63283313578,
+                  81222.97676673981,
+                  79438.20975066516,
+                  79362.52222701395,
+                  78918.77058040584,
+                  79411.2566301278,
+                  79753.14168349805,
+                  79478.53536802711,
+                  79623.42306987401,
+                  79779.29611442194,
+                  79706.25394282232,
+                  79649.90012856525,
+                  79648.8752251388,
+                  79671.25767420157,
+                  79593.020767888,
+                  79547.32656799363,
+                  79577.31078765137,
+                  79591.52525925986,
+                  79513.2875742262,
+                  79586.59732593811,
+                  79657.8072660828,
+                  79711.96673205243,
+                  79647.88200438251,
+                  79626.99964778067,
+                  79624.2235567454,
+                  79616.72878630973,
+                  79713.129978018,
+                  79617.56064482199,
+                  79730.88136501185,
+                  79803.39493926977,
+                  80053.61256468344,
+                  80045.27884672082,
+                  79987.72340498707,
+                  79757.93033702066,
+                  79741.22436343327,
+                  79909.49573147147,
+                  79781.05895269189,
+                  79821.69873179746,
+                  79886.77458177783,
+                  79959.30436655713,
+                  79906.5630995094,
+                  80026.31967167041,
+                  79862.90595561713,
+                  79971.37099232111,
+                  79772.81701990326,
+                  79811.52488960416,
+                  79835.09901045753,
+                  79878.78090091703,
+                  80001.87569426838,
+                  79911.77981667651,
+                  79918.62682851448,
+                  79806.90665184474,
+                  79526.7967398626,
+                  79707.92574611641,
+                  79668.64531446325,
+                  79730.84512060262,
+                  79944.44972766159,
+                  79814.59046924824,
+                  79896.32558416478,
+                  79935.95559040409,
+                  80046.70819196723,
+                  80329.3478460037,
+                  80112.92063846144,
+                  79916.55232204411,
+                  79848.98832803365,
+                  79588.86534996543,
+                  79705.86589525286,
+                  79750.33195508539,
+                  79647.51433159942
+                ],
+                "price_change_7d": 1.7,
+                "price_change_24h": -0.49298
+              },
+              {
+                "name": "Stacks",
+                "image": "https://coin-images.coingecko.com/coins/images/2069/small/Stacks_Logo_png.png?1709979332",
+                "symbol": "STX",
+                "price_usd": 0.265261,
+                "coingecko_id": "blockstack",
+                "sparkline_7d": [
+                  0.24684619574561784,
+                  0.24991244386867623,
+                  0.24740824376562023,
+                  0.24647668256344138,
+                  0.24538051666343855,
+                  0.24867208007552669,
+                  0.2472077672175993,
+                  0.2497020079638931,
+                  0.2447658584108192,
+                  0.2506201424651693,
+                  0.24974894678788725,
+                  0.25071144876258955,
+                  0.2508240567523632,
+                  0.2512295525342966,
+                  0.2504397010883697,
+                  0.25273394343941114,
+                  0.25135369468112295,
+                  0.253077352520627,
+                  0.2547084612927057,
+                  0.25788289249316765,
+                  0.25709639278144564,
+                  0.25495828551552324,
+                  0.2543820562823104,
+                  0.24965641405022432,
+                  0.2518240471485796,
+                  0.2487103155093646,
+                  0.25104531488350684,
+                  0.25132978632140734,
+                  0.25331978719026627,
+                  0.25678362955491124,
+                  0.25674935273669175,
+                  0.26246876992257795,
+                  0.2651888930984411,
+                  0.2618079148009928,
+                  0.25960398592174105,
+                  0.2598245529404967,
+                  0.25728480487891764,
+                  0.2571789847422721,
+                  0.2573623343722636,
+                  0.25797236103455967,
+                  0.2555773295793575,
+                  0.2501129832279394,
+                  0.25132965133453056,
+                  0.2573348772787948,
+                  0.25942328896269157,
+                  0.2599398461564435,
+                  0.26007666580805894,
+                  0.2587145212701174,
+                  0.25947642794394377,
+                  0.2566064488841215,
+                  0.2546479225310576,
+                  0.25446965781910974,
+                  0.2590527277492667,
+                  0.255845792872247,
+                  0.2575649819467694,
+                  0.25594509425994955,
+                  0.2566175319824862,
+                  0.2585748991463447,
+                  0.2587778475294677,
+                  0.25771920896185047,
+                  0.2579635108812592,
+                  0.2585303906834086,
+                  0.26124022084537324,
+                  0.25881484321846404,
+                  0.2610734976768246,
+                  0.26227277269372123,
+                  0.26657585110344156,
+                  0.2740309725986183,
+                  0.2761638318065084,
+                  0.2788109496316383,
+                  0.27868212619260985,
+                  0.27304343090914895,
+                  0.26942301932970536,
+                  0.2670593386221705,
+                  0.265122996455971,
+                  0.26321609877548285,
+                  0.26253891786379263,
+                  0.2623129343262394,
+                  0.2613326389498535,
+                  0.26758630019632723,
+                  0.27065327163753006,
+                  0.27744165553283856,
+                  0.279648767712802,
+                  0.2785462629269047,
+                  0.2809502498620351,
+                  0.2757023473288737,
+                  0.27623497439649675,
+                  0.2720021664958397,
+                  0.27535087774820505,
+                  0.2749071468127833,
+                  0.2743867116607551,
+                  0.27461558183622975,
+                  0.2750031009330981,
+                  0.2727114942816982,
+                  0.27184699827164005,
+                  0.2676084103003541,
+                  0.27035953913243177,
+                  0.27252048184536176,
+                  0.27475940184819153,
+                  0.2742352537616818,
+                  0.2708566751722686,
+                  0.26381006397624834,
+                  0.2650813378475384,
+                  0.2602733301325043,
+                  0.26269068850131244,
+                  0.2641258261191392,
+                  0.26165316354379947,
+                  0.2637272098516289,
+                  0.26456325615726717,
+                  0.2647942580995931,
+                  0.2626503284717063,
+                  0.26309322180606204,
+                  0.26475447091765175,
+                  0.26557636327250916,
+                  0.2660115545429034,
+                  0.2643267559011273,
+                  0.26322064558826563,
+                  0.26272470598839653,
+                  0.2631933444320809,
+                  0.2646534009758374,
+                  0.26257219710633367,
+                  0.26048124756249874,
+                  0.261103950741645,
+                  0.26074034228395,
+                  0.2607352100919463,
+                  0.2604850764197999,
+                  0.2580323052852099,
+                  0.2586572352331571,
+                  0.2602326828345605,
+                  0.26086296373109863,
+                  0.26461860568531875,
+                  0.2708406698885865,
+                  0.27074527451160085,
+                  0.2694645737606889,
+                  0.26938892803753645,
+                  0.26906210858840063,
+                  0.2693246808574325,
+                  0.271500676752532,
+                  0.26636350670286163,
+                  0.26652630803933064,
+                  0.266973134383786,
+                  0.26559597344647645,
+                  0.2671667868964456,
+                  0.26562076704362303,
+                  0.2658063944906482,
+                  0.2650140936269488,
+                  0.2650248061951199,
+                  0.2690848934988988,
+                  0.26949513811030634,
+                  0.2660325738745363,
+                  0.2655894900593084,
+                  0.2638167341495402,
+                  0.265192055341128,
+                  0.2646506938722429,
+                  0.2670112628893742,
+                  0.269221907318247,
+                  0.27014484348539575,
+                  0.2689891485733244,
+                  0.26952570128737063,
+                  0.2667595499889915,
+                  0.2689444115767969,
+                  0.26380480783604604,
+                  0.2613002340061917,
+                  0.26065982538934496,
+                  0.261129833123245,
+                  0.263438643844773,
+                  0.26533044982770543,
+                  0.26510032399800754
+                ],
+                "price_change_7d": 5.9,
+                "price_change_24h": 0.00193
+              },
+              {
+                "name": "Hermetica USDh",
+                "image": "https://coin-images.coingecko.com/coins/images/54325/small/USDh.png?1758177140",
+                "symbol": "USDH",
+                "price_usd": 1,
+                "coingecko_id": "hermetica-usdh",
+                "sparkline_7d": [
+                  1.002228174842461,
+                  1.0022312562529248,
+                  1.0022108278629973,
+                  1.0022703035280112,
+                  1.0022377278320884,
+                  1.002276673327392,
+                  1.0022645738423446,
+                  1.002316134790598,
+                  1.002183304714478,
+                  1.0022394379933235,
+                  1.0022579222247934,
+                  1.002252630780071,
+                  1.0022734967967,
+                  1.0022925538361447,
+                  1.0022593209207873,
+                  1.0022600929957286,
+                  1.0022625135464205,
+                  1.0023701319391645,
+                  1.0023602916470096,
+                  1.0023422272389888,
+                  1.0023946006063835,
+                  1.0023009266071836,
+                  1.0023128782909467,
+                  1.002344422832854,
+                  1.0023208175371054,
+                  1.0023520944863378,
+                  1.0023642494891745,
+                  1.0025108899496729,
+                  1.0024892849588072,
+                  1.0025145272979683,
+                  1.0024744620671893,
+                  1.0025006001339027,
+                  1.0025030718527903,
+                  1.0024527803887704,
+                  1.0024341965873496,
+                  1.0024233684220232,
+                  1.0020880785806745,
+                  1.002127781540069,
+                  1.0020640069177806,
+                  1.0020769702775347,
+                  1.002454751042373,
+                  1.0024156419782786,
+                  1.0024129153426065,
+                  1.0024260592061442,
+                  1.002402842965505,
+                  1.0024381486866407,
+                  1.002432396409034,
+                  1.0024014845550464,
+                  1.0024242396461276,
+                  1.002125125276745,
+                  1.0021012326106014,
+                  1.002091867464152,
+                  1.0020129130988316,
+                  1.0020414518366585,
+                  1.0020440689368886,
+                  1.0019761958481888,
+                  1.002247523651259,
+                  0.9994676844444551,
+                  0.999492744002137,
+                  0.9994978349391034,
+                  0.9993895861635523,
+                  0.9993346676563732,
+                  0.9993641540635024,
+                  0.9993884884272893,
+                  0.9993488899187413,
+                  0.9993714966330745,
+                  0.9993430384429162,
+                  0.9993608349545895,
+                  0.9993714051543603,
+                  0.9993610882871049,
+                  0.9993963573833354,
+                  0.9993940222144497,
+                  0.9993989739120951,
+                  0.9994096373169199,
+                  0.9993888010863952,
+                  0.9993701148745971,
+                  0.9993841687814422,
+                  0.9994096004437313,
+                  0.999639966690517,
+                  0.9994051915517401,
+                  0.99937459219838,
+                  0.9993681179962952,
+                  0.9993586673955078,
+                  0.9993169641684349,
+                  0.9993098517356503,
+                  0.9992632931166844,
+                  0.9992983494174448,
+                  0.9992897717671058,
+                  0.9993372805934058,
+                  0.9992824712284398,
+                  0.9992831082951248,
+                  0.9993141872984652,
+                  0.9992920483465929,
+                  0.9992990037559948,
+                  0.9993303839421511,
+                  0.9993613688785205,
+                  0.9993482909478657,
+                  0.9993636270234522,
+                  0.9993302014918624,
+                  0.9993147863478445,
+                  0.999378357600091,
+                  0.999357910340854,
+                  0.9993500034022015,
+                  0.9993291248198153,
+                  0.9993153808878147,
+                  1.000243674317077,
+                  1.0002060535300699,
+                  1.0002489610132752,
+                  1.000228553327047,
+                  1.0001988776144262,
+                  1.000190425360405,
+                  1.0002271727219816,
+                  1.0001856054316582,
+                  1.0002015148072976,
+                  1.0001813905372834,
+                  1.000187612533197,
+                  1.0001836863918356,
+                  1.0002105636849092,
+                  1.0002007598727574,
+                  1.0002040876631835,
+                  1.000225182662142,
+                  1.0002072546826408,
+                  1.0002190039489702,
+                  1.0002557858920271,
+                  1.0002984366285668,
+                  1.0002569245754347,
+                  1.0002703141739224,
+                  1.0002684259577892,
+                  1.0002443817056923,
+                  1.0001580267259713,
+                  1.0001822934347429,
+                  1.0001684118523904,
+                  1.0001728790874278,
+                  1.0001876264125829,
+                  1.0000806155989224,
+                  1.0000689741135542,
+                  1.0000493788811,
+                  1.0000606209811649,
+                  1.0000639473651367,
+                  0.9999698866484338,
+                  0.9999515191711384,
+                  0.9999393751254586,
+                  0.9999549310271885,
+                  0.9999871680631832,
+                  0.9998527645226657,
+                  0.9998581423189058,
+                  0.9998656929847192,
+                  0.999855599004145,
+                  0.9998751530741302,
+                  0.9998315424339621,
+                  0.9998752787286057,
+                  0.9998867346754254,
+                  0.9998827677556339,
+                  0.9998837657396992,
+                  0.9998566528539222,
+                  0.9998743459014977,
+                  0.9999089526420458,
+                  0.9998850983267142,
+                  0.9998832148514258,
+                  0.9998885525999924,
+                  1.0003941759279293,
+                  1.0003631627258063,
+                  1.0003607759478954,
+                  1.0003858368495246,
+                  1.0004049241629798,
+                  1.0004076296090896,
+                  1.0003904915633595,
+                  1.0003859232613734
+                ],
+                "price_change_7d": -0.2,
+                "price_change_24h": 0.05392
+              },
+              {
+                "name": "LEO",
+                "image": "https://coin-images.coingecko.com/coins/images/34175/small/imresizer-1704428645492.jpg?1704504097",
+                "symbol": "LEO",
+                "price_usd": 0.00011033,
+                "coingecko_id": "leopold",
+                "sparkline_7d": [
+                  0.00018118879191313553,
+                  0.000183165055610552,
+                  0.00018208559772361002,
+                  0.0001819378743031117,
+                  0.00018185054783210314,
+                  0.00018348653794712325,
+                  0.00018257975313202654,
+                  0.00018402383250847073,
+                  0.00018142423638860893,
+                  0.00018454546666565343,
+                  0.00018405231233289474,
+                  0.0001859743306718256,
+                  0.0001863084427192471,
+                  0.00018669151243196706,
+                  0.00018584685454023814,
+                  0.00018767636901333604,
+                  0.00018669129790542744,
+                  0.0001879924375026814,
+                  0.00018894494699156863,
+                  0.00019093629257916543,
+                  0.00019061456552056424,
+                  0.00018939788652418778,
+                  0.00018926491492223118,
+                  0.0001859742187207166,
+                  0.0001875824970800952,
+                  0.0001890982724734104,
+                  0.00018683606691855193,
+                  0.00018724591887263458,
+                  0.0001885354224533775,
+                  0.00019017810823209545,
+                  0.0001903365156094905,
+                  0.000193793938271042,
+                  0.00019563672521630363,
+                  0.00019621916371045757,
+                  0.0001960552790595169,
+                  0.00019477537748356768,
+                  0.00019371283049497384,
+                  0.00019277193514847252,
+                  0.0001933627461196868,
+                  0.00019596570554622633,
+                  0.00019629275735055573,
+                  0.0001942891124398686,
+                  0.00019290360007334683,
+                  0.0001946117780342224,
+                  0.00019599603141999127,
+                  0.0001961142585506814,
+                  0.00019655871718624474,
+                  0.00019612229294922815,
+                  0.00019677254610952675,
+                  0.00019761554126381922,
+                  0.00019527202852455297,
+                  0.00019530075483296816,
+                  0.00019669158750562074,
+                  0.00019535509065135201,
+                  0.00019638453261144613,
+                  0.00019454101143461896,
+                  0.00019370403007054008,
+                  0.00019513900857983684,
+                  0.0001958638079339551,
+                  0.00019648983288045254,
+                  0.0001964572480626639,
+                  0.00019665520232598993,
+                  0.00019745719057489831,
+                  0.0001950037303437509,
+                  0.00019776450464114418,
+                  0.00019907757517396537,
+                  0.00020412036530985378,
+                  0.000207314943852297,
+                  0.00020930582809454507,
+                  0.00021337044083294298,
+                  0.00018990477556900002,
+                  0.00018680740065536367,
+                  0.00018009681672346604,
+                  0.00017890776980856524,
+                  0.00017788290025625998,
+                  0.00017651313007041293,
+                  0.00017612840904454344,
+                  0.0001767235532078576,
+                  0.0001776802731650772,
+                  0.0001818865007146871,
+                  0.00018426171608549528,
+                  0.0001928267010634501,
+                  0.00019109116956495773,
+                  0.00019021445836892676,
+                  0.00019147972483611245,
+                  0.00018813433540858243,
+                  0.00017918962459418945,
+                  0.00014353417984407785,
+                  0.00010992609062433164,
+                  0.00012761778279664893,
+                  0.0001266961067273618,
+                  0.00012832855126658377,
+                  0.00012936071570417517,
+                  0.00013151329312397525,
+                  0.00013590473380455903,
+                  0.00013498283707060808,
+                  0.00013533873291835837,
+                  0.00013627425334844954,
+                  0.00013837025275551532,
+                  0.0001395500859784741,
+                  0.00013850505010759264,
+                  0.00013603059583019872,
+                  0.00013492736794855868,
+                  0.00013258070681217133,
+                  0.00013275460574715197,
+                  0.0001342569076137843,
+                  0.00013299224803458337,
+                  0.00012998428750077311,
+                  0.00013110795236857546,
+                  0.000130938743174,
+                  0.00013045391901849677,
+                  0.00013040849903545845,
+                  0.00013247414849248062,
+                  0.00013225648074293803,
+                  0.00013233506805449997,
+                  0.0001333033900922923,
+                  0.00012879115379295323,
+                  0.00012865754533727592,
+                  0.00012853997497709144,
+                  0.00012962955055206195,
+                  0.00012920192283541275,
+                  0.00012908161764646906,
+                  0.00012921047882883297,
+                  0.00012918164753486573,
+                  0.0001288692927046789,
+                  0.00010702699635084859,
+                  0.00010999050332562592,
+                  0.00011025417444204736,
+                  0.00011447512470982855,
+                  0.0001149257426143164,
+                  0.0001168890405964472,
+                  0.00011890025992516707,
+                  0.00011962462073884604,
+                  0.00011937954570913723,
+                  0.00011947505429591877,
+                  0.00011915831696865357,
+                  0.00012015494792478875,
+                  0.0001212460326285029,
+                  0.00012032477294475613,
+                  0.000120153085605258,
+                  0.00012065515880915031,
+                  0.00011994094766907262,
+                  0.00012022887734890388,
+                  0.00012005283968001888,
+                  0.00012005977675561995,
+                  0.00011991683478435587,
+                  0.0001198956577225383,
+                  0.00012089967713907174,
+                  0.00012095238192294485,
+                  0.00012098398102360795,
+                  0.00012271526096211001,
+                  0.00012195041315078094,
+                  0.00012171976080734599,
+                  0.0001238845474257376,
+                  0.00012436200062155745,
+                  0.00011999744700108874,
+                  0.00012013724114002396,
+                  0.00012005385708753893,
+                  0.00011613887769302078,
+                  0.0001151081708573721,
+                  0.00011587717033487009,
+                  0.00010907366248910256,
+                  0.00010814254354837141,
+                  0.00010774345340531088,
+                  0.00010812742935179486,
+                  0.00010863855821349255,
+                  0.00010944080446045444,
+                  0.00010965035308523993
+                ],
+                "price_change_7d": -40.1,
+                "price_change_24h": -8.04083
+              },
+              {
+                "name": "Zest Protocol",
+                "image": "https://coin-images.coingecko.com/coins/images/102173294/small/zest.jpg?1778837125",
+                "symbol": "ZEST",
+                "price_usd": 0.130745,
+                "coingecko_id": "zest-protocol",
+                "sparkline_7d": [
+                  0.13997773458621385,
+                  0.13780707286446903,
+                  0.1376021443771066,
+                  0.13663370995495724,
+                  0.1348805175296022,
+                  0.13663304220810008,
+                  0.13800894543279477,
+                  0.13763226851006455,
+                  0.13828392705952938,
+                  0.13803672386901786,
+                  0.13905699657988563,
+                  0.13880747215266437,
+                  0.13931835767667564,
+                  0.13867375903741366,
+                  0.13850785207256594,
+                  0.1386481757064206,
+                  0.13756676797784875,
+                  0.13817699073441106,
+                  0.1377873006772332,
+                  0.13735647011010244,
+                  0.137642916872767,
+                  0.13828081469172618,
+                  0.13809758280643325,
+                  0.13722314841079772,
+                  0.13639347673029867,
+                  0.13512416393703652,
+                  0.13481662264112146,
+                  0.1337892727506717,
+                  0.13386476755327273,
+                  0.1348266537745278,
+                  0.1345458973302752,
+                  0.13452678375986002,
+                  0.13558872000633035,
+                  0.1350228746683168,
+                  0.13473084551832443,
+                  0.13427229935103244,
+                  0.13466975338842177,
+                  0.13471169673535285,
+                  0.13513526357422076,
+                  0.1345291205584019,
+                  0.13460458399947112,
+                  0.13439552588042367,
+                  0.13389193132214552,
+                  0.13481883566979017,
+                  0.13437824053414132,
+                  0.13462768939645006,
+                  0.13539899765808808,
+                  0.13559009820441267,
+                  0.1350496546730642,
+                  0.13136624206197042,
+                  0.13327861323068854,
+                  0.13697392119499316,
+                  0.1315543575830868,
+                  0.13076379943313313,
+                  0.13028184885165603,
+                  0.13253936283550047,
+                  0.13334859742176838,
+                  0.13222341977440588,
+                  0.13288607660246968,
+                  0.1323603074695408,
+                  0.13409581471081355,
+                  0.13371577966724627,
+                  0.1339926239455352,
+                  0.13309353710543914,
+                  0.13266564813206377,
+                  0.13276774244095443,
+                  0.13058819630527022,
+                  0.12936757208099436,
+                  0.12829146252916787,
+                  0.1279207024943777,
+                  0.1282951762964464,
+                  0.12827621412892387,
+                  0.12803294639876203,
+                  0.12790039477148418,
+                  0.14775035762628824,
+                  0.14809033081176967,
+                  0.14786924460050263,
+                  0.14811436952237658,
+                  0.14690015392499997,
+                  0.14639331450564377,
+                  0.14521398057648716,
+                  0.15209820004934996,
+                  0.1589120037051519,
+                  0.1505533705640438,
+                  0.1536403967639944,
+                  0.1530058495883428,
+                  0.15302610603711173,
+                  0.15554106349667757,
+                  0.1556213652990036,
+                  0.15101023176634196,
+                  0.15318474638055407,
+                  0.1488888142619002,
+                  0.14917482261913786,
+                  0.1476618017431456,
+                  0.15136232411923273,
+                  0.14953309763805372,
+                  0.16130374574119843,
+                  0.1617847280447189,
+                  0.14039336399845767,
+                  0.14036890629229073,
+                  0.139876164843617,
+                  0.1360669419473993,
+                  0.1348635670420135,
+                  0.1345966369644696,
+                  0.12907440843250823,
+                  0.12991769632469624,
+                  0.1290156403730307,
+                  0.12134813490975337,
+                  0.12105066777064077,
+                  0.12146999692795557,
+                  0.12216551472731288,
+                  0.12282051177051062,
+                  0.12018053687196237,
+                  0.12145657288522511,
+                  0.12065075857403769,
+                  0.12024307587011968,
+                  0.12073651749118261,
+                  0.12169329662715829,
+                  0.12202402586808135,
+                  0.12240932848958222,
+                  0.12425455860165893,
+                  0.12443024421950447,
+                  0.1236478218699737,
+                  0.12273727962669082,
+                  0.12122582164037823,
+                  0.123059603032924,
+                  0.12332597946436599,
+                  0.12412206191477393,
+                  0.12353155995996104,
+                  0.12477343960301057,
+                  0.12414144732672304,
+                  0.12359993533816048,
+                  0.12347366526143838,
+                  0.12355084898611056,
+                  0.12468443778729792,
+                  0.12395270328155197,
+                  0.12521148142784239,
+                  0.12981197619697393,
+                  0.12844643925631455,
+                  0.12922117885549586,
+                  0.1308267724910571,
+                  0.1272895702731639,
+                  0.130687226780496,
+                  0.128729163279263,
+                  0.12663996895753749,
+                  0.12666524926377498,
+                  0.1265412445732114,
+                  0.12768022459303066,
+                  0.12978801015551752,
+                  0.12977381364729165,
+                  0.12861718716647436,
+                  0.12827451218318986,
+                  0.1294388151391074,
+                  0.1296459102801476,
+                  0.12996819116828134,
+                  0.13007710977262757,
+                  0.1290353112856214,
+                  0.12989152096481835,
+                  0.12878029887207929,
+                  0.12848453744695684,
+                  0.1282647238553481,
+                  0.13074451521412622,
+                  0.13018280264010926,
+                  0.13132889259878638,
+                  0.13077952140281013,
+                  0.13122666160663227,
+                  0.1309266874083517,
+                  0.13043042270169622
+                ],
+                "price_change_7d": -6,
+                "price_change_24h": 3.2205
+              }
+            ],
+            "fear_greed": {
+              "emoji": ":large_green_circle:",
+              "value": 68,
+              "timestamp": "2026-09-06T00:00:00",
+              "classification": "Greed"
+            }
+          },
+          "activity": {
+            "by_source": [
+              {
+                "count": 1839,
+                "source": "x",
+                "share_pct": 82.5
+              },
+              {
+                "count": 304,
+                "source": "discord",
+                "share_pct": 13.6
+              },
+              {
+                "count": 72,
+                "source": "telegram",
+                "share_pct": 3.2
+              },
+              {
+                "count": 14,
+                "source": "forum",
+                "share_pct": 0.6
+              }
+            ],
+            "voice_count": 655,
+            "message_count": 2229
+          },
+          "projects": [
+            {
+              "name": "LEO",
+              "slug": "leo",
+              "score": 7.5,
+              "sources": [
+                "discord",
+                "x"
+              ],
+              "icon_url": "https://pbs.twimg.com/profile_images/1742120134964322304/ijQtmZ28_400x400.jpg",
+              "wow_change": 1.8,
+              "sparkline_14d": [
+                7,
+                6.8,
+                5.8,
+                4.7,
+                null,
+                7,
+                5.7,
+                7.4,
+                5.5,
+                3.8,
+                7.3,
+                6.4,
+                6.5,
+                7.5
+              ],
+              "messages_7d_band": "medium"
+            },
+            {
+              "name": "Tenero",
+              "slug": "tenero-021c",
+              "score": 7.3,
+              "sources": [
+                "discord",
+                "x"
+              ],
+              "icon_url": "https://tenero.io/favicon.ico?favicon.87b212ac.ico",
+              "wow_change": 1.2,
+              "sparkline_14d": [
+                5.6,
+                5.8,
+                6.6,
+                5.5,
+                6.2,
+                6.7,
+                6.1,
+                5.7,
+                6.8,
+                6,
+                6.1,
+                5.6,
+                4.1,
+                7.3
+              ],
+              "messages_7d_band": "medium"
+            },
+            {
+              "name": "Stacks",
+              "slug": "stacks-da51",
+              "score": 7,
+              "sources": [
+                "ballot",
+                "forum",
+                "x"
+              ],
+              "icon_url": "https://cdn.prod.website-files.com/618b0aafa4afde65f2fe38fe/6595cd4d199d17f0429766ea_Stacks%20(Nakamojo)%20(1).png",
+              "wow_change": -0.1,
+              "sparkline_14d": [
+                8,
+                7.2,
+                6.9,
+                6.4,
+                6.6,
+                5.2,
+                7.1,
+                7.5,
+                6.5,
+                6.2,
+                8.3,
+                7.2,
+                5.8,
+                7
+              ],
+              "messages_7d_band": "high"
+            },
+            {
+              "name": "Stacks Endowment",
+              "slug": "stacks-endowment",
+              "score": 6.5,
+              "sources": [
+                "forum",
+                "x"
+              ],
+              "icon_url": "https://cdn.prod.website-files.com/68e6f8d4d0348327a08c8be0/690d1d0780b350f787274641_StacksEndowmentSymbol_Squircle%201-1.png",
+              "wow_change": -1.2,
+              "sparkline_14d": [
+                7.3,
+                7.3,
+                5.4,
+                8.1,
+                5.5,
+                7.7,
+                6.9,
+                5.9,
+                6.9,
+                6.7,
+                6.6,
+                6.5,
+                6.5,
+                null
+              ],
+              "messages_7d_band": "medium"
+            },
+            {
+              "name": "Bitflow Finance",
+              "slug": "bitflow-finance-af3b",
+              "score": 6.4,
+              "sources": [
+                "x"
+              ],
+              "icon_url": "https://www.bitflow.finance/favicon.ico",
+              "wow_change": 0.2,
+              "sparkline_14d": [
+                6,
+                6.3,
+                7.9,
+                6,
+                7.6,
+                7.2,
+                6.2,
+                7,
+                5.9,
+                7.6,
+                6.1,
+                6.6,
+                7.6,
+                6.4
+              ],
+              "messages_7d_band": "high"
+            },
+            {
+              "name": "AIBTC",
+              "slug": "aibtc",
+              "score": 6.3,
+              "sources": [
+                "discord",
+                "github_discussions",
+                "x"
+              ],
+              "icon_url": "https://aibtc.com/apple-icon.png",
+              "wow_change": null,
+              "sparkline_14d": [
+                6.4,
+                7.6,
+                6.9,
+                7.1,
+                null,
+                6,
+                6.3,
+                null,
+                6.4,
+                6.8,
+                6.2,
+                6.3,
+                null,
+                null
+              ],
+              "messages_7d_band": "medium"
+            },
+            {
+              "name": "Hermetica",
+              "slug": "hermetica",
+              "score": 5.6,
+              "sources": [
+                "discord",
+                "x"
+              ],
+              "icon_url": "https://framerusercontent.com/images/6bjqvyXlAkazHzLmDwVf4veY.png",
+              "wow_change": -0.9,
+              "sparkline_14d": [
+                5.9,
+                6.7,
+                6.1,
+                6.5,
+                5.7,
+                7.2,
+                6.5,
+                6.2,
+                5.8,
+                6,
+                5.7,
+                null,
+                null,
+                5.6
+              ],
+              "messages_7d_band": "low"
+            },
+            {
+              "name": "Zest Protocol",
+              "slug": "zest-protocol-3672",
+              "score": 4.3,
+              "sources": [
+                "discord",
+                "telegram",
+                "x"
+              ],
+              "icon_url": "https://cdn.prod.website-files.com/653fe0bb9dd31b04c24b2e44/65d0c2fcd6ab41d1dedcff2b_webclip-zest.png",
+              "wow_change": -1.1,
+              "sparkline_14d": [
+                6.8,
+                6.6,
+                7.5,
+                6.3,
+                6.2,
+                6.2,
+                5.4,
+                7.3,
+                5.5,
+                7.5,
+                6.8,
+                6.9,
+                6,
+                4.3
+              ],
+              "messages_7d_band": "high"
+            },
+            {
+              "name": "Stacking DAO",
+              "slug": "stacking-dao",
+              "score": 4.1,
+              "sources": [
+                "discord",
+                "telegram",
+                "x"
+              ],
+              "icon_url": "https://cdn.prod.website-files.com/659ac11b664b15dc69f75700/660db0604d3e7ff322c9bcb4_webclip.png",
+              "wow_change": -3.3,
+              "sparkline_14d": [
+                7.2,
+                6.8,
+                6.9,
+                8,
+                6.5,
+                6.4,
+                7.4,
+                3.8,
+                7,
+                6.4,
+                8,
+                7.5,
+                6.1,
+                4.1
+              ],
+              "messages_7d_band": "high"
+            },
+            {
+              "name": "Boom",
+              "slug": "boom",
+              "score": null,
+              "sources": [
+                "x"
+              ],
+              "icon_url": null,
+              "wow_change": null,
+              "sparkline_14d": [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+              ],
+              "messages_7d_band": "low"
+            },
+            {
+              "name": "Jing Swap",
+              "slug": "jing-swap",
+              "score": null,
+              "sources": [
+                "x"
+              ],
+              "icon_url": "https://www.jingswap.com/jing-logo-twitter.png",
+              "wow_change": null,
+              "sparkline_14d": [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+              ],
+              "messages_7d_band": "low"
+            },
+            {
+              "name": "Scaffold Stacks",
+              "slug": "scaffold-stacks",
+              "score": null,
+              "sources": [
+                "x"
+              ],
+              "icon_url": "https://scaffoldstacks.mintlify.app/mintlify-assets/_mintlify/favicons/scaffoldstacks/POJlTZSi0ixyRqCJ/_generated/favicon/apple-touch-icon.png",
+              "wow_change": null,
+              "sparkline_14d": [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+              ],
+              "messages_7d_band": "low"
+            }
+          ],
+          "narrative": "The week ending September 6, 2026 marked a decisive inflection for Stacks Bitcoin finance. Stacking DAO launched stBTC — a liquid, auto-compounding Bitcoin staking token with no STX pairing required for individuals — and its initial minting cap was entirely subscribed in under 24 hours, with a single whale deploying a significant stBTC position as collateral on Zest Protocol. Zest Protocol simultaneously shipped its Levered Bitcoin Staking Vault, a one-click loop that deposits sBTC or stBTC, borrows against the position, and restakes to target elevated APY fully denominated in Bitcoin; that vault also hit capacity and had its cap raised before filling again. On the institutional side, Bullish — the NYSE-listed exchange — listed STX/USDC, sBTC/USDC, and sBTC/BTC pairs, while 21Shares announced participation in the Stacks Genesis Bond scheduled for around mid-September, joining HashKey and UTXO Management as inaugural participants. Bitflow's BoostX integration attracted its own wave of enthusiasm, enabling hover-to-swap Bitcoin Tags directly on X timelines via Bitflow routing. The Stacks Endowment opened Q3 2026 grants with a September 23 deadline, prioritizing Bitcoin staking, sBTC utility, and market efficiency. Sentiment across scored messages ran strongly positive with minimal negative readings, and the Fear and Greed index reflected broad but measured enthusiasm rather than euphoria.",
+          "sentiment": {
+            "counts": {
+              "neutral": 607,
+              "negative": 99,
+              "positive": 1523
+            },
+            "shares_pct": {
+              "neutral": 27.2,
+              "negative": 4.4,
+              "positive": 68.3
+            },
+            "scored_messages": 2229
+          },
+          "standouts": [
+            {
+              "url": "https://x.com/Bullish/status/2095498487651561973",
+              "text": "1/2 📣 New digital asset listing: @Stacks (blockstack:native), the native asset of the Stacks network, and $sBTC, are now available to trade on Bullish in eligible regions.\n\nAvailable pairs:\n◾STX/USDC\n◾sBTC/USDC\n◾sBTC/BTC https://t.co/BtK9mPHsKV",
+              "author": "Bullish",
+              "reason": "Bullish, the NYSE-listed exchange, publicly announced STX and sBTC listings with three trading pairs, the most consequential institutional exchange integration Stacks has received and a direct signal of growing mainstream market access for Bitcoin-native assets.",
+              "engagement": 16,
+              "project_slug": "stacks-da51"
+            },
+            {
+              "url": "https://x.com/reubs_btc/status/2095558662228164934",
+              "text": "Today on @Stacks 🟧\n\n→ @Bullish integrating $STX & sBTC\n→ @21shares announcing participation in Stacks Genesis Bond\n→ @StackingDao stBTC\n→ @ZestProtocol Vaults launch\n\nBullish times indeed and i'm building out the STX Legionaries X chat to boost these and future activations\n\nWho wants in? 👀",
+              "author": "reubs_btc",
+              "reason": "A single post captured the full convergence of the week — Bullish listing, 21Shares Genesis Bond participation, stBTC launch, and Zest Protocol Vaults — making it the clearest single-source summary of why this period stands out in Stacks ecosystem history.",
+              "engagement": 14,
+              "project_slug": "stacking-dao"
+            },
+            {
+              "url": "https://x.com/hodlstxbtc/status/2094788219720331483",
+              "text": "This is the Stacks Vaults reveal: stBTC is collateral on @ZestProtocol, day one 👇\n\nHow it works in one click: deposit BTC → vault mints stBTC → borrows sBTC against it → stakes more stBTC → repeat. Target APY 6-8%, all denominated in Bitcoin, one position.\n\nWhat makes this different from a typical leverage loop: the borrowed asset and the yield asset are both Bitcoin. No altcoin exposure in the collateral, no altcoin in the debt. You are levering Bitcoin yield with Bitcoin.\n\nHonest note: leverage cuts both ways, and stacked positions carry liquidation risk if rates shift. This is a product for people who understand loops, not a savings account.\n\n@Stacks Bitcoin staking yield, StackingDAO's stBTC, and Zest's lending engine, composed into one button. Nine days before enrollment, the DeFi stack is arriving assembled 🟧\n\nDisclosure: I hold BTC and STX.",
+              "author": "hodlstxbtc",
+              "reason": "The most detailed public explanation of how Zest Protocol's leveraged vault works mechanically, grounding the excitement in a concrete step-by-step description and articulating why the borrowed and yield assets both being Bitcoin changes the risk profile versus typical leverage loops.",
+              "engagement": 9,
+              "project_slug": "zest-protocol-3672"
+            },
+            {
+              "url": "https://x.com/renapshah/status/2095879345554280468",
+              "text": "Congrats @StackingDao! A new milestone unlocked for Bitcoin Staking with @Stacks. Bitcoin has spent years being the most valuable idle asset in crypto. Now, BTC can earn native yield and remain productive within an emerging Bitcoin-native financial ecosystem 🟧",
+              "author": "renapshah",
+              "reason": "A concise, high-signal framing of stBTC's significance from a credible voice, positioning native Bitcoin yield as the end of BTC's status as crypto's largest idle asset and contextualizing the launch within a longer arc of ecosystem development.",
+              "engagement": 15,
+              "project_slug": "stacking-dao"
+            }
+          ],
+          "governance": [],
+          "suppressed": [],
+          "top_themes": [
+            {
+              "count": 8,
+              "title": "stBTC Launch and 150 BTC Sellout Define the Week's Signal Moment",
+              "projects": [
+                "stacking-dao",
+                "stacks-da51"
+              ],
+              "paragraph": "Stacking DAO's stBTC went live on Stacks, filling its full initial minting cap in under 24 hours with no STX pairing required for depositors. A single whale staked a substantial stBTC position as Zest Protocol collateral on day one, and Stacking DAO confirmed the Genesis Bitcoin Bond is scheduled for around mid-September to expand capacity further.",
+              "evidence_ref": "theme-1",
+              "count_is_floor": true,
+              "distinct_authors": 6,
+              "quote": {
+                "text": "@StackingDao @Stacks Huge demand for bitcoin yield!",
+                "author": "larrysalibra",
+                "url": "https://x.com/larrysalibra/status/2095884498202501302"
+              }
+            },
+            {
+              "count": 8,
+              "title": "Zest Protocol Leveraged Vault Sells Out Twice, Raising Cap to 20 BTC",
+              "projects": [
+                "stacks-da51",
+                "zest-protocol-3672"
+              ],
+              "paragraph": "Zest Protocol launched its Levered Bitcoin Staking Vault — a one-click loop targeting 6–8% APY fully in Bitcoin — and hit capacity fast enough to warrant a cap raise to 20 BTC before filling again. The vault accepts stBTC or sBTC as collateral, borrows against the position, and restakes automatically, drawing whale interest and strong community demand for higher limits.",
+              "evidence_ref": "theme-2",
+              "count_is_floor": true,
+              "distinct_authors": 6,
+              "quote": {
+                "text": "Morpho have Ethereum DeFi vaults. @ZestProtocol is creating Bitcoin DeFi vaults. Can you see where this is going anon ? $ZEST trading up strongly 🟧",
+                "author": "Taylor_stxBTC",
+                "url": "https://x.com/Taylor_stxBTC/status/2095812292483149896"
+              }
+            },
+            {
+              "count": 7,
+              "title": "Institutional Onramps Accelerate: Bullish Lists STX and sBTC, 21Shares Joins Genesis Bond",
+              "projects": [
+                "stacking-dao",
+                "stacks-da51",
+                "zest-protocol-3672"
+              ],
+              "paragraph": "Bullish, the NYSE-listed exchange, listed STX/USDC, sBTC/USDC, and sBTC/BTC pairs, while 21Shares announced participation in the Stacks Genesis Bond alongside inaugural participants HashKey and UTXO Management. Muneeb noted the first bond is intentionally limited to demonstrate that all components work before scaling to larger monthly capacity.",
+              "evidence_ref": "theme-3",
+              "count_is_floor": true,
+              "distinct_authors": 5,
+              "quote": {
+                "text": "@Olaniran_btc @Stacks correct, starting small and then scaling out. the key is to have sustained monthly capacity launches at larger scales. first one is limited on purpose to showcase that everything works well.",
+                "author": "muneeb",
+                "url": "https://x.com/muneeb/status/2095888722558382160"
+              }
+            },
+            {
+              "count": 8,
+              "title": "Bitflow BoostX Enables Hover-to-Swap Bitcoin Tags Directly on X",
+              "projects": [
+                "bitflow-finance-af3b",
+                "stacks-da51"
+              ],
+              "paragraph": "A new BoostX integration built on Bitflow routing lets users hover over Bitcoin Tags such as STX₿ or sBTC₿ in any X timeline post and execute live swaps without leaving the page. The launch generated enthusiastic reception from ecosystem builders and community members as a frictionless onboarding surface.",
+              "evidence_ref": "theme-4",
+              "count_is_floor": true,
+              "distinct_authors": 7,
+              "quote": {
+                "text": "@boostx_app @bitflow @Stacks @stackslabs @mcuevasm @DiegoMey @muneeb How you may ask? ... Bitcoin Tags Example: STX₿ or sBTC₿ (or other tagged tokens Built on Bitcoin via @Stacks) Are detected if you are running @boostx_app From there you…",
+                "author": "cryptodude_btc",
+                "url": "https://x.com/cryptodude_btc/status/2096413614764892529"
+              }
+            },
+            {
+              "count": 6,
+              "title": "Stacks Endowment Opens Q3 2026 Grants Targeting Bitcoin Staking and Market Efficiency",
+              "projects": [
+                "bitflow-finance-af3b",
+                "leo",
+                "stacks-endowment"
+              ],
+              "paragraph": "The Stacks Endowment opened its Q3 2026 grant cycle with a September 23 deadline, prioritizing three focus areas: Bitcoin staking and sBTC utility, distribution and integration, and market efficiency and risk. The announcement coincided with the broader product momentum of the week and drew international builder attention.",
+              "evidence_ref": "theme-5",
+              "count_is_floor": true,
+              "distinct_authors": 6,
+              "quote": {
+                "text": "1/ Q3 2026 Stacks Ecosystem Grants are now open! Find out more at @StacksEndowment",
+                "author": "zeroauthdao",
+                "url": "https://x.com/zeroauthdao/status/2094802542903636133"
+              }
+            }
+          ],
+          "week_composite": 6.3,
+          "worth_addressing": [
+            {
+              "type": "support_issue",
+              "count": 5,
+              "title": "Bitflow Ledger signing error leaving user locked out for over a week",
+              "projects": [
+                "bitflow-finance-af3b",
+                "stacks-da51"
+              ],
+              "paragraph": "A user reported being unable to add or remove liquidity on Bitflow for more than ten days due to a persistent Ledger signing error, with a submitted support ticket going unacknowledged for the entire period despite a known manual wallet fix existing.",
+              "suggestion": "Bitflow should audit ticket queue response times, especially for hardware-wallet edge cases where a manual fix is already documented, and confirm ETAs publicly so affected users know their issue is tracked.",
+              "evidence_ref": "worth-1",
+              "count_is_floor": false,
+              "distinct_authors": 1
+            },
+            {
+              "type": "misinformation",
+              "count": 4,
+              "title": "Coordinated scam accusations targeting Zest Protocol and its team",
+              "projects": [
+                "stacks-da51",
+                "zest-protocol-3672"
+              ],
+              "paragraph": "A single account repeatedly posted accusations across multiple threads claiming Zest Protocol is a scam and that its team is dumping tokens on the community, using increasingly hostile language and attempting to spread fear during the vault launch period.",
+              "suggestion": "Zest Protocol should address on-chain token flow questions transparently with verifiable data and consider a brief public clarification post so the broader community has factual context to evaluate claims independently.",
+              "evidence_ref": "worth-2",
+              "count_is_floor": false,
+              "distinct_authors": 1
+            },
+            {
+              "type": "question",
+              "count": 2,
+              "title": "Hermetica token launch timeline unclear for pre-launch investors",
+              "projects": [
+                "hermetica"
+              ],
+              "paragraph": "Multiple posts from a concerned investor expressed frustration that Hermetica has not communicated a launch date for tokens purchased during the pre-launch phase, with the absence of updates creating anxiety among early participants.",
+              "suggestion": "Hermetica should publish a clear, dated roadmap for its token launch process and establish a regular communication cadence so pre-launch participants have confidence the team is on track.",
+              "evidence_ref": "worth-3",
+              "count_is_floor": true,
+              "distinct_authors": 1
+            }
+          ],
+          "governance_historical_unavailable": false
+        }
+      }
+    },
+    {
+      "label": "free reports archive",
+      "request": "GET /api/v1/public/stacks-index/reports",
+      "at": "2026-09-17T08:53:06.588Z",
+      "status": 200,
+      "response_server_date": "Thu, 17 Sep 2026 08:53:06 GMT",
+      "payment_required_header": false,
+      "challenge": null,
+      "body": "{\"schema_version\":\"1.1\",\"as_of\":\"2026-09-17T08:46:51.194253Z\",\"reports\":[{\"week_start\":\"2026-09-07\",\"week_end\":\"2026-09-13\",\"title\":\"Bitcoin Staking Goes Live\",\"title_emoji\":\"🟧\",\"week_composite\":6.4,\"wow\":0.1,\"theme_titles\":[\"Institutional rails are the real story\",\"Stacking DAO captures the majority of staked BTC\",\"Zest passes 800 BTC and becomes the collateral layer\",\"Stack Sats puts 1 BTC a month into DeFi usage\",\"Sustainability questions under the celebration\"],\"themes\":[{\"title\":\"Institutional rails are the real story\",\"polarity\":\"positive\"},{\"title\":\"Stacking DAO captures the majority of staked BTC\",\"polarity\":\"positive\"},{\"title\":\"Zest passes 800 BTC and becomes the collateral layer\",\"polarity\":\"positive\"},{\"title\":\"Stack Sats puts 1 BTC a month into DeFi usage\",\"polarity\":\"positive\"},{\"title\":\"Sustainability questions under the celebration\",\"polarity\":\"neutral\"}]},{\"week_start\":\"2026-08-31\",\"week_end\":\"2026-09-06\",\"title\":\"stBTC Sells Out in 24 Hours as Stacks Bitcoin Finance Goes Live\",\"title_emoji\":\"🟧⚡\",\"week_composite\":6.3,\"wow\":-0.3,\"theme_titles\":[\"stBTC Launch and 150 BTC Sellout Define the Week's Signal Moment\",\"Zest Protocol Leveraged Vault Sells Out Twice, Raising Cap to 20 BTC\",\"Institutional Onramps Accelerate: Bullish Lists STX and sBTC, 21Shares Joins Genesis Bond\",\"Bitflow BoostX Enables Hover-to-Swap Bitcoin Tags Directly on X\",\"Stacks Endowment Opens Q3 2026 Grants Targeting Bitcoin Staking and Market Efficiency\"],\"themes\":[{\"title\":\"stBTC Launch and 150 BTC Sellout Define the Week's Signal Moment\",\"polarity\":\"positive\"},{\"title\":\"Zest Protocol Leveraged Vault Sells Out Twice, Raising Cap to 20 BTC\",\"polarity\":\"positive\"},{\"title\":\"Institutional Onramps Accelerate: Bullish Lists STX and sBTC, 21Shares Joins Genesis Bond\",\"polarity\":\"positive\"},{\"title\":\"Bitflow BoostX Enables Hover-to-Swap Bitcoin Tags Directly on X\",\"polarity\":\"positive\"},{\"title\":\"Stacks Endowment Opens Q3 2026 Grants Targeting Bitcoin Staking and Market Efficiency\",\"polarity\":\"positive\"}]},{\"week_start\":\"2026-08-24\",\"week_end\":\"2026-08-30\",\"title\":\"Genesis Bond Countdown Powers Bitcoin Staking Momentum on Stacks\",\"title_emoji\":\"🟧\",\"week_composite\":6.6,\"wow\":0.2,\"theme_titles\":[\"Genesis Bond and self-custodial Bitcoin staking dominate the countdown\",\"Liquid staking and yield vaults define the DeFi stack\",\"Institutional rails give the ecosystem credibility\",\"Memecoins and AI agents extend the ecosystem narrative\"],\"themes\":[{\"title\":\"Genesis Bond and self-custodial Bitcoin staking dominate the countdown\",\"polarity\":\"positive\"},{\"title\":\"Liquid staking and yield vaults define the DeFi stack\",\"polarity\":\"positive\"},{\"title\":\"Institutional rails give the ecosystem credibility\",\"polarity\":\"positive\"},{\"title\":\"Memecoins and AI agents extend the ecosystem narrative\",\"polarity\":\"positive\"}]},{\"week_start\":\"2026-08-17\",\"week_end\":\"2026-08-23\",\"title\":\"Genesis Bond Countdown Puts Productive Bitcoin at Center of Stacks\",\"title_emoji\":\"🟧\",\"week_composite\":6.4,\"wow\":0.1,\"theme_titles\":[\"Genesis Bond and self-custodial Bitcoin yield\",\"'Productive Bitcoin' DeFi stack across Zest, Bitflow, Hermetica, StackingDAO\",\"stBTC and liquid Bitcoin staking momentum\",\"Bitflow milestone and product updates\",\"AI agents on Bitcoin via AIBTC\"],\"themes\":[{\"title\":\"Genesis Bond and self-custodial Bitcoin yield\",\"polarity\":\"positive\"},{\"title\":\"'Productive Bitcoin' DeFi stack across Zest, Bitflow, Hermetica, StackingDAO\",\"polarity\":\"positive\"},{\"title\":\"stBTC and liquid Bitcoin staking momentum\",\"polarity\":\"positive\"},{\"title\":\"Bitflow milestone and product updates\",\"polarity\":\"positive\"},{\"title\":\"AI agents on Bitcoin via AIBTC\",\"polarity\":\"positive\"}]},{\"week_start\":\"2026-08-10\",\"week_end\":\"2026-08-16\",\"title\":\"PoX-5 Goes Live as BTC Yield Takes Center Stage\",\"title_emoji\":\"🟧\",\"week_composite\":6.3,\"wow\":null,\"theme_titles\":[],\"themes\":[]}],\"latest_preview\":{\"week_start\":\"2026-09-07\",\"tldr\":\"Bitcoin Staking launched on Stacks this week with the Genesis Bond selling out quickly, drawing BTC enrollment alongside 21Shares, UTXO Management and HashKey Cloud. Stacking DAO routed part of that, Zest grew its lending market, and the Stack Sats campaign put a monthly BTC prize on the table. Sentiment ran clearly positive.\",\"sentiment_shares_pct\":{\"neutral\":21.5,\"negative\":6.7,\"positive\":71.8}}}",
+      "json": {
+        "schema_version": "1.1",
+        "as_of": "2026-09-17T08:46:51.194253Z",
+        "reports": [
+          {
+            "week_start": "2026-09-07",
+            "week_end": "2026-09-13",
+            "title": "Bitcoin Staking Goes Live",
+            "title_emoji": "🟧",
+            "week_composite": 6.4,
+            "wow": 0.1,
+            "theme_titles": [
+              "Institutional rails are the real story",
+              "Stacking DAO captures the majority of staked BTC",
+              "Zest passes 800 BTC and becomes the collateral layer",
+              "Stack Sats puts 1 BTC a month into DeFi usage",
+              "Sustainability questions under the celebration"
+            ],
+            "themes": [
+              {
+                "title": "Institutional rails are the real story",
+                "polarity": "positive"
+              },
+              {
+                "title": "Stacking DAO captures the majority of staked BTC",
+                "polarity": "positive"
+              },
+              {
+                "title": "Zest passes 800 BTC and becomes the collateral layer",
+                "polarity": "positive"
+              },
+              {
+                "title": "Stack Sats puts 1 BTC a month into DeFi usage",
+                "polarity": "positive"
+              },
+              {
+                "title": "Sustainability questions under the celebration",
+                "polarity": "neutral"
+              }
+            ]
+          },
+          {
+            "week_start": "2026-08-31",
+            "week_end": "2026-09-06",
+            "title": "stBTC Sells Out in 24 Hours as Stacks Bitcoin Finance Goes Live",
+            "title_emoji": "🟧⚡",
+            "week_composite": 6.3,
+            "wow": -0.3,
+            "theme_titles": [
+              "stBTC Launch and 150 BTC Sellout Define the Week's Signal Moment",
+              "Zest Protocol Leveraged Vault Sells Out Twice, Raising Cap to 20 BTC",
+              "Institutional Onramps Accelerate: Bullish Lists STX and sBTC, 21Shares Joins Genesis Bond",
+              "Bitflow BoostX Enables Hover-to-Swap Bitcoin Tags Directly on X",
+              "Stacks Endowment Opens Q3 2026 Grants Targeting Bitcoin Staking and Market Efficiency"
+            ],
+            "themes": [
+              {
+                "title": "stBTC Launch and 150 BTC Sellout Define the Week's Signal Moment",
+                "polarity": "positive"
+              },
+              {
+                "title": "Zest Protocol Leveraged Vault Sells Out Twice, Raising Cap to 20 BTC",
+                "polarity": "positive"
+              },
+              {
+                "title": "Institutional Onramps Accelerate: Bullish Lists STX and sBTC, 21Shares Joins Genesis Bond",
+                "polarity": "positive"
+              },
+              {
+                "title": "Bitflow BoostX Enables Hover-to-Swap Bitcoin Tags Directly on X",
+                "polarity": "positive"
+              },
+              {
+                "title": "Stacks Endowment Opens Q3 2026 Grants Targeting Bitcoin Staking and Market Efficiency",
+                "polarity": "positive"
+              }
+            ]
+          },
+          {
+            "week_start": "2026-08-24",
+            "week_end": "2026-08-30",
+            "title": "Genesis Bond Countdown Powers Bitcoin Staking Momentum on Stacks",
+            "title_emoji": "🟧",
+            "week_composite": 6.6,
+            "wow": 0.2,
+            "theme_titles": [
+              "Genesis Bond and self-custodial Bitcoin staking dominate the countdown",
+              "Liquid staking and yield vaults define the DeFi stack",
+              "Institutional rails give the ecosystem credibility",
+              "Memecoins and AI agents extend the ecosystem narrative"
+            ],
+            "themes": [
+              {
+                "title": "Genesis Bond and self-custodial Bitcoin staking dominate the countdown",
+                "polarity": "positive"
+              },
+              {
+                "title": "Liquid staking and yield vaults define the DeFi stack",
+                "polarity": "positive"
+              },
+              {
+                "title": "Institutional rails give the ecosystem credibility",
+                "polarity": "positive"
+              },
+              {
+                "title": "Memecoins and AI agents extend the ecosystem narrative",
+                "polarity": "positive"
+              }
+            ]
+          },
+          {
+            "week_start": "2026-08-17",
+            "week_end": "2026-08-23",
+            "title": "Genesis Bond Countdown Puts Productive Bitcoin at Center of Stacks",
+            "title_emoji": "🟧",
+            "week_composite": 6.4,
+            "wow": 0.1,
+            "theme_titles": [
+              "Genesis Bond and self-custodial Bitcoin yield",
+              "'Productive Bitcoin' DeFi stack across Zest, Bitflow, Hermetica, StackingDAO",
+              "stBTC and liquid Bitcoin staking momentum",
+              "Bitflow milestone and product updates",
+              "AI agents on Bitcoin via AIBTC"
+            ],
+            "themes": [
+              {
+                "title": "Genesis Bond and self-custodial Bitcoin yield",
+                "polarity": "positive"
+              },
+              {
+                "title": "'Productive Bitcoin' DeFi stack across Zest, Bitflow, Hermetica, StackingDAO",
+                "polarity": "positive"
+              },
+              {
+                "title": "stBTC and liquid Bitcoin staking momentum",
+                "polarity": "positive"
+              },
+              {
+                "title": "Bitflow milestone and product updates",
+                "polarity": "positive"
+              },
+              {
+                "title": "AI agents on Bitcoin via AIBTC",
+                "polarity": "positive"
+              }
+            ]
+          },
+          {
+            "week_start": "2026-08-10",
+            "week_end": "2026-08-16",
+            "title": "PoX-5 Goes Live as BTC Yield Takes Center Stage",
+            "title_emoji": "🟧",
+            "week_composite": 6.3,
+            "wow": null,
+            "theme_titles": [],
+            "themes": []
+          }
+        ],
+        "latest_preview": {
+          "week_start": "2026-09-07",
+          "tldr": "Bitcoin Staking launched on Stacks this week with the Genesis Bond selling out quickly, drawing BTC enrollment alongside 21Shares, UTXO Management and HashKey Cloud. Stacking DAO routed part of that, Zest grew its lending market, and the Stack Sats campaign put a monthly BTC prize on the table. Sentiment ran clearly positive.",
+          "sentiment_shares_pct": {
+            "neutral": 21.5,
+            "negative": 6.7,
+            "positive": 71.8
+          }
+        }
+      }
+    },
+    {
+      "label": "paid evidence 2026-08-31",
+      "request": "GET /api/v1/public/stacks-index/pro/evidence/2026-08-31",
+      "at": "2026-09-17T08:53:07.650Z",
+      "status": 402,
+      "response_server_date": "Thu, 17 Sep 2026 08:53:07 GMT",
+      "payment_required_header": true,
+      "challenge": {
+        "x402Version": 2,
+        "resource": {
+          "url": "https://api.vibewatch.io/api/v1/public/stacks-index/pro/evidence/2026-08-31",
+          "description": "Stacks Index paid data. A payer covering its own network fee needs STX in the paying wallet. A sponsored transaction (empty sponsor slot, fee 0) is accepted and relayed with the fee covered, so a wallet holding only sBTC can pay."
+        },
+        "accepts": [
+          {
+            "scheme": "exact",
+            "network": "stacks:1",
+            "payTo": "SP3PHGPE8G09FFBSH6NVM3J5S2118M8YA825HWQY1",
+            "maxTimeoutSeconds": 45,
+            "amount": "100",
+            "asset": "SM3VDXK3WZZSA84XXFKAFAF15NNZX32CTSG82JFQ4.sbtc-token"
+          },
+          {
+            "scheme": "exact",
+            "network": "stacks:1",
+            "payTo": "SP3PHGPE8G09FFBSH6NVM3J5S2118M8YA825HWQY1",
+            "maxTimeoutSeconds": 45,
+            "amount": "300000",
+            "asset": "STX"
+          }
+        ]
+      },
+      "body": "{\"x402Version\":2,\"resource\":{\"url\":\"https://api.vibewatch.io/api/v1/public/stacks-index/pro/evidence/2026-08-31\",\"description\":\"Stacks Index paid data. A payer covering its own network fee needs STX in the paying wallet. A sponsored transaction (empty sponsor slot, fee 0) is accepted and relayed with the fee covered, so a wallet holding only sBTC can pay.\"},\"accepts\":[{\"scheme\":\"exact\",\"network\":\"stacks:1\",\"payTo\":\"SP3PHGPE8G09FFBSH6NVM3J5S2118M8YA825HWQY1\",\"maxTimeoutSeconds\":45,\"amount\":\"100\",\"asset\":\"SM3VDXK3WZZSA84XXFKAFAF15NNZX32CTSG82JFQ4.sbtc-token\"},{\"scheme\":\"exact\",\"network\":\"stacks:1\",\"payTo\":\"SP3PHGPE8G09FFBSH6NVM3J5S2118M8YA825HWQY1\",\"maxTimeoutSeconds\":45,\"amount\":\"300000\",\"asset\":\"STX\"}]}",
+      "json": {
+        "x402Version": 2,
+        "resource": {
+          "url": "https://api.vibewatch.io/api/v1/public/stacks-index/pro/evidence/2026-08-31",
+          "description": "Stacks Index paid data. A payer covering its own network fee needs STX in the paying wallet. A sponsored transaction (empty sponsor slot, fee 0) is accepted and relayed with the fee covered, so a wallet holding only sBTC can pay."
+        },
+        "accepts": [
+          {
+            "scheme": "exact",
+            "network": "stacks:1",
+            "payTo": "SP3PHGPE8G09FFBSH6NVM3J5S2118M8YA825HWQY1",
+            "maxTimeoutSeconds": 45,
+            "amount": "100",
+            "asset": "SM3VDXK3WZZSA84XXFKAFAF15NNZX32CTSG82JFQ4.sbtc-token"
+          },
+          {
+            "scheme": "exact",
+            "network": "stacks:1",
+            "payTo": "SP3PHGPE8G09FFBSH6NVM3J5S2118M8YA825HWQY1",
+            "maxTimeoutSeconds": 45,
+            "amount": "300000",
+            "asset": "STX"
+          }
+        ]
+      }
+    },
+    {
+      "label": "paid project leo",
+      "request": "GET /api/v1/public/stacks-index/pro/projects/leo?days=90",
+      "at": "2026-09-17T08:53:08.795Z",
+      "status": 402,
+      "response_server_date": "Thu, 17 Sep 2026 08:53:09 GMT",
+      "payment_required_header": true,
+      "challenge": {
+        "x402Version": 2,
+        "resource": {
+          "url": "https://api.vibewatch.io/api/v1/public/stacks-index/pro/projects/leo",
+          "description": "Stacks Index paid data. A payer covering its own network fee needs STX in the paying wallet. A sponsored transaction (empty sponsor slot, fee 0) is accepted and relayed with the fee covered, so a wallet holding only sBTC can pay."
+        },
+        "accepts": [
+          {
+            "scheme": "exact",
+            "network": "stacks:1",
+            "payTo": "SP3PHGPE8G09FFBSH6NVM3J5S2118M8YA825HWQY1",
+            "maxTimeoutSeconds": 45,
+            "amount": "100",
+            "asset": "SM3VDXK3WZZSA84XXFKAFAF15NNZX32CTSG82JFQ4.sbtc-token"
+          },
+          {
+            "scheme": "exact",
+            "network": "stacks:1",
+            "payTo": "SP3PHGPE8G09FFBSH6NVM3J5S2118M8YA825HWQY1",
+            "maxTimeoutSeconds": 45,
+            "amount": "300000",
+            "asset": "STX"
+          }
+        ]
+      },
+      "body": "{\"x402Version\":2,\"resource\":{\"url\":\"https://api.vibewatch.io/api/v1/public/stacks-index/pro/projects/leo\",\"description\":\"Stacks Index paid data. A payer covering its own network fee needs STX in the paying wallet. A sponsored transaction (empty sponsor slot, fee 0) is accepted and relayed with the fee covered, so a wallet holding only sBTC can pay.\"},\"accepts\":[{\"scheme\":\"exact\",\"network\":\"stacks:1\",\"payTo\":\"SP3PHGPE8G09FFBSH6NVM3J5S2118M8YA825HWQY1\",\"maxTimeoutSeconds\":45,\"amount\":\"100\",\"asset\":\"SM3VDXK3WZZSA84XXFKAFAF15NNZX32CTSG82JFQ4.sbtc-token\"},{\"scheme\":\"exact\",\"network\":\"stacks:1\",\"payTo\":\"SP3PHGPE8G09FFBSH6NVM3J5S2118M8YA825HWQY1\",\"maxTimeoutSeconds\":45,\"amount\":\"300000\",\"asset\":\"STX\"}]}",
+      "json": {
+        "x402Version": 2,
+        "resource": {
+          "url": "https://api.vibewatch.io/api/v1/public/stacks-index/pro/projects/leo",
+          "description": "Stacks Index paid data. A payer covering its own network fee needs STX in the paying wallet. A sponsored transaction (empty sponsor slot, fee 0) is accepted and relayed with the fee covered, so a wallet holding only sBTC can pay."
+        },
+        "accepts": [
+          {
+            "scheme": "exact",
+            "network": "stacks:1",
+            "payTo": "SP3PHGPE8G09FFBSH6NVM3J5S2118M8YA825HWQY1",
+            "maxTimeoutSeconds": 45,
+            "amount": "100",
+            "asset": "SM3VDXK3WZZSA84XXFKAFAF15NNZX32CTSG82JFQ4.sbtc-token"
+          },
+          {
+            "scheme": "exact",
+            "network": "stacks:1",
+            "payTo": "SP3PHGPE8G09FFBSH6NVM3J5S2118M8YA825HWQY1",
+            "maxTimeoutSeconds": 45,
+            "amount": "300000",
+            "asset": "STX"
+          }
+        ]
+      }
+    },
+    {
+      "label": "paid delta",
+      "request": "GET /api/v1/public/stacks-index/pro/delta?since=2026-09-10T00:00:00Z",
+      "at": "2026-09-17T08:53:10.093Z",
+      "status": 402,
+      "response_server_date": "Thu, 17 Sep 2026 08:53:10 GMT",
+      "payment_required_header": true,
+      "challenge": {
+        "x402Version": 2,
+        "resource": {
+          "url": "https://api.vibewatch.io/api/v1/public/stacks-index/pro/delta",
+          "description": "Stacks Index paid data. A payer covering its own network fee needs STX in the paying wallet. A sponsored transaction (empty sponsor slot, fee 0) is accepted and relayed with the fee covered, so a wallet holding only sBTC can pay."
+        },
+        "accepts": [
+          {
+            "scheme": "exact",
+            "network": "stacks:1",
+            "payTo": "SP3PHGPE8G09FFBSH6NVM3J5S2118M8YA825HWQY1",
+            "maxTimeoutSeconds": 45,
+            "amount": "100",
+            "asset": "SM3VDXK3WZZSA84XXFKAFAF15NNZX32CTSG82JFQ4.sbtc-token"
+          },
+          {
+            "scheme": "exact",
+            "network": "stacks:1",
+            "payTo": "SP3PHGPE8G09FFBSH6NVM3J5S2118M8YA825HWQY1",
+            "maxTimeoutSeconds": 45,
+            "amount": "300000",
+            "asset": "STX"
+          }
+        ]
+      },
+      "body": "{\"x402Version\":2,\"resource\":{\"url\":\"https://api.vibewatch.io/api/v1/public/stacks-index/pro/delta\",\"description\":\"Stacks Index paid data. A payer covering its own network fee needs STX in the paying wallet. A sponsored transaction (empty sponsor slot, fee 0) is accepted and relayed with the fee covered, so a wallet holding only sBTC can pay.\"},\"accepts\":[{\"scheme\":\"exact\",\"network\":\"stacks:1\",\"payTo\":\"SP3PHGPE8G09FFBSH6NVM3J5S2118M8YA825HWQY1\",\"maxTimeoutSeconds\":45,\"amount\":\"100\",\"asset\":\"SM3VDXK3WZZSA84XXFKAFAF15NNZX32CTSG82JFQ4.sbtc-token\"},{\"scheme\":\"exact\",\"network\":\"stacks:1\",\"payTo\":\"SP3PHGPE8G09FFBSH6NVM3J5S2118M8YA825HWQY1\",\"maxTimeoutSeconds\":45,\"amount\":\"300000\",\"asset\":\"STX\"}]}",
+      "json": {
+        "x402Version": 2,
+        "resource": {
+          "url": "https://api.vibewatch.io/api/v1/public/stacks-index/pro/delta",
+          "description": "Stacks Index paid data. A payer covering its own network fee needs STX in the paying wallet. A sponsored transaction (empty sponsor slot, fee 0) is accepted and relayed with the fee covered, so a wallet holding only sBTC can pay."
+        },
+        "accepts": [
+          {
+            "scheme": "exact",
+            "network": "stacks:1",
+            "payTo": "SP3PHGPE8G09FFBSH6NVM3J5S2118M8YA825HWQY1",
+            "maxTimeoutSeconds": 45,
+            "amount": "100",
+            "asset": "SM3VDXK3WZZSA84XXFKAFAF15NNZX32CTSG82JFQ4.sbtc-token"
+          },
+          {
+            "scheme": "exact",
+            "network": "stacks:1",
+            "payTo": "SP3PHGPE8G09FFBSH6NVM3J5S2118M8YA825HWQY1",
+            "maxTimeoutSeconds": 45,
+            "amount": "300000",
+            "asset": "STX"
+          }
+        ]
+      }
+    }
+  ]
+}
