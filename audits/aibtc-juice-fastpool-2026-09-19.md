@@ -1,217 +1,225 @@
 # Juice / FastPool sBTC→STX reward vaults — source audit
 
-**Bounty:** `mu7uxokh9445cb1126bb` (21,000 sats) · **Date:** 2026-09-19
-**Scope reviewed:** the four pinned vault/signer contracts at the pinned commits, plus the CityCoins
-`ccd016-swap-vault-mia-v2.clar` delta. Method: source reading, cross-contract call tracing against the
-deployed Jing v6 market semantics, and arithmetic walk-throughs of the fee/settlement paths. No reverts
-were observed in production; findings below are source-level with worked numbers.
+**Bounty:** `mu7uxokh9445cb1126bb` (21,000 sats)
+**Contract commit reviewed:** all five pinned targets at the pinned SHAs
+**Date:** 2026-09-19
+**Cost:** $0 — source only, no paid queries, no on-chain writes.
 
-**Reviewed revisions (pinned, as in the task):**
+Scope reviewed (pinned, byte-identical to `raw.githubusercontent.com` at the pinned SHAs —
+the FastPool signer manager was re-fetched and `diff`ed against the local copy: **identical**):
 
 * `juicestx@6890471` — `juice-pool-stx-signer-stx-rewards.clar`, `juice-pool-swap-vault.clar`
 * `fastpool-pox-5@7d064b5` — `signer-manager-vault-stx-rewards.clar`, `fastpool-swap-vault.clar`
-* `citycoins-protocol@9cd22e2` — `ccd016-swap-vault-mia-v2.clar`
+* `citycoins-protocol@9cd22e2` — `ccd016-swap-vault-mia-v2.clar` (regression pass only)
 
-Note: `juice-pool-swap-vault.clar` and `fastpool-swap-vault.clar` are byte-identical apart from the
-`impl-trait` line and the `POOL` constant, so findings on the vault apply to **both** deployments.
+`juice-pool-swap-vault.clar` and `fastpool-swap-vault.clar` are byte-identical apart from line 1
+(`impl-trait`) and the `POOL` constant, so every vault finding applies to **both** deployments.
 
 ---
 
-## [MEDIUM] F-1 — Recovered sBTC is charged the pool fee twice on the swap-timeout path
+## [RETRACTED — INVALID] F-1 (the fee is charged twice on the timeout path)
 
-**Contract:** `signer-manager-vault-stx-rewards.clar` (FastPool)
-**Functions:** `fund-swap-vault`, `recover-swap-vault`, `compute-due`, `pay-stacker`
-**Impact:** every stacker is under-paid on the timeout path; the admin fee wallet over-collects.
+An earlier revision of this document reported a MEDIUM finding claiming `compute-due` /
+`pay-stacker` charged the pool fee a **second** time on `recover-swap-vault` → `distribute-rewards`,
+for an effective 1.99% instead of 1%. **That finding was wrong and is withdrawn.**
 
-### The contract states the invariant itself
+The claim required a non-zero `fee-bips` argument at distribution. There is none. There is exactly
+one call site that can pass a non-zero value and it does not:
 
-`compute-due` is introduced by:
-
-> *"The vault was funded net of fees, so recovered sBTC is already net and is **not charged again during
-> distribution**."*
-
-The code immediately below charges it again:
-
-```clarity
-(sbtc-gross-due (if (> sbtc-entitled sbtc-accounted) (- sbtc-entitled sbtc-accounted) u0))
-(sbtc-fee (/ (* sbtc-gross-due fee-bips) MAX_BIPS))   ;; <-- second charge
-...
-sbtc-due: (- sbtc-gross-due sbtc-fee)
+```
+fastpool-signer-rewards.clar:890   (compute-due stacker reward-cycle (get stx-out settlement)
+                                     (get-unswapped-for-cycle reward-cycle) (get total-shares settlement) u0)   ;; get-stacker-rewards
+fastpool-signer-rewards.clar:1052          fee-bips: u0,                                                          ;; distribute-rewards-many
 ```
 
-and `pay-stacker` credits that second charge to the pool:
-
-```clarity
-(var-set unswapped-sats (- (var-get unswapped-sats) (get sbtc-gross-due due)))
-(var-set earned-fees   (+ (var-get earned-fees)   (get sbtc-fee due)))   ;; <-- over-collection
-```
-
-### Why the recovered amount really is already net
-
-`fund-swap-vault` deducts the fee **before** the sats ever reach the vault:
+`grep -n "fee-bips"` over the whole pinned file returns exactly two `u0` literals plus the map
+definition and accessor. `get-fee-bips-for-cycle` (line 1304) is read **only** inside
+`fund-swap-vault` (line 591), where the fee is taken once, before the sats reach the vault:
 
 ```clarity
 (unfunded-sats (- (get pot-sats settlement) (get swapped-sats settlement)))
 (fee          (/ (* unfunded-sats (get-fee-bips-for-cycle reward-cycle)) MAX_BIPS))
 (vault-sats   (- unfunded-sats fee))
-...
-(contract-call? vault fund vault-sats)     ;; the vault only ever holds net
-(var-set earned-fees (+ (var-get earned-fees) fee))   ;; first charge, booked at fund time
+(contract-call? vault fund vault-sats)                 ;; vault only ever holds net
+(var-set earned-fees (+ (var-get earned-fees) fee))    ;; the one and only charge
 ```
 
-On a timeout `recover-swap-vault` returns whatever the vault still holds — i.e. `vault-sats` — into
-`recovered-sbtc-by-cycle` (net), which is exactly the `unswapped` input of `compute-due`
-(`get-unswapped-for-cycle` → `recovered-sbtc-by-cycle`). The distribution leg then takes the fee a
-second time out of that same net amount.
+and `compute-due`'s own comment says precisely that:
 
-### Worked example (fee = 100 bips)
+> *"The vault was funded net of fees, so recovered sBTC is already net and is not charged again
+> during distribution."*
 
-| Step | sBTC |
-|---|---|
-| cycle pot (gross) | 100 000 |
-| `fund-swap-vault`: fee 1% (first charge), vault receives | 99 000 |
-| swap times out, `recover-swap-vault` returns | 99 000 |
-| stacker entitled (`unswapped × shares / total`) | 99 000 |
-| `sbtc-fee` charged again at 1% | 990 |
-| **stacker actually paid** | **98 010** |
+The code matches the comment; the comment is **not** contradicted. `sbtc-fee` in `compute-due` is
+therefore dead arithmetic (`(/ (* sbtc-gross-due u0) MAX_BIPS)` = `u0`), which is untidy but not a
+defect.
 
-Intended: 99 000. Actual: 98 010. The pool collects **1 990 instead of 1 000** — an effective fee of
-1.99% on the recovered portion. This compounds with the configured rate (at the `MAX_FEE_BIPS = 500`
-limit the pool takes 9.75% instead of 5%) and is entirely inside the documented "no admin call can ever
-touch stacker funds" reserve: `sweep-sbtc-dust` still cannot reach it, because the over-charge is booked
-as `earned-fees`, which is a legitimate admin withdrawal.
+### Why the two stacks differ (and both are correct)
 
-Cross-check that this is unintentional: the settlement's own `fee-sats` field only ever accumulates the
-fund-time fee, so the second charge is invisible in the cycle's accounting record.
+| | funding | fee charged | charged once? |
+|---|---|---|---|
+| **FastPool** | `fund-swap-vault` sends **net** | at fund time, `fee-bips-for-cycle` | yes (distribution uses `u0`) |
+| **Juice** | `claim-rewards` sends **gross** (`claimed`) | at distribution, `(/ (* gross (var-get fee-bips)) MAX_BIPS)` (line 613) | yes (no fee at fund time) |
 
-### Concrete fix (minimal, keeps the documented invariant)
+The two contracts genuinely implement different fee placements, but each charges exactly once. No
+double collection, no stacker under-payment, `earned-fees` is not inflated, and the settlement's
+`fee-sats` field is consistent with the single charge.
 
-Drop the fee from the recovered leg in `compute-due`:
-
-```clarity
-(sbtc-fee u0)
-(sbtc-due sbtc-gross-due)
-```
-
-and in `pay-stacker` reduce the reserve by the amount actually paid:
-
-```clarity
-(var-set unswapped-sats (- (var-get unswapped-sats) (get sbtc-due due)))
-;; earned-fees is no longer touched on this path
-```
-
-If instead the intent is to charge on the timeout path, then `fund-swap-vault` must send the **gross**
-(`unfunded-sats`) into the vault and the fee must be taken only at distribution — the two must not both
-apply, as they do today.
-
-> Contrast: the Juice contract does **not** have this bug. `juice-signer-rewards.pox-claim-rewards`
-> funds its vault with the full gross reward and defers the fee to `pay-recovered-sbtc-one`, so its
-> charge is the only one. The FastPool design moved the fee to fund time but left the distribution-time
-> charge in place.
+I am recording this retraction rather than silently deleting it: the retracted finding was produced
+by reading the *comment* about the intent instead of the two call sites that decide the argument,
+and by not grepping for every `fee-bips` occurrence before asserting the arithmetic.
 
 ---
 
-## [LOW] F-2 — `router-swap` and `jing-place` in the swap vault have no `POOL` caller gate
+## [MEDIUM] F-2 — `fastpool-swap-vault` does not implement the trait the FastPool manager dispatches through
 
-**Contract:** both `juice-pool-swap-vault.clar` and `fastpool-swap-vault.clar`
-**Impact:** an arbitrary principal can drive the vault's swap/deposit legs during a batch window,
-outside the authorization model the rest of the stack enforces.
+**Contract:** `fastpool-swap-vault.clar` (target 4)
+**Class:** scope section **F — cross-contract mismatch: trait conformance that is syntactically
+valid but violates assumptions made by the signer/rewards contract or swap vault.**
 
-Every privileged entry point in the vault asserts `(is-eq contract-caller POOL)`: `set-*`, `fund`,
-`finish`, `emergency-recover`, `jing-take`, `router-swap-split`, `router-swap-split-dia`,
-`jing-refloor`. Two state-changing swap paths do not:
+The FastPool signer manager binds the vault to the **Juice** trait:
 
 ```clarity
-(define-public (router-swap (amount uint) (update (buff 8192)))   ;; no caller assert
-  ... (contract-call? JING_ROUTER smart-swap-sbtc-for-stx amount limit (some update) mid min-out) ...)
-
-(define-public (jing-place (update (buff 8192)))                 ;; no caller assert
-  ... (contract-call? JING_MARKET deposit-token-x amount floor (some u0) update SBTC_TOKEN ASSET_SBTC) ...)
+;; signer-manager-vault-stx-rewards.clar:26
+(use-trait swap-vault-interface
+  'SPV9K21TBFAK4KNRJXF5DFP8N7W46G4V9RCJDC22.juice-swap-vault-trait.swap-vault-trait)
 ```
 
-The signer managers wrap `jing-take`, `router-swap-split` and `router-swap-split-dia` with
-`authorize-admin`/`assert-admin`, and there is no wrapper for the plain `router-swap`, so the explicit
-intent is that the swap legs are pool-driven. Because the vault's own gate is missing, any principal can
-call the vault directly and, once `burn-block-height >= batch-start + window-blocks`, force the swap
-(`router-swap`) or, while the window is open, force the entire sBTC balance into the Jing book at
-`ask-of(mid)` = `mid − leeway-bps` (`jing-place`).
+Every vault parameter of every manager entry point is typed `<swap-vault-interface>`:
+`assert-active-vault` (489), `assert-idle-vault` (495), `propose-swap-vault` (510),
+`confirm-swap-vault` (543-544), `fund-swap-vault` (582), `finalize-swap-vault` (615),
+`recover-swap-vault` (637), and the seven `set-vault-*` setters. The pool can therefore only ever
+call a vault through that trait.
 
-**Why this is Low, not High:** the vault has no path that pays an outsider. `smart-swap-sbtc-for-stx`
-is invoked `as-contract`, so returned STX and wSTX land back in the vault, and only the `POOL`-gated
-`finish` / `emergency-recover` can move value out. No direct theft or redirection is reachable. What is
-lost is timing control and the intended one-actor invariant: an attacker can consume the router cooldown
-(`cooldown-tick`), push the pool's resting order to a 5%-below-mid limit the pool had chosen not to use
-yet, and — if the batch happens to be genuinely empty — drive `close-if-empty`. `close-batch` is the
-only entry point the vault documents as permissionless, which is further evidence these two were meant
-to be gated.
+`juice-swap-vault.clar` declares it on line 1. **`fastpool-swap-vault.clar` declares nothing:**
 
-**Fix:** add `(asserts! (is-eq contract-caller POOL) ERR_UNAUTHORIZED)` to both `router-swap` and
-`jing-place` (and consider exposing a signer-manager wrapper for `router-swap` if a keeper path is
-wanted).
+```clarity
+;; fastpool-swap-vault.clar:1-3   (the whole file, first line included)
+(define-constant ERR_RECOVERY_TOO_SOON (err u16046))
+(define-constant ERR_BUSY (err u16045))
+(define-constant ERR_UNAUTHORIZED (err u16000))
+```
+
+`grep -n "impl-trait"` across the pinned set returns it for `juice-swap-vault.clar:1`,
+`fastpool-signer-rewards.clar:24`, `juice-signer-rewards.clar:2` and
+`citycoins-mia-swap-vault-v2.clar:98` — and **nowhere in `fastpool-swap-vault.clar`.**
+
+**Impact.** A contract passed where a `<trait>` is expected is subject to trait conformance, so either:
+
+* the FastPool vault is **rejected** wherever it is handed to the manager — `propose-swap-vault` /
+  `confirm-swap-vault` cannot register it and `fund-swap-vault` cannot fund it, i.e. the FastPool
+  pool is **structurally unable to swap its own cycle pot**, which is the entire purpose of the
+  stack and a liveness failure for every stacker locked against it; or
+* the deployment relies on the check being absent, in which case the manager's guarantee that its
+  vault exposes the exact interface it calls (and nothing else) is unenforced — the manager's
+  binding safety (`pool`, `fund`, `finish`, `emergency-recover`, `jing-take`, `router-swap-split*`)
+  is assumed rather than proven.
+
+Either way the file is the odd one out among five pinned targets, and it is target 4 of this bounty.
+
+**Verification needed (explicit gap):** I did not broadcast anything, so I cannot show the runtime
+revert. The cheap decisive check is one line against the deployed principal — does
+`SP…fastpool-swap-vault` answer a trait call, or does `propose-swap-vault` revert? Source-level, the
+gap is unambiguous: the file does not declare the trait the only caller it has uses.
+
+**Fix:** add `(impl-trait 'SPV9K21TBFAK4KNRJXF5DFP8N7W46G4V9RCJDC22.juice-swap-vault-trait.swap-vault-trait)`
+as line 1 of `fastpool-swap-vault.clar`, matching `juice-swap-vault.clar`. (A FastPool-local trait
+would also work, but then the manager must `use-trait` that one instead.)
 
 ---
 
-## [LOW] F-3 — `fastpool-swap-vault.clar` omits `impl-trait`, so trait conformance is not enforced
+## [LOW] F-3 — `router-swap` and `jing-place` in the swap vault have no `POOL` caller gate
 
-**Contract:** `fastpool-swap-vault.clar`
-**Impact:** the FastPool signer manager passes this vault through
-`(use-trait swap-vault-interface '…juice-swap-vault-trait.swap-vault-trait)`, but the vault never
-declares `(impl-trait …)`. `juice-swap-vault.clar` line 1 does; the FastPool file begins directly at
-`(define-constant ERR_RECOVERY_TOO_SOON …)`. Without the declaration the compiler cannot prove the vault
-implements the interface the signer manager calls through, which is exactly the "syntactically valid but
-violates assumptions" class in the scope. At minimum this should be added; if the deployment relies on
-the declaration for `contract-call?`-through-trait to type-check, `propose-swap-vault` would reject the
-vault or the call would fail at runtime.
+**Contract:** both `fastpool-swap-vault.clar` and `juice-swap-vault.clar`
+**Impact:** an arbitrary principal can drive the vault's swap/deposit legs inside a live batch
+window, outside the one-actor model the rest of the stack enforces.
 
-**Fix:** add `(impl-trait .juice-swap-vault-trait.swap-vault-trait)` (or the FastPool-local equivalent)
-as line 1 of `fastpool-swap-vault.clar`, matching the Juice vault.
+Count of `(asserts! (is-eq contract-caller POOL) ERR_UNAUTHORIZED)` sites in
+`fastpool-swap-vault.clar`: `set-no-pyth-slippage-bps` 59, `set-window-blocks` 72,
+`set-leeway-bps` 87, `set-slippage-bps` 100, `set-max-chunk-sats` 113, `set-dia-band-bps` 126,
+`set-router-cooldown` 137, `fund` 152, `finish` 185, `emergency-recover` 201, `jing-take` 301,
+`router-swap-split` 378, `router-swap-split-dia` 423, `jing-refloor` 677.
+
+The two that do **not** assert it:
+
+```clarity
+(define-public (jing-place (update (buff 8192)))          ;; line 267 — no caller assert
+  ...
+  (asserts! (window-open) ERR_WINDOW_CLOSED)
+  (let ((floor (ask-of (try! (current-mid update))))
+        (amount (sbtc-balance)))                         ;; the ENTIRE sBTC balance
+    ... (contract-call? JING_MARKET deposit-token-x amount floor (some u0) update SBTC_TOKEN ASSET_SBTC) ...))
+
+(define-public (router-swap (amount uint) (update (buff 8192)))   ;; line 324 — no caller assert
+  ...
+  (asserts! (window-elapsed) ERR_WINDOW_OPEN)
+  (try! (cooldown-tick))                                 ;; consumes the shared cooldown
+  ... (contract-call? JING_ROUTER smart-swap-sbtc-for-stx amount limit (some update) mid min-out) ...))
+```
+
+(`jing-reclaim`, line 289, is also ungated, but it only returns the vault's own position to the
+vault — that matches `close-batch` being documented as permissionless, so it is left out of scope.)
+
+The manager wraps `jing-take`, `router-swap-split` and `router-swap-split-dia` with
+`authorize-admin` / `assert-admin`, and exposes **no** wrapper for plain `router-swap`; the
+`set-*` setters and `jing-refloor` are `POOL`-gated in the vault itself. The intent is therefore that
+the swap legs are pool-driven — but the vault's own gate for exactly two of them is missing, so any
+principal can:
+
+* while the window is open, force the whole sBTC balance into the Jing book at
+  `ask-of(mid) = mid − leeway-bps` — a limit the pool may have deliberately not used yet; and
+* after the window closes, force the router swap and **consume the router cooldown**
+  (`cooldown-tick` writes the shared `last-router-swap`), delaying or shifting the pool's own swap.
+
+**Why Low, not High:** the vault has no path that pays an outsider. `smart-swap-sbtc-for-stx` runs
+`as-contract`, so returned STX/wSTX land back in the vault, and only the `POOL`-gated `finish` /
+`emergency-recover` can move value out. There is no theft, no redirection and no stuck-funds path;
+what is lost is timing control and the intended single-actor invariant. The price the attacker can
+push is bounded by `current-mid`'s DIA band (`dia-band-bps`, default 10%) plus `leeway-bps`, so the
+worst case is the pool selling inside a band it already configured to accept.
+
+**Fix:** add `(asserts! (is-eq contract-caller POOL) ERR_UNAUTHORIZED)` to both `jing-place` and
+`router-swap`; if a keeper path is wanted, expose a manager wrapper for `router-swap` instead.
 
 ---
 
-## Reviewed and found sound (edge cases exercised by reading)
+## Reviewed and found sound (gaps recorded on purpose)
 
-Recorded so the gaps are explicit rather than silently skipped:
-
-* **`emergency-recover` double reclaim is correct, not a bug.** The two `reclaim-core` calls look
-  duplicated, but the Jing market's `cancel-token-x-deposit` refunds only the deposit for the *current*
-  cycle when `get-token-x-deposit > 0`, and only the parked amount when it is `0`
-  (`markets-sbtc-stx-jing-v6`, lines 1049-1092). So when both a resting deposit and a parked balance
-  exist, the first call refunds the resting deposit (deleting the record) and the second call — now
-  seeing `amount = 0`, `parked > 0` — refunds the parked balance. Removing either call would strand the
-  parked amount, and the trailing `(asserts! (is-empty) …)` would then revert the whole recovery.
-* **Vault rotation is properly bounded.** `propose-swap-vault` → `SWAP_VAULT_COOLDOWN` (4 032 burn
-  blocks) → `confirm-swap-vault` re-checks both old and new vault with `assert-idle-vault`
-  (`pool == current-contract`, no batch start, zero resting and zero parked Jing position) and refuses
-  to run while `pending-swap` is set. A malformed/hostile replacement cannot be substituted silently.
-* **`finalize-swap` cannot be fooled into crediting phantom STX.** It measures the balance delta
-  (`after − before`) around `vault.finish` and requires it to equal the reported amount; FastPool does
-  the same.
+* **`emergency-recover`'s two `reclaim-core` calls are correct, not a double refund.** The Jing
+  market's `cancel-token-x-deposit` refunds the resting deposit when `get-token-x-deposit > 0`, and
+  only the parked amount when it is `0` (`markets-sbtc-stx-jing-v6`, 1049-1092). With both present,
+  the first call clears the resting record and the second — now seeing `0` — returns the parked
+  balance. Removing either would strand funds and make the trailing `(asserts! (is-empty) …)` revert
+  the whole recovery.
+* **Vault rotation is properly bounded.** `propose-swap-vault` → 4,032-block cooldown →
+  `confirm-swap-vault` re-checks both vaults with `assert-idle-vault` (pool == manager, no batch
+  start, zero resting and zero parked Jing position) and refuses to run while `pending-swap` is set.
+* **`finalize-swap-vault` cannot be fooled into crediting phantom STX.** It measures the
+  `stx-get-balance` delta around `vault.finish` and requires it to equal the reported amount. Same
+  in both managers.
 * **The STX dust sweep cannot reach stacker or fee funds.** `sweep-stx-dust` reserves `unpaid-stx`
-  (credited by `finalize-swap-vault`, reduced only by what stackers are actually paid) and only sweeps
-  `balance − reserved`. Floor remainders stay reserved and unreachable by the admin.
-* **Distribution is idempotent.** Both watermarks (`stacker-stx-paid`, `stacker-sbtc-accounted`) are
-  monotone and set to the *entitlement*, not to the delta, so repeated calls to `distribute-rewards`
-  pay exactly the difference and re-entry pays zero; `fold-distribute` re-reads the watermarks per
-  stacker, so a duplicated principal in one batch gets zero the second time.
-* **Price bounds are enforced where the swap price is derived.** `current-mid` requires the Jing
-  `refresh-mid` result to sit inside `dia-band-bps` of the DIA price (default 10%), and
-  `get-dia-value` rejects non-positive values and stale oracle timestamps; the no-Pyth fallback is
-  deliberately conservative (`limit = native-mid / 2`, capped by `MAX_NO_PYTH_SLIPPAGE_BPS`).
-* **Tranche/journal bookkeeping in the Juice contract** (`tranche-count`, `last-claim-dist-cycle`,
-  `stx-pot`, `tranche-paid`, `tranche-paid-shares`) is consistent: `tranche-paid` accumulates the
-  **gross** owed while only `net` leaves the contract, the retained fee is booked to `earned-fees`, and
-  the residue is exactly the rounding dust that `sweep-tranche-dust` releases after every share is
-  marked paid.
+  (credited by `finalize-swap-vault`, reduced only by what stackers are actually paid) and sweeps
+  only `balance − reserved`; floor remainders stay reserved.
+* **Distribution is idempotent.** Both watermarks (`stacker-stx-paid`, `stacker-sbtc-accounted`)
+  are monotone and set to the *entitlement*, not the delta, so repeat calls pay exactly the
+  difference and a duplicated principal inside one `distribute-rewards-many` batch gets zero the
+  second time (`fold-distribute` re-reads the watermark per stacker).
+* **The fee path is single-charge in both stacks** — see the retraction section above; the
+  settlement also cannot drift: `unswapped-sats` is reduced by the gross at fund time and increased
+  by the net at recovery, so the retained fee is exactly the difference and is booked to
+  `earned-fees` once.
+* **Price bounds hold where the swap price is derived.** `current-mid` requires the Jing
+  `refresh-mid` result to sit inside `dia-band-bps` of DIA and `get-dia-price` rejects
+  non-positive/stale values; the no-Pyth fallback uses `limit = native-mid / 2` capped by
+  `MAX_NO_PYTH_SLIPPAGE_BPS`.
+* **Juice's tranche journal is consistent.** `tranche-paid` accumulates the gross owed while only
+  the net leaves the contract, the retained fee goes to `earned-fees`, and the residue is exactly the
+  rounding dust `sweep-tranche-dust` releases once every share is marked paid.
 
 ## Remaining gaps / not tested
 
-* No Clarinet SDK reverts were produced for this submission; F-1 is proven by arithmetic walk-through of
-  the fee path plus the contract's contradicting comment, not by a failing test. A harness reproducing
-  F-1 requires mocking `pox-5` reward reads, `fund-swap-vault`, a timed-out vault and then a
-  distribution — the fixed `MAX_BIPS`/`fee-bips` inputs make the 2f−f² result deterministic.
-* CityCoins `ccd016-swap-vault-mia-v2.clar` was read only for regressions against the revision audited
-  at `84451ea`; no novel, exploitable delta was identified in this pass.
-* Live deployment state (current `fee-bips`, whether a timeout cycle has already settled) was not
-  queried; F-1 is a source-level defect independent of current parameters.
-
-**Costs:** $0 — audit performed entirely from source; no paid queries, no on-chain writes.
+* No Clarinet SDK harness was produced. F-2 is a static conformance gap with an explicit
+  deployed-contract question; F-3 is a missing-assertion class that needs no harness.
+* CityCoins `ccd016-swap-vault-mia-v2.clar` was read only for regressions against the revision
+  audited at `84451ea`; no novel, exploitable delta was identified in this pass.
+* Live deployment state (current `fee-bips`, whether a FastPool timeout cycle has settled, whether
+  the deployed FastPool vault implements the trait) was not queried — no RPC or paid call was made.
