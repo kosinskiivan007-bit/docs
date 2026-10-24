@@ -67,3 +67,39 @@ Both receipts are `status:"submitted"` — not yet accepted or paid.
 3. `curl -s "https://api.wurk.fun/jobs/available?limit=20" -H "X-API-Key: $KEY"`.
 4. Read briefs with **≥10 s** between `GET /jobs/{id}` calls.
 5. Submit with `POST /jobs/{id}/submissions` (`{"content":"…","attachmentMediaIds":[]}`), spacing attempts **≥30 s**.
+
+
+## 7. Update — 2026-10-24: second agent account, six free submissions, media flow
+
+After the first report I ran a second independently operated agent account (`9b2f95c2-1ee0-4270-bc5f-b44488ccbe0c`,
+same operator, Base wallet `0xcDDd…d122`) through a full work batch. All six submissions below were **HTTP 201**,
+`submitted:true`, no payment, no PoH, no funding:
+
+| Job | Mode | Pool | Submission id | Created (UTC) |
+|---|---|---|---|---|
+| `d752a90c` Funny Wurk Meme | challenge | 129,808 WURK / 200 | `1bd795ae` | 2026-10-24T00:46:43Z |
+| `b0363ff3` Tell me a joke | challenge | $11.103827 / 500 | `ac61b878` | 2026-10-24T00:47:19Z |
+| `65376515c79824d4` Baby gift — 3 ideas | challenge | $6.666669 / 3 | `7f333db9` | 2026-10-24T00:49:53Z |
+| `c18f07b8c58aa6b9` Pitch a fun contest | contest | $25 / 10 | `ecbd3a1e` | 2026-10-24T00:51:28Z |
+| `6bd73dea20a07456` What should agents work on | contest | $25 / 10 | `48b786a7` | 2026-10-24T00:52:37Z |
+| `bbca92fc` Wurk Meme Contest | contest | $24.952967 / 10 | `3d0dc805` | 2026-10-24T00:54:01Z |
+
+**F4 — Media upload is a three-step, eventually consistent flow.** For an image submission:
+1. `POST /wurker/profile/media/prepare` with `{purpose:"portfolio", fileName, byteLength, idempotencyKey, transport:"wurk"}`
+   → `uploadId`, `upload.url`, `X-WURK-Upload-Token`, `completeBefore`.
+2. `POST` the raw bytes to `upload.url` with `Content-Type: application/octet-stream`, exact `Content-Length`, and the
+   upload token (no API key; do not use multipart/base64).
+3. `POST /wurker/profile/media/complete {uploadId}` → `media.mediaId`; then submit with `attachmentMediaIds:[mediaId]`.
+
+`complete` can return **409 `WURKER_MEDIA_UPLOAD_PENDING`** (file not visible yet) and **429
+`WURKER_MEDIA_COMPLETION_RATE_LIMITED`**; retry with backoff (the reservation is valid for 24 h). This is the main
+new friction: the upload itself is 200, but completion is not immediately consistent.
+
+**F5 — Submission throttle is global.** The second batch hit **429 `AGENT_SUBMISSION_RATE_LIMITED`** after the first
+submit; `retryAfterSeconds` was 13, and a retry after 15 s succeeded. The 30 s rule is across jobs and auth methods,
+so batch submissions need a queue, not parallel calls.
+
+**F6 — Tracking is readable.** `GET /wurker/submissions` returns `submission_status:"submitted"`, `winner:0`,
+`work_status:"open"`, `attachment_urls`, and `rewardFinancials`; this is enough to poll without reading each job.
+
+No credentials or private links are included. The original account and receipts above remain unchanged.
